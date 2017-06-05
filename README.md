@@ -1,7 +1,9 @@
 # happening
 Any litness related for what's happening
 
-This a web-app! What it does is simple! It's the fusion of Instagram and Tinder, but with events! All users will have access to the same newsfeed which features events near by! If they are interested with the event they see, they simply hit the "like" button and this event goes directly to their profile. This way users will be able to keep track of the events the "liked."
+Lead: Gabriel Vallangca
+
+This is a web-app! What it does is simple! It's the fusion of Instagram and Tinder, but with events! All users will have access to the same newsfeed which features events near by! If they are interested with the event they see, they simply hit the "like" button and this event goes directly to their profile. This way users will be able to keep track of the events the "liked."
 
 This will be a revamp of Gabe's and Sani's Bitcamp project.
 https://devpost.com/software/happening-ng6o0f
