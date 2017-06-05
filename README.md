@@ -6,7 +6,7 @@ This a web-app! What it does is simple! It's the fusion of Instagram and Tinder,
 This will be a revamp of Gabe's and Sani's Bitcamp project.
 https://devpost.com/software/happening-ng6o0f
 
-=====================================================================================================
+=================================================================================
 
 We will be using HTML, PHP, JS, CSS for webdev and MYSQL for database.
 
