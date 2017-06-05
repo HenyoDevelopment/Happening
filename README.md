@@ -16,6 +16,9 @@ Download XAMPP
 Link: https://www.apachefriends.org/index.html
 -Make sure it will have APACHE, PHP, and MYSQL
 
+Download any kind of environment you want to use. 
+-I use Dreamweaver
+
 Learn JS and HTML and CSS and MYSQL
 Link: https://www.cs.umd.edu/class/spring2017/cmsc389N/schedule.shtml
 User: CMSC389N
