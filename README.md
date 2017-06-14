@@ -28,7 +28,7 @@ PWD: sprcoredump
 
 
 HTML starting template: 
-'''
+'''html
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
@@ -46,7 +46,11 @@ HTML starting template:
         <link rel="stylesheet" href="src/css/style.css">
         <script src="dist/js/jQuery.min.js"></script>
     </head>
+
     <body>
+
+    <!-- HTML GOES HERE--> 
+
     </body>
 </html>
 '''
