@@ -25,3 +25,29 @@ Learn JS and HTML and CSS and MYSQL
 Link: https://www.cs.umd.edu/class/spring2017/cmsc389N/schedule.shtml
 User: CMSC389N
 PWD: sprcoredump
+
+
+HTML starting template: 
+'''
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <meta name="renderer" content="webkit">
+
+        <title>Document</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <link rel="stylesheet" href="src/css/style.css">
+        <script src="dist/js/jQuery.min.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
+'''
+
