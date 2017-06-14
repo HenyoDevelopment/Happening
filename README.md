@@ -8,6 +8,9 @@ This is a web-app! What it does is simple! It's the fusion of Instagram and Tind
 This will be a revamp of Gabe's and Sani's Bitcamp project.
 https://devpost.com/software/happening-ng6o0f
 
+OG Code 
+https://github.com/sanisideup/Happening
+
 =================================================================================
 
 We will be using HTML, PHP, JS, CSS for webdev and MYSQL for database.
