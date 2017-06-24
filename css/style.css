@@ -32,6 +32,17 @@
 .navbar-default .navbar-nav > li > a {
     color: #484848;
     font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff944d;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+    color: #ff944d;
+    border-bottom: 2px solid #ff944d
 }
 
 .navbar-default .navbar-form {
