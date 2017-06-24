@@ -1,0 +1,132 @@
+.navbar-default {
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    color: #484848;
+}
+
+.navbar-brand {
+    width: 40px;
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.navbar-brand-logo {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.navbar-search {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #484848;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #484848;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+/*TEMPORARY*/
+.navbar-right { 
+    margin-right: 15px;
+    
+}
+
+.navbar-nav>li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-right {
+    float: right!important;
+}
+
+.card {
+    display: block;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.header-user {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.header-user-img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    height: auto;
+}
+
+.img-wrapper {
+    padding-top: 56.25%;
+}
+
+.card-img-top {
+    vertical-align: 50%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    margin-bottom: 2px;
+}
+
+.card-text {
+    margin: 1px 0px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-left {
+        width: 100%;
+        margin: 0px;
+        padding-top: 18px;
+    }
+
+    .navbar-right {
+    float: right!important;
+}
+
+    .navbar-brand {
+        margin-top: 15px;
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
