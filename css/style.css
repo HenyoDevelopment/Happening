@@ -5,7 +5,16 @@
 }
 
 .navbar-brand {
-    padding: 15px 15px;
+    width: 40px;
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.navbar-brand-logo {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .navbar-search {
@@ -32,13 +41,21 @@
 /*TEMPORARY*/
 .navbar-right { 
     margin-right: 15px;
+    
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
     .navbar-left {
         width: 100%;
         margin: 0px;
         padding-top: 18px;
+    }
+
+    .navbar-brand {
+        margin-top: 15px;
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
