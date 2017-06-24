@@ -44,22 +44,6 @@
     
 }
 
-@media only screen and (max-width: 768px){
-    .navbar-left {
-        width: 100%;
-        margin: 0px;
-        padding-top: 18px;
-    }
-
-    .navbar-brand {
-        margin-top: 15px;
-        padding: 0px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-}
-
-
 .navbar-nav>li, .navbar-nav {
     float: left !important;
 }
@@ -126,3 +110,23 @@
 .col-fixed {
     /* custom width */
     width:320px;
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-left {
+        width: 100%;
+        margin: 0px;
+        padding-top: 18px;
+    }
+
+    .navbar-right {
+    float: right!important;
+}
+
+    .navbar-brand {
+        margin-top: 15px;
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
