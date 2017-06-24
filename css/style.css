@@ -82,11 +82,13 @@
     width: 25px;
     height: 25px;
     line-height: 25px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .header-user-img {
     width: 100%;
-    height: 100%;
+    height: auto;
     vertical-align: middle;
     margin-bottom: 0.25em;
 }
