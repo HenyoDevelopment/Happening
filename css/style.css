@@ -29,8 +29,9 @@
     border-color: transparent;
 }
 
-.navbar-right {
-    margin: 0px;
+/*TEMPORARY*/
+.navbar-right { 
+    margin-right: 15px;
 }
 
 @media only screen and (max-width: 576px){
@@ -83,6 +84,14 @@
     margin: 0 auto;
     width: 100%;
     height: auto;
+}
+
+.card-title {
+    margin-bottom: 2px;
+}
+
+.card-text {
+    margin: 1px 0px;
 }
 
 /* centered columns styles */
