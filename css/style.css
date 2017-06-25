@@ -102,10 +102,10 @@
     margin-left: 5px;
 }
 
-.img-wrapper {
+.img-container {
     padding: 10px;
     height: 340px;
-    line-height: 340px;
+    line-height: 315px;
 }
 
 .card-img-top {
