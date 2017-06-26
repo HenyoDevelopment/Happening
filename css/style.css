@@ -75,23 +75,21 @@
 }
 
 .card-header {
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 .header-user {
     display: inline-block;
     width: 25px;
     height: 25px;
-    line-height: 25px;
     overflow: hidden;
     border-radius: 50%;
+    vertical-align: bottom;
 }
 
 .header-user-img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
-    margin-bottom: 0.25em;
 }
 
 .header-text {
@@ -99,7 +97,6 @@
     font-weight: bold;
     font-size: 20px;
     height: auto;
-    margin-left: 5px;
 }
 
 .img-container {
