@@ -1,7 +1,8 @@
 .navbar-default {
     background-color: #ffffff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     color: #484848;
+    border-radius: 0px;
+    border: transparent;
 }
 
 .navbar-brand {
@@ -26,9 +27,8 @@
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #484848;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #e7e7e7;
     border-radius: 4px;
     outline: none;
 }
@@ -41,7 +41,6 @@
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #ff944d;
-    font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a.active {
@@ -71,11 +70,11 @@
     display: block;
     width: 100%;
     margin: 8px 0px;
+    border-radius: 10px;
 }
 
 .card:hover {
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -102,6 +101,7 @@
     font-weight: bold;
     font-size: 20px;
     height: auto;
+    margin-left: 10px;
 }
 
 .img-container {
@@ -127,6 +127,7 @@
 
 .card-text {
     margin: 1px 0px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* centered columns styles */
