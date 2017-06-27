@@ -58,12 +58,16 @@
     
 }
 
-.navbar-nav>li, .navbar-nav {
+.navbar-nav > li, .navbar-nav {
     float: left !important;
 }
 
 .navbar-right {
     float: right!important;
+}
+
+.main-content{
+    margin-top: 70px;
 }
 
 .card {
