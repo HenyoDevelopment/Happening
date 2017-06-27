@@ -6,13 +6,6 @@
     display: inline-block;
 }
 
-.login-container {
-    display: block;
-    padding: 25px;
-    border: 1px solid rgba(0,0,0,0.4);
-    border-radius: 8px;
-}
-
 .logo-container {
     display: inline-block;
     width: 150px; 
@@ -40,6 +33,14 @@
     object-fit: cover;
     height: 80px; 
     width: 80px;
+}
+
+.login-container {
+    display: block;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 8px;
+    margin-top: 50px;
 }
 
 #inputEmail #inputPassword {
