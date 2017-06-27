@@ -7,7 +7,7 @@
 }
 
 .login-container {
-    display: inline-block;
+    display: block;
     padding: 25px;
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 8px;
@@ -26,6 +26,20 @@
     height: 100%;
     vertical-align: middle;
     margin-bottom: 0.9em;
+}
+
+.col-xs-4 {
+    padding: 0px;
+}
+
+.img-grid {
+    margin: 5px auto;
+}
+
+.event-img {
+    object-fit: cover;
+    height: 80px; 
+    width: 80px;
 }
 
 #inputEmail #inputPassword {

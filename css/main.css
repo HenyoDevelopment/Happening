@@ -169,3 +169,12 @@
         margin-right: 15px;
     }
 }
+
+.center-row-9 {
+    margin: 0 12.5%;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
