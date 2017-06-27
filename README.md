@@ -32,3 +32,16 @@ PWD: sprcoredump
 
 HTML starting template: https://www.w3schools.com/html/html5_intro.asp
 
+
+
+
+
+=================================================================================
+
+TO DO: 
+
+Login Page: 
+- Fix mobile view
+
+Navbar: 
+- Center nav bar buttons when size < 767
