@@ -173,8 +173,8 @@
     .main-content{
         margin-top: 140px;
     }
-    
-    .vertical-align {
+
+    .row.vertical-align {
         display: block;
     }
 
