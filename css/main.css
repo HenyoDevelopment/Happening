@@ -169,6 +169,15 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .main-content{
+        margin-top: 140px;
+    }
+    
+    .vertical-align {
+        display: block;
+    }
+
 }
 
 .center-row-9 {
@@ -178,10 +187,4 @@
 .vertical-align {
     display: flex;
     align-items: center;
-}
-
-@media (max-width: 767px) {
-    .vertical-align {
-        display: block;
-    }
 }
