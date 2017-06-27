@@ -143,9 +143,16 @@
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+/* fixed width for cards */
 .col-fixed {
-    /* custom width */
     width:320px;
+}
+
+/* simple vertical align */ 
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 767px){
@@ -180,11 +187,7 @@
 
 }
 
+/* custom 3 column centering */ 
 .center-row-9 {
     margin: 0 12.5%;
-}
-
-.vertical-align {
-    display: flex;
-    align-items: center;
 }
