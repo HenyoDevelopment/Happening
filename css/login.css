@@ -25,14 +25,24 @@
     padding: 0px;
 }
 
-.img-grid {
-    margin: 5px auto;
+.img-grid-container {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.grid-block {
+    display: inline-block;
+    float: left;
+    margin: 10px;
 }
 
 .event-img {
     object-fit: cover;
     height: 80px; 
     width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .login-container {
