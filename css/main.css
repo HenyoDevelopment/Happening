@@ -8,7 +8,6 @@
     border-radius: 0px;
 }
 
-
 .navbar-brand {
     width: 40px;
     height: 40px;
@@ -21,6 +20,14 @@
     margin: 0 auto;
     width: 100%;
     height: auto;
+}
+
+.navbar-default .navbar-left {
+    width: 60%;
+}
+
+.form-group {
+    width: 100%;
 }
 
 .navbar-search {
@@ -47,10 +54,6 @@
 .navbar-default .navbar-nav > li > a.active {
     color: #ff944d;
     border-bottom: 2px solid #ff944d;
-}
-
-.navbar-default .navbar-form {
-    border-color: transparent;
 }
 
 /*TEMPORARY*/
