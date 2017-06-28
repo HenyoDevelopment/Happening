@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Happening Discover Page</title>
+        <meta name="description" content="Happening App">
+        <meta name="author" content="The Happening Team">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/calendar.css">
+    </head> 
+
+    <body>
+        
+        <!--NAVIGATION BAR-->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
+            </a>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="navbar-search" placeholder="Search Event or User">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="host.html">Host</a></li>
+                <li><a class="active" href="#calendar">Calendar</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+
+        <!--NOTIFICATIONS-->
+        <div class="container main-content">
+            <div class="row row-centered">
+                <div class="col-sm-6 col-centered col-fixed">
+                    <div class="calendar-container">
+                        <div class="navbar navbar-default navbar-calendar">
+                            <ul class="nav navbar-nav calendar-nav navbar-left">
+                                <li><a class="active" href="#upcoming">Upcoming</a></li>
+                                <li><a href="#hosting">Hosting</a></li>
+                                <li><a href="#invites">Invites</a></li>
+                                <li><a href="#past">Past</a></li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-user">
+                                    <img class="header-user-img" src="img/technica-user.png">
+                                </div>
+                                <div class="header-text">Technica</div>
+                            </div>
+                            <div class="img-container vertical-align">
+                                <img class="card-img-top" src="img/technica.png" alt="Technica 2017">
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">$5.00 &#9679; Technica 2017</h4>
+                                <p class="card-text">Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                <p class="card-text">^ ^ ^ ^ ^ &#183; 59 Friends Going</p>
+                                <p class="card-text">#womenshackathon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </body>
+</html>
