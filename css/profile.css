@@ -1,14 +1,23 @@
-.calendar-container {
+.profile-container {
     /*border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
-.navbar-calendar {
+.navbar-profile {
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.navbar-center {
+    width: 100%;
+    text-align: center;
+}
 
-.navbar .calendar-nav > li > a {
+.navbar-center > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar .profile-nav > li > a {
     padding: 10px;
     color: #484848;
     font-size: 12px;
@@ -16,12 +25,12 @@
     border-bottom: 2px solid transparent;
 }
 
-.navbar .calendar-nav > li > a:hover,
-.navbar .calendar-nav > li > a:active {
+.navbar .profile-nav > li > a:hover,
+.navbar .profile-nav > li > a:active {
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.navbar .calendar-nav > li > a.active {
+.navbar .profile-nav > li > a.active {
     color: #484848;
     border-bottom: 2px solid #ff944d;
 }

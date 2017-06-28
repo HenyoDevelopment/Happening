@@ -60,11 +60,11 @@
 }
 
 .navbar-nav > li, .navbar-nav {
-    float: left !important;
+    float: left 
 }
 
 .navbar-right {
-    float: right!important;
+    float: right !important;
 }
 
 .main-content{
@@ -171,8 +171,16 @@
     }
 
     .navbar-right {
-        float: right!important;
+        width: 100%;
+        text-align: center;
     }
+
+    .navbar-right > li {
+        float: none;
+        display: inline-block;
+    }
+
+    
 
     .navbar-brand {
         margin-top: 15px;
