@@ -1,12 +1,17 @@
+.navbar {
+    min-height: 0px;
+}
+
 .navbar-default {
     background-color: #ffffff;
     color: #484848;
     border-radius: 0px;
-    border: transparent;
 }
+
 
 .navbar-brand {
     width: 40px;
+    height: 40px;
     padding: 0px;
     margin-left: 15px;
     margin-top: 5px;
@@ -16,10 +21,6 @@
     margin: 0 auto;
     width: 100%;
     height: auto;
-}
-
-.navbar-left {
-    width: 60%;
 }
 
 .navbar-search {
@@ -40,12 +41,12 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #ff944d;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .navbar-default .navbar-nav > li > a.active {
     color: #ff944d;
-    border-bottom: 2px solid #ff944d
+    border-bottom: 2px solid #ff944d;
 }
 
 .navbar-default .navbar-form {
@@ -72,13 +73,13 @@
 
 .card {
     display: block;
-    width: 100%;
+    width: auto;
     margin: 8px 0px;
-    border-radius: 10px;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -109,7 +110,7 @@
 }
 
 .img-container {
-    padding: 10px;
+    padding: 10px 0px;
     height: 340px;
 }
 
@@ -123,12 +124,14 @@
 }
 
 .card-block {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 .card-text {
     margin: 1px 0px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* centered columns styles */
@@ -146,7 +149,8 @@
 
 /* fixed width for cards */
 .col-fixed {
-    width:320px;
+    width: 300px;
+    padding: 0px;
 }
 
 /* simple vertical align */ 
