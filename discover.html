@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Happening Home Page</title>
+        <title>Happening Discover Page</title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
@@ -17,7 +17,7 @@
         
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="#discover">
+            <a class="navbar-brand" href="discover.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -26,80 +26,48 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
+                <li><a class="host-nav" href="host.html">Host</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a class="active" href="#discover">Discover</a></li>
-                <li><a href="host.html">Host</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
 
-        <!--EVENT CARDS-->
+                        <!--EVENTS-->
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-6 col-centered col-fixed">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="header-user">
-                                <img class="header-user-img" src="img/moonrise-user.jpg">
+                    <div class="secondary-container">
+                        <div class="navbar navbar-default navbar-secondary">
+                            <ul class="nav navbar-nav secondary-nav navbar-center">
+                                <li><a class="active" href="#freefood">#freefood</a></li>
+                                <li><a href="#freeswag">#freeswag</a></li>
+                                <li><a href="#soon">#soon</a></li>
+                                <li><a href="#trending">#trending</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-user">
+                                    <img class="header-user-img" src="img/bitcamp.png">
+                                </div>
+                                <div class="header-text">Bitcamp</div>
                             </div>
-                            <div class="header-text">Moonrise</div>
+                            <div class="img-container vertical-align">
+                                <img class="card-img-top" src="img/bitcamp.png" alt="Bitcamp 2017">
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Free &#9679; Bitcamp 2017</h4>
+                                <p class="card-text">APR 1 @ 5:00 PM &#183; 2 miles away</p>
+                                <p class="card-text">^ ^ ^ ^ ' &#183; 8 Friends Going </p>
+                                <p class="card-text"><b class="match">#freefood</b> &#183; #freeswag</p>
+                            </div>
                         </div>
-                        <div class="img-container vertical-align">
-                            <img class="card-img-top" src="img/moonrise.jpg" alt="Moonrise Festival 2017">
-                        </div>
-                        <div class="card-block">
-                            <h4 class="card-title">$109.50 &#9679; Moonrise Festival 2017</h4>
-                            <p class="card-text">AUG 12 @ 10:00 AM &#183; 26 miles away</p>
-                            <p class="card-text">^ ^ ^ ^ ' &#183; 32 Friends Going </p>
-                            <p class="card-text">#musicfestival</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row row-centered">
-            <div class="col-sm-6 col-centered col-fixed">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="header-user">
-                            <img class="header-user-img" src="img/bitcamp.png">
-                        </div>
-                        <div class="header-text">Bitcamp</div>
-                    </div>
-                    <div class="img-container vertical-align">
-                        <img class="card-img-top" src="img/bitcamp.png" alt="Bitcamp 2017">
-                    </div>
-                    <div class="card-block">
-                        <h4 class="card-title">Free &#9679; Bitcamp 2017</h4>
-                        <p class="card-text">APR 1 @ 5:00 PM &#183; 2 miles away</p>
-                        <p class="card-text">^ ^ ^ ^ ' &#183; 8 Friends Going </p>
-                        <p class="card-text">#freefood &#183; #freeswag</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row row-centered">
-            <div class="col-sm-6 col-centered col-fixed">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="header-user">
-                            <img class="header-user-img" src="img/technica-user.png">
-                        </div>
-                        <div class="header-text">Technica</div>
-                    </div>
-                    <div class="img-container vertical-align">
-                        <img class="card-img-top" src="img/technica.png" alt="Technica 2017">
-                    </div>
-                    <div class="card-block">
-                        <h4 class="card-title">$5.00 &#9679; Technica 2017</h4>
-                        <p class="card-text">Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                        <p class="card-text">^ ^ ^ ^ ^ &#183; 59 Friends Going</p>
-                        <p class="card-text">#womenshackathon</p>
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
 
     </body>
