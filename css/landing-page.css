@@ -1,0 +1,186 @@
+.navbar-default {
+    border: transparent;
+}
+
+.navbar-brand {
+    margin-top: 5px;
+    margin-left: 18px;
+}
+
+.navbar-brand-full {
+    height: 47px;
+    width: auto;
+}
+
+.navbar-fixed-top {
+    height: 60px;
+}
+
+.main-content {
+    margin-top: 10px;
+    position: relative;
+    min-height: 100%
+}
+
+/*
+.background-img {
+    height: 576px;
+    background-image: url("../img/events/basketballjpg");
+    background-position: center center; 
+    background-size: cover;
+}*/
+
+.box-container {
+    width: 100%;
+    height: 600px;
+}
+
+.text-container {
+    margin-top: 120px;
+    color: #282828;
+}
+
+.text-container > h1, 
+.text-container > h2 {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.text-container > h2,
+.text-container > h5 {
+    margin-left: 3px;
+}
+
+.text-container > h1 {
+    font-size: 100px;
+}
+
+.text-container > h2 {
+    font-size: 70px;
+    margin-top: -10px;
+}
+
+.text-container > h5 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.text-container > h5 > a {
+    font-weight: bold;
+    cursor: pointer;
+    color: #1c94e0;
+}
+
+#get-started {
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #ff944d;
+    border-color: #ff944d;
+    border-radius: 2px; 
+    outline: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+    padding: 14px 12px;
+}
+
+@media only screen and (max-width: 767px) {
+    .text-container {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .text-container > h1 {
+        font-size: 90px;
+    }
+
+    .text-container > h2 {
+        font-size: 60px;
+    }
+
+    .text-container > h5 {
+        font-size: 18px;
+    }
+
+    #get-started {
+        width: 100%;
+    }
+}
+
+
+
+
+/* OLD LANDING PAGE CSS
+
+.main-text {
+    display: inline-block;
+}
+
+.logo-container {
+    display: inline-block;
+    width: 150px; 
+    height: auto;
+    margin-left: 4px;
+    line-height: 50px;
+}
+
+.logo-full-img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    margin-bottom: 0.9em;
+}
+
+.col-xs-4 {
+    padding: 0px;
+}
+
+.img-grid-container {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.grid-block {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+.event-img {
+    object-fit: cover;
+    height: 80px; 
+    width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login-container {
+    display: block;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 8px;
+    margin-top: 70px;
+}
+
+#inputEmail #inputPassword {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    outline: none;
+}
+
+#passwordHelp {
+    margin-left: 13px;
+}
+
+#passwordHelp:hover {
+    color: #3897f0;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+*/

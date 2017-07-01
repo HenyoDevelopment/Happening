@@ -11,14 +11,14 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/calendar.css">
+        <link rel="stylesheet" href="css/explore.css">
     </head> 
 
     <body>
         
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="discover.html">
+            <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -27,41 +27,44 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="host.html">Host</a></li>
-                <li><a class="active" href="#calendar">Calendar</a></li>
+                <li><a class="host-nav" href="host.html">Host</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="#explore">Explore</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
 
-        <!--EVENTS-->
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-6 col-centered col-fixed">
-                    <div class="calendar-container">
-                        <div class="navbar navbar-default navbar-calendar">
-                            <ul class="nav navbar-nav calendar-nav navbar-left">
-                                <li><a class="active" href="#upcoming">Upcoming</a></li>
-                                <li><a href="#hosting">Hosting</a></li>
-                                <li><a href="#invites">Invites</a></li>
-                                <li><a href="#past">Past</a></li>
+
+                    <!--SECONDARY NAV-->
+                    <div class="secondary-container">
+                        <div class="navbar navbar-default navbar-secondary">
+                            <ul class="nav navbar-nav secondary-nav navbar-center">
+                                <li><a class="active" href="#freefood">#freefood</a></li>
+                                <li><a href="#freeswag">#freeswag</a></li>
+                                <li><a href="#soon">#soon</a></li>
+                                <li><a href="#weekly">#weekly</a></li>
                             </ul>
                         </div>
+
+                        <!--EVENTS-->
                         <div class="card">
                             <div class="card-header">
                                 <div class="header-user">
-                                    <img class="header-user-img" src="img/technica-user.png">
+                                    <img class="header-user-img" src="img/bitcamp.png">
                                 </div>
-                                <div class="header-text">Technica</div>
+                                <div class="header-text">Bitcamp</div>
                             </div>
                             <div class="img-container vertical-align">
-                                <img class="card-img-top" src="img/technica.png" alt="Technica 2017">
+                                <img class="card-img-top" src="img/bitcamp.png" alt="Bitcamp 2017">
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">$5.00 &#9679; Technica 2017</h4>
-                                <p class="card-text">Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                <p class="card-text">^ ^ ^ ^ ^ &#183; 59 Friends Going</p>
-                                <p class="card-text">#womenshackathon</p>
+                                <h4 class="card-title"><a id="event-link">Free &#9679; Bitcamp 2017</a></h4>
+                                <p class="card-text">APR 1 @ 5:00 PM &#183; 2 miles away</p>
+                                <p class="card-text">^ ^ ^ ^ ' &#183; 8 Friends Going </p>
+                                <p class="card-text"><a class="match">#freefood</a> &#183; #freeswag</p>
                             </div>
                         </div>
                     </div>

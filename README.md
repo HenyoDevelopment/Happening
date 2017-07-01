@@ -42,6 +42,3 @@ TO DO:
 
 Login Page: 
 - Fix mobile view
-
-Navbar: 
-- Center nav bar buttons when size < 767
