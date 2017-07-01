@@ -1,3 +1,4 @@
 .card-text > a.match {
+    font-weight: bold;
     color: #ff944d;
 }
