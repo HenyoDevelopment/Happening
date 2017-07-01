@@ -186,7 +186,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-container {
     padding: 10px 0px;
-    height: 340px;
+    overflow: hidden;
+    max-height: 400px;
 }
 
 .card-img-top {
@@ -210,22 +211,9 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(0, 0, 0, 0.6);
 }
 
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-}
-
 /* fixed width for cards */
 .col-fixed {
-    width: 300px;
+    width: 600px;
     padding: 0px;
 }
 
