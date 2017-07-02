@@ -67,9 +67,10 @@
 }
 
 .text-container > h5 > a {
-    font-weight: bold;
+    
     cursor: pointer;
     color: #1c94e0;
+    
 }
 
 #get-started {
