@@ -23,12 +23,6 @@
     min-height: 100%
 }
 
-.background-img {
-    background-image: url("../img/events/football.jpg");
-    background-position: center center; 
-    background-size: cover;
-}
-
 .box-container {
     height: 600px;
 }
