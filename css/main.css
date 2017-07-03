@@ -7,7 +7,7 @@
     color: #282828;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -233,13 +233,14 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     position: absolute;
     bottom: 0;
-    width:100%;
-
-}
-
-.footer > h6 {
     font-size: 12px;
     text-align: center;
+    width: 100%;
+}
+
+.footer > .row > h6 {
+    display: inline-block;
+    width: 100px;
 }
 
 @media only screen and (max-width: 767px){
@@ -282,6 +283,12 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
     }
 
+}
+
+a,
+a:hover {
+    cursor: pointer;
+    color: #1c94e0; 
 }
 
 a#tags {

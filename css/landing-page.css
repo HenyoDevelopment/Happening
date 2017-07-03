@@ -18,7 +18,7 @@
 }
 
 .main-content {
-    margin-top: 10px;
+    margin-top: 70px;
     position: relative;
     min-height: 100%
 }
@@ -62,12 +62,6 @@
     font-size: 20px;
 }
 
-.text-container > h3 > a {
-    cursor: pointer;
-    color: #1c94e0;
-    
-}
-
 .text-container > h4 {
     font-size: 18px;
 }
@@ -93,7 +87,12 @@
 
 @media only screen and (max-width: 767px) {
     .text-container {
-        margin-top: 100px;
+        margin-top: 40px;
+    }
+
+    .box-container,
+    .box-container-two {
+        height: 750px;
     }
 }
 
