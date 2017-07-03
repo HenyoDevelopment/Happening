@@ -213,9 +213,29 @@ h1, h2, h3, h4, h5, h6, h7 {
     padding-bottom: 10px;
 }
 
+.card-text-container {
+    display: inline-block;
+    width: 80%;
+}
+
 .card-text {
     margin: 1px 0px;
     color: rgba(0, 0, 0, 0.6);
+}
+
+.card-rating-container {
+    height: 70px;
+    width: 20%;
+    float: right;
+    background-color: black;
+}
+
+.lit-rating {
+    vertical-align: top;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
 }
 
 /* fixed width for cards */
@@ -244,6 +264,20 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 @media only screen and (max-width: 767px){
+
+    /*CARD TEXT*/
+    a#user {
+        font-size: 16px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
     .navbar-default {
         border-color: rgba(0, 0, 0, 0.1);
     }
@@ -261,6 +295,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     .navbar-right {
         width: 100%;
         text-align: center;
+        margin: 0px; 
     }
 
     .navbar-right > li {
@@ -276,13 +311,12 @@ h1, h2, h3, h4, h5, h6, h7 {
     }
 
     .main-content{
-        margin-top: 140px;
+        margin-top: 100px;
     }
 
     .row.vertical-align {
         display: block;
     }
-
 }
 
 a,
