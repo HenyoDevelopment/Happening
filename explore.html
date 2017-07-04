@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/explore.css">
+
     </head> 
 
     <body>
@@ -36,40 +37,61 @@
 
         <div class="container main-content">
             <div class="row row-centered">
-                <div class="col-sm-6 col-centered col-fixed">
+                <div class="col-sm-8 col-sm-offset-2">
 
-                    <!--SECONDARY NAV-->
-                    <div class="secondary-container">
-                        <div class="navbar navbar-default navbar-secondary">
-                            <ul class="nav navbar-nav secondary-nav navbar-center">
-                                <li><a class="active" href="#freefood">#freefood</a></li>
-                                <li><a href="#freeswag">#freeswag</a></li>
-                                <li><a href="#soon">#soon</a></li>
-                                <li><a href="#weekly">#weekly</a></li>
-                            </ul>
+                    <!--SECONDARY NAV START-->
+                    <div class="navbar navbar-default navbar-secondary">
+                        <ul class="nav navbar-nav secondary-nav">
+                            <li><a class="active" href="#freefood">#freefood</a></li>
+                            <li><a href="#freeswag">#freeswag</a></li>
+                            <li><a href="#soon">#soon</a></li>
+                            <li><a href="#weekly">#weekly</a></li>
+                        </ul>
+                    </div>
+
+                    <!--BITCAMP CARD START-->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="header-user">
+                                <img class="header-user-img" src="img/bitcamp.png">
+                            </div>
+                            <div class="header-text"><a id="user">Bitcamp</a></div>
                         </div>
-
-                        <!--EVENTS-->
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="header-user">
-                                    <img class="header-user-img" src="img/bitcamp.png">
-                                </div>
-                                <div class="header-text">Bitcamp</div>
-                            </div>
-                            <div class="img-container vertical-align">
-                                <img class="card-img-top" src="img/bitcamp.png" alt="Bitcamp 2017">
-                            </div>
-                            <div class="card-block">
+                        <div class="img-container vertical-align">
+                            <img class="card-event-img" src="img/bitcamp.png" alt="Bitcamp 2017">
+                        </div>
+                        <div class="event-size-indicator-large"></div>
+                        <div class="card-block">
+                            <div class="card-text-container">
                                 <h4 class="card-title"><a id="event-link">Free &#9679; Bitcamp 2017</a></h4>
                                 <p class="card-text">APR 1 @ 5:00 PM &#183; 2 miles away</p>
-                                <p class="card-text">^ ^ ^ ^ ' &#183; 8 Friends Going </p>
-                                <p class="card-text"><a class="match">#freefood</a> &#183; #freeswag</p>
+                                <p class="card-text">Large Event &#183; 8 Friends Going </p>
+                                <p class="card-tags">
+                                    <a id="tags">#freefood</a> &#183; 
+                                    <a id="tags">#freeswag</a>
+                                </p>
+                            </div>
+                            <div class="card-rating-container">
+                                <div class="lit-rating">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--BITCAMP CARD END-->
+
                 </div>
             </div> 
+
+            <!--FOOTER START-->
+            <div class="row">
+                <div class="footer"> 
+                    <h6><a>About Us</a></h6>
+                    <h6>&copy; 2017 Happening</h6>
+                    <h6><a>Contact</a></h6>
+                </div>
+            </div>
+            <!--FOOTER END-->
+            
         </div>
 
     </body>
