@@ -258,15 +258,20 @@ h1, h2, h3, h4, h5, h6, h7 {
     width: 20%;
     margin-top: 10px;
     float: right;
-    background-color: black;
+}
+
+.lit-rating-container {
+    vertical-align: top;
+    float: right;
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .lit-rating {
-    vertical-align: top;
-    float: right;
-    width: 50px;
-    height: 50px;
-    background-color: lightblue;
+    height: 100%;
+    width: 100%;
 }
 
 /* fixed width for cards */
@@ -351,6 +356,11 @@ h1, h2, h3, h4, h5, h6, h7 {
 
     .row.vertical-align {
         display: block;
+    }
+
+    .lit-rating-container {
+        width: 50px;
+        height: 50px;
     }
 
     .footer > h6 {
