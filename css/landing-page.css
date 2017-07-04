@@ -63,6 +63,7 @@ h4.lit-line {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
+    margin-left: 2px;
 }
 
 #get-started {
@@ -97,15 +98,28 @@ h4.lit-line {
 
 @media only screen and (max-width: 450px) {
     .text-container > h1 {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .text-container > h2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .text-container > h3 {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .text-container > h4 {
+        font-size: 14px;
+    }
+    
+    h4.lit-line {
+        margin-top: -5px;
+    }
+
+    .lit {
+        height: 18px;
+        width: 18px;
     }
 
     #get-started {
