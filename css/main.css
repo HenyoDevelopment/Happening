@@ -112,6 +112,8 @@ h1, h2, h3, h4, h5, h6, h7 {
 .main-content{
     margin-top: 70px;
     width:100%;
+    position: relative;
+    min-height: 100%
 }
 
 .navbar-secondary {
@@ -276,6 +278,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 .vertical-align {
     display: flex;
     align-items: center;
+}
+
+.row-centered {
+    margin-bottom: 15px;
 }
 
 .footer {
