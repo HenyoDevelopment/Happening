@@ -85,18 +85,16 @@ h4.lit-line {
     height: 600px;
 }
 
-@media only screen and (max-width: 768px) {
-    .text-container {
-        margin-top: 40px;
-    }
-
+/*IPAD FIX*/
+@media only screen and (width: 768px) {
     .box-container,
     .box-container-two {
-        height: 780px;
+        height: 500px;
     }
 }
 
-@media only screen and (width: 768px) {
+/*MOBILE DEVICES*/
+@media only screen and (max-width: 768px) {
     .text-container > h1 {
         font-size: 80px;
     }
@@ -112,23 +110,9 @@ h4.lit-line {
     .text-container > h4 {
         font-size: 14px;
     }
-}
 
-@media only screen and (max-width: 450px) {
-    .text-container > h1 {
-        font-size: 80px;
-    }
-
-    .text-container > h2 {
-        font-size: 50px;
-    }
-
-    .text-container > h3 {
-        font-size: 14px;
-    }
-
-    .text-container > h4 {
-        font-size: 14px;
+    .text-container {
+        margin-top: 40px;
     }
     
     h4.lit-line {
@@ -138,6 +122,13 @@ h4.lit-line {
     .lit {
         height: 18px;
         width: 18px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .box-container,
+    .box-container-two {
+        height: 780px;
     }
 
     #get-started {

@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6, h7 {
     outline: none;
 }
 
+.navbar-search:focus {
+    border-color: #282828;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: #282828;
     font-weight: bold;
