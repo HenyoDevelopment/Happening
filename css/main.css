@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 .card {
     display: block;
     width: auto;
-    margin: 25px 0px;
+    margin-bottom: 25px;
     background: white;
     border-radius: 2px;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     }
 
     .main-content{
-        margin-top: 100px;
+        margin-top: 125px;
     }
 
     .row.vertical-align {
