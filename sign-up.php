@@ -90,6 +90,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/landing-page.css">
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="/resources/demos/style.css">
@@ -103,6 +104,16 @@
     </head> 
 
     <body>
+
+        <!--NAVIGATION BAR-->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-brand">
+                <a class= "navbar-brand-logo" href="landing-page.html">
+                    <img class="navbar-brand-full" alt="Happening Logo" src="img/happening-full.png">
+                </a>
+            </div>
+        </div>
+        <!-- NAVIGATION BAR END-->
 
 		<div id="tabs">
 			<ul>
