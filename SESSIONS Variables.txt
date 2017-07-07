@@ -1,0 +1,4 @@
+When User Logins:
+
+	$_SESSION["passwordValue"] = User's Username 
+	$_SESSION["usernameValue"] = User's Password
