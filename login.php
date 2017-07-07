@@ -21,7 +21,7 @@
     
     	<!-- FORM: Enter Username, and Password -->
          <form action="login-validation.php" method="post">
-            <h4> 
+            <h5> 
 				<?php 
 					//If login_validation.php detects invalid match = true
 					if (isset($_SESSION["invalid_match"]) && $_SESSION["invalid_match"]){
@@ -31,11 +31,11 @@
 						$_SESSION["invalid_match"] = false;
 					}
 				?>
-            </h4>
+            </h5>
 			<input type="text" name="username" placeholder="Username" required="true"/><br/>
           	<input type="password" name="password" placeholder="Password" required="true" /><br/>
 	      	<input type="submit" name="submit" value="Sign In">
-			<a href="createaccount.php"><button type="button">Sign Up</button></a><br>
+			<a href="sign-up.php"><button type="button">Sign Up</button></a><br>
          </form>
          <!-- END FORM -->
          

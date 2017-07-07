@@ -9,7 +9,7 @@
 		$email = trim($_POST["email"]);
 		$name = NULL;
 		$username = trim($_POST["username"]);
-		$password = password_hash(trim($_POST["password"]), PASSWORD_DEFAULT);
+		$password = password_hash(trim($_POST["password"]), PASSWORD_DEFAULT);//password_hash(trim($_POST["password"]), PASSWORD_DEFAULT);
 		
 		//Since name is optional, if it is set:
 		if (isset($_POST["name"])) {
@@ -26,8 +26,12 @@
 			//echo $error; //Debugging purposes
 		} else {
 			
+			 //SAVE CREDENTIALS TO LOCAL MEMORY	
+			$_SESSION["passwordValue"] = $password;
+			$_SESSION["usernameValue"] = $email;
+						
 			//Redirect to their own home page
-			header("Location: home.php");
+			header("Location: login.php");
 		}
 	}
 ?>
