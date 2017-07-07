@@ -66,7 +66,10 @@ h4.lit-line {
     margin-left: 2px;
 }
 
-.get-started-button {
+.get-started-button,
+.get-started-button:hover,
+.get-started-button:active,
+.get-started-button:focus  {
     font-weight: bold;
     width: 200px;
     height: 50px;
