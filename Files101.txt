@@ -1,0 +1,9 @@
+init-database.php 	-> Initialized the whole database if it does not exist
+
+login.php             	-> Login page's HTML file
+login-validation.php	-> Validates Login Input
+
+open-database.php	-> Helper: Opens the database from any files
+
+sign-up.php		-> Sign-Up page's HTML file
+sign-up-validation.php	-> Inserts Sign-Up Input into Database
