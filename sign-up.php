@@ -90,24 +90,61 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$( function() {
+			$( "#tabs" ).tabs();
+		} );
+		</script>
     </head> 
 
     <body>
-    	<!-- FORM (Input): Enter Username, and Password 
-        	Notes: 
-            	sign-up-validation.php - Inserts Data to DATABASE if it passes validateForm()
-                validateForm()		   - Validates if the User Input Valid/acceptable
-        -->
-         <form name="sign-up-form" action="sign-up-validation.php" method="post" onSubmit="return validateForm()">
-         	<h5 id="invalid-password"> 
-            </h5>
-         	<input type="email" name="email" placeholder="Email" required="true"/><br/>
-            <input type="text" name="name" placeholder="Name" /><br/>
-			<input type="text" name="username" placeholder="Username" required="true"/><br/>
-          	<input type="password" name="password" placeholder="Password" required="true" /><br/>
-	      	<input type="submit" name="submit" value="Create Account">
-         </form>
-         <!-- END FORM -->
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Sign In</a></li>
+				<li><a href="#tabs-2">Sign Up</a></li>
+			</ul>
+			<div id="tabs-1">
+				<!-- FORM: Enter Username, and Password -->
+				<form action="login-validation.php" method="post">
+					<h5> 
+						<?php 
+							//If login_validation.php detects invalid match = true
+							if (isset($_SESSION["invalid_match"]) && $_SESSION["invalid_match"]){
+								//MESSAGE WHEN CREDENTIALS INPUT FAILS
+								echo "Username and Password do not match."; 
+								//Set it back to false
+								$_SESSION["invalid_match"] = false;
+							}
+						?>
+					</h5>
+					<input type="text" name="username" placeholder="Username" required="true"/><br/>
+					<input type="password" name="password" placeholder="Password" required="true" /><br/>
+					<input type="submit" name="submit" value="Sign In">
+				</form>
+				<!-- END FORM -->
+			</div>
+			<div id="tabs-2">
+				<!-- FORM (Input): Enter Username, and Password 
+					Notes: 
+						sign-up-validation.php - Inserts Data to DATABASE if it passes validateForm()
+						validateForm()		   - Validates if the User Input Valid/acceptable
+				-->
+				<form name="sign-up-form" action="sign-up-validation.php" method="post" onSubmit="return validateForm()">
+					<h5 id="invalid-password"> </h5>
+					<input type="email" name="email" placeholder="Email" required="true"/><br/>
+					<input type="text" name="name" placeholder="Name" /><br/>
+					<input type="text" name="username" placeholder="Username" required="true"/><br/>
+					<input type="password" name="password" placeholder="Password" required="true" /><br/>
+					<input type="submit" name="submit" value="Create Account">
+				</form>
+			</div>
+		</div>
          
     </body>
 </html>

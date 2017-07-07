@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     color: #282828;
 }
 
-#event-link {
+.event-link {
     color: #282828;
 }
 
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 @media only screen and (max-width: 767px){
 
     /*CARD TEXT*/
-    a#user {
+    a.user {
         font-size: 16px;
     }
     
@@ -390,7 +390,7 @@ a#tags {
     color: #1c94e0;
 }
 
-a#user {
+a.user {
     color: #282828;
     float: bottom;
 }
