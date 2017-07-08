@@ -100,7 +100,7 @@
             <div class="row box-container">
                 <div class="login-container">
 
-						<a class= "navbar-brand-logo" href="landing-page.html">
+						<a class= "navbar-brand-logo" href="index.html">
                     		<img class="navbar-brand-full" alt="Happening Logo" src="img/happening-full.png">
 						</a>
 						<div id="exTab3">	
