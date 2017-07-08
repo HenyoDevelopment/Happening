@@ -17,6 +17,7 @@
 }
 
 .line-one {
+    height: 34px;
     margin-bottom: 15px;
 }
 
@@ -29,6 +30,7 @@
 .username > h2 {
     margin: 0px; 
     font-size: 30px;
+    line-height: 34px;
 }
 
 .profile-btn {
@@ -100,6 +102,7 @@ h3 {
 }
 
 .line-four {
+    margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 5px;
 }
@@ -107,7 +110,7 @@ h3 {
 .events-hosted,
 .followers,
 .following {
-    width: 30%;
+    width: 32%;
     display: inline-block;
     text-align: center;
 }
@@ -121,16 +124,26 @@ h4 > b {
     margin-right: 3px;
 }
 
-.host-rating {
-    text-align: center;
+hr {
+    margin: 5px 0;
 }
 
-@media only screen and (max-width: 767px){    
+@media only screen and (max-width: 767px){ 
+    .username > h2 {
+        font-size: 20px;
+    }
+
+    h3,
+    .host-rating > h3 {
+        font-size: 14px;
+    }
+
     .main-content{
         margin-top: 140px;
     }
 
     .line-one {
-        margin-top:15px;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 }
