@@ -16,16 +16,18 @@
     height: auto;
 }
 
+.line-one {
+    margin-bottom: 15px;
+}
+
 .username { 
     display: inline-block;
     max-width: 50%;
     word-wrap: break-word;
-
 }
 
 .username > h2 {
     margin: 0px; 
-    font-weight: bold;
     font-size: 30px;
 }
 
@@ -71,7 +73,48 @@ a.dropdown-item:hover {
     background-color: rgba(0,0,0,0.1);
 }
 
+.line-two {
+    margin-bottom: 5px; 
+    margin-left: 5px;
+}
 
+.fullname {
+    display: block;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.line-three {
+    margin-bottom: 15px; 
+    margin-left: 5px;
+}
+
+.bio > p {
+    margin: 0px;
+    color: rgba(0,0,0,0.6);
+}
+
+.line-four {
+    margin-left: 5px;
+}
+
+.events-hosted,
+.followers,
+.following {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    font-size: 14px;
+}
 
 @media only screen and (max-width: 767px){    
     .main-content{

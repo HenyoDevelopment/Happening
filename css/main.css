@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
