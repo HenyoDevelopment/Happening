@@ -31,7 +31,7 @@
 					$passed = true;
                     
                     //Redirect to HOME
-                    header("Location: home.php");
+                    header("Location: home.html");
                 }
             }
 			
