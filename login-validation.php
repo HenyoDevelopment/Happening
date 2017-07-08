@@ -22,7 +22,7 @@
 			
 				//Search the array
                 if ($recordArray["username"] == $usernameValue && 
-					 password_verify($passwordValue, $recordArray["password"])) {//password_verify($passwordValue, $recordArray["password"])
+					 password_verify($passwordValue, $recordArray["password"])) {
 					
                     //SAVE CREDENTIALS TO LOCAL MEMORY	
                     $_SESSION["passwordValue"] = $passwordValue;

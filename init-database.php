@@ -50,8 +50,10 @@
 		//Create table for ALL events
 		//Notes: Image is 16MB at most
 		//Private is either 1 or 0; 0 is FALSE and 1 is TRUE
+		//event_ID = event-name + date + host
 		$conn->query("CREATE TABLE $table2(
-						name varchar(50) primary key, 
+						event_ID varchar(100) primary key,
+						name varchar(50), 
 						host varchar(50), 
 						event_date date, 
 						event_time time, 
