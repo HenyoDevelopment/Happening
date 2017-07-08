@@ -172,14 +172,13 @@ h1, h2, h3, h4, h5, h6, h7 p {
     margin-bottom: 25px;
     background: white;
     border-radius: 2px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1)
 }
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(0, 0, 0, 0.15)
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .card-header {

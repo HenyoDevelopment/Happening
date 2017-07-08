@@ -53,6 +53,11 @@
     display:inline-block;
 }
 
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+    outline: none;
+}
+
 .dropdown-item {
     display: block;
 }
