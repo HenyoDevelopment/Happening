@@ -1,5 +1,79 @@
+.profile-container {
+    padding: 15px 0;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.profile-img-container {
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    border-radius: 5px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+}
+
+.username { 
+    display: inline-block;
+    max-width: 50%;
+    word-wrap: break-word;
+
+}
+
+.username > h2 {
+    margin: 0px; 
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile-btn {
+    float: right;
+    vertical-align:top;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropdown-container {
+    float: right;
+}
+
+.profile-settings-btn {
+    float: right;
+    vertical-align: top;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.div-inline{
+    display:inline-block;
+}
+
+.dropdown-item {
+    display: block;
+}
+
+a.dropdown-item {
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.dropdown-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+
 @media only screen and (max-width: 767px){    
     .main-content{
         margin-top: 140px;
+    }
+
+    .line-one {
+        margin-top:15px;
     }
 }

@@ -102,6 +102,10 @@ input[type=submit] {
     padding: 14px 12px;
 }
 
+input[type=submit]:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
 @media only screen and (max-width: 370px) {
     .login-container {
         width: 300px;
