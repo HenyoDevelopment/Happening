@@ -115,15 +115,17 @@
 									</div>
 									<!--LOGIN FORM START: Enter Username, and Password-->
 									<form action="login-validation.php" method="post">
-										<?php 
-											//If login_validation.php detects invalid match = true
-											if (isset($_SESSION["invalid_match"]) && $_SESSION["invalid_match"]){
-												//MESSAGE WHEN CREDENTIALS INPUT FAILS
-												echo "Username and Password do not match."; 
-												//Set it back to false
-												$_SESSION["invalid_match"] = false;
-											}
-										?>
+										<div class="text-container error">
+											<?php 
+												//If login_validation.php detects invalid match = true
+												if (isset($_SESSION["invalid_match"]) && $_SESSION["invalid_match"]){
+													//MESSAGE WHEN CREDENTIALS INPUT FAILS
+													echo "Username and Password do not match."; 
+													//Set it back to false
+													$_SESSION["invalid_match"] = false;
+												}
+											?>
+										</div>
 										<input type="text" name="username" placeholder="Username" required="true"/><br/>
 										<input type="password" name="password" placeholder="Password" required="true" /><br/>
 										<div class="btn-holder">
@@ -144,7 +146,9 @@
 											validateForm()		   - Validates if the User Input Valid/acceptable
 									-->
 									<form name="sign-up-form" action="sign-up-validation.php" method="post" onSubmit="return validateForm()">
-										<h5 id="invalid-password"> </h5>
+										<div class="text-container error">
+											<p id="invalid-password"> </p>
+										</div>
 										<input type="email" name="email" placeholder="Email" required="true"/><br/>
 										<input type="text" name="name" placeholder="Name" /><br/>
 										<input type="text" name="username" placeholder="Username" required="true"/><br/>

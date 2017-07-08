@@ -26,6 +26,11 @@ h3 {
     text-align: center;
 }
 
+.error,
+#invalid-password   {
+    color: #ff2c2c;
+}
+
 #exTab3 .nav-pills {
     text-align: center;
 }

@@ -38,7 +38,7 @@
 			if ($passed == false) {
 				//Username & Password do not match. Ask to input again
 				$_SESSION["invalid_match"] = true;
-				header("Location: login.php");
+				header("Location: get-started.php");
 			}
     } else {
         $error = "Retrieving records failed.".mysqli_error($db);
