@@ -130,7 +130,8 @@ hr {
     margin: 5px 0;
 }
 
-@media only screen and (max-width: 767px){ 
+/*FONT RESIZING FOR IPAD AND MOBILE*/
+@media only screen and (max-width: 768px) {
     .username > h2 {
         font-size: 20px;
     }
@@ -140,12 +141,41 @@ hr {
         font-size: 14px;
     }
 
-    .main-content{
-        margin-top: 140px;
+    .profile-btn {
+        font-size: 10px;
+        margin-top: 4px;
+
+    }
+
+    .profile-settings-btn {
+        height: 28px;
+        line-height: 14px;
+        margin-top: 4px;
+    }
+}
+
+/*MOBILE MARGINS FIX*/
+@media only screen and (max-width: 767px) { 
+    .main-content {
+        margin-top: 100px;
+    }
+
+    .profile-container {
+        margin-bottom: 0px;
     }
 
     .line-one {
         margin-top: 15px;
         margin-bottom: 5px;
+    }
+
+    .line-four {
+        margin-bottom: 0px;
+    }
+
+    .events-hosted > h4,
+    .followers > h4,
+    .following > h4 {
+        font-size: 12px;
     }
 }
