@@ -1,5 +1,181 @@
-@media only screen and (max-width: 767px){    
-    .main-content{
-        margin-top: 140px;
+.profile-container {
+    padding: 15px 0;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.profile-img-container {
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    border-radius: 5px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+}
+
+.line-one {
+    height: 34px;
+    margin-bottom: 15px;
+}
+
+.username { 
+    display: inline-block;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+.username > h2 {
+    margin: 0px; 
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.profile-btn {
+    float: right;
+    vertical-align:top;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropdown-container {
+    float: right;
+}
+
+.profile-settings-btn {
+    float: right;
+    vertical-align: top;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.div-inline{
+    display:inline-block;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+    outline: none;
+}
+
+.dropdown-item {
+    display: block;
+}
+
+a.dropdown-item {
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.dropdown-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.line-two {
+    margin-bottom: 5px; 
+    margin-left: 5px;
+}
+
+.fullname {
+    display: block;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.line-three {
+    margin-bottom: 15px; 
+    margin-left: 5px;
+}
+
+.bio > p {
+    margin: 0px;
+    color: rgba(0,0,0,0.6);
+}
+
+.line-four {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.events-hosted,
+.followers,
+.following {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+}
+
+.events-hosted > h4,
+.followers > h4,
+.following > h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+h4 > b {
+    margin-right: 3px;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+/*FONT RESIZING FOR IPAD AND MOBILE*/
+@media only screen and (max-width: 768px) {
+    .username > h2 {
+        font-size: 20px;
+    }
+
+    h3,
+    .host-rating > h3 {
+        font-size: 14px;
+    }
+
+    .profile-btn {
+        font-size: 10px;
+        margin-top: 4px;
+
+    }
+
+    .profile-settings-btn {
+        height: 28px;
+        line-height: 14px;
+        margin-top: 4px;
+    }
+}
+
+/*MOBILE MARGINS FIX*/
+@media only screen and (max-width: 767px) { 
+    .main-content {
+        margin-top: 100px;
+    }
+
+    .profile-container {
+        margin-bottom: 0px;
+    }
+
+    .line-one {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .line-four {
+        margin-bottom: 0px;
+    }
+
+    .events-hosted > h4,
+    .followers > h4,
+    .following > h4 {
+        font-size: 12px;
     }
 }

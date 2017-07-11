@@ -60,7 +60,9 @@
     margin-top: -12px;
 }
 
-#get-started {
+.get-started-button,
+.get-started-button:hover,
+.get-started-button:focus  {
     font-weight: bold;
     width: 200px;
     height: 50px;
@@ -72,6 +74,10 @@
     outline: none;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
     padding: 14px 12px;
+}
+
+.get-started-button:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
 .box-container-two {
@@ -121,7 +127,7 @@
         height: 780px;
     }
 
-    #get-started {
+    .get-started-button {
         width: 100%;
     }
 }

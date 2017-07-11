@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
+
         <title>Happening Discover Page</title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
@@ -12,6 +15,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/profile.css">
+        
     </head> 
 
     <body>
@@ -39,16 +43,63 @@
                 <div class="col-sm-8 col-sm-offset-2">
 
                     <!--PROFILE START-->
-                    <div class="profile-container">
-                        <div class="row row-centered">
+                    <div class="row row-centered profile-container">
+                        <div class="col-sm-4">
                             <div class="profile-img-container">
-                                <img></img>
-                            </div>
-                            <div class="user-info">
+                                <img class="profile-photo" src="img/profile-photo.png" alt="profile photo"> </img>
                             </div>
                         </div>
-                        <div class="row row-centered">
-                            <div class="bio-box">
+                        <div class="col-sm-8">
+                            <div class="user-info">
+                                <div class="line-one">
+                                    <div class="username">
+                                        <h2>@sanisideup</h2>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <div class="dropdown div-inline">
+                                            <button class="btn profile-settings-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                &#9662;
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Account Settings</a>
+                                                <a class="dropdown-item" href="#">Log Out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn profile-btn">Edit Profile</div>
+                                </div>
+                                <div class="line-two">
+                                    <div class="fullname">
+                                        <h3><b>Sani Djaya</b></h3>
+                                        <div class="host-rating">
+                                            <p>* * * * ^
+                                                <b>4.5</b> Stars
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-three">
+                                    <div class="bio">
+                                        <p>21 | 5'2" // D [M] V</p> 
+                                        <p>Indonesian by blood</p>
+                                        <p>Do what you love. Be a good person. Those are your only two jobs in life.</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="line-four">
+                                    <div class="events-hosted">
+                                        <h4><b>8</b></h4>
+                                        <h4>events hosted</h4>
+                                    </div>
+                                    <div class="followers">
+                                        <h4><b>245</b></h4>
+                                        <h4>followers</h4>
+                                    </div>
+                                    <div class="following">
+                                        <h4><b>234</b></h4>
+                                        <h4>following</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,9 +122,9 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="header-user">
-                                <img class="header-user-img" src="img/moonrise-user.jpg">
+                                <img class="header-user-img" src="img/moonrise-user.jpg" alt="">
                             </div>
-                            <div class="header-text"><a id="user">Moonrise</a></div>
+                            <div class="header-text"><a class="user">Moonrise</a></div>
                         </div>
                         <div class="img-container vertical-align">
                             <img class="card-event-img" src="img/moonrise.jpg" alt="Moonrise Festival 2017">
@@ -81,16 +132,16 @@
                         <div class="event-size-indicator-huge"></div>
                         <div class="card-block">
                             <div class="card-text-container">
-                                <h4 class="card-title"><a id="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
+                                <h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
                                 <p class="card-text">AUG 12 @ 10:00 AM &#183; 26 miles away</p>
                                 <p class="card-text">Huge Event &#183; 32 Friends Going</p>
                                 <p class="card-tags">
-                                    <a id="tags">#musicfestival</a>
+                                    <a class="tags">#musicfestival</a>
                                 </p>
                             </div>
                             <div class="card-rating-container">
                                 <div class="lit-rating-container">
-                                    <img class
+                                    <img class="lit-rating" src="img/one-quarter-lit.png" alt="one quarter lit">
                                 </div>
                             </div>
                         </div>
@@ -112,4 +163,6 @@
 
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>

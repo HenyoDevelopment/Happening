@@ -1,0 +1,121 @@
+#tabs {
+    margin-top: 100px;
+}
+
+body {
+  padding : 10px ;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login-container {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.navbar-brand-full {
+    display: block;
+    height: 50px;
+    width: auto;
+    margin: 0 auto;
+}
+.text-container {
+    text-align: center;
+}
+
+.error,
+#invalid-password   {
+    color: #ff2c2c;
+}
+
+#exTab3 .nav-pills {
+    text-align: center;
+}
+
+#exTab3 .nav-pills > li {
+    margin: 0 auto;
+    width: 175px;
+    float: left; 
+    text-align: center;
+}
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+    display: block;
+    width: 100%; 
+    height: 50px; 
+    line-height: 40px;
+    background-color: #fff;
+    color: #282828;
+    font-weight: bold;
+}
+
+#exTab3 .nav-pills > li > a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#exTab3 .nav-pills > li.active > a {
+    color: #ff944d;
+    border-bottom: 2px solid #ff944d;
+}
+
+#exTab3 .tab-content {
+    background-color: #fff;
+    padding : 5px 15px;
+}
+
+input {
+    margin: 10px auto;
+    height: 34px;
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    outline: none;
+}
+input:focus {
+    border-bottom: 1px solid #282828;
+}
+
+.btn-holder {
+    text-align: center;
+}
+
+input[type=submit] {
+    margin: 0 auto;
+    font-weight: bold;
+    height: 50px;
+    width: 80%;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #ff944d;
+    border-color: #ff944d;
+    border-radius: 2px; 
+    outline: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+    padding: 14px 12px;
+}
+
+input[type=submit]:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+@media only screen and (max-width: 370px) {
+    .login-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #exTab3 .nav-pills > li {
+        width: 150px;
+    }
+}
+
+
+
