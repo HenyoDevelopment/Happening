@@ -76,7 +76,7 @@ a.dropdown-item:hover {
 }
 
 .line-two {
-    margin-bottom: 5px; 
+    margin-bottom: 15px; 
     margin-left: 5px;
 }
 
@@ -107,17 +107,15 @@ h3 {
     margin-left: 5px;
 }
 
-.events-hosted,
-.followers,
-.following {
-    width: 32%;
+.points,
+.connections {
+    width: 49%;
     display: inline-block;
     text-align: center;
 }
 
-.events-hosted > h4,
-.followers > h4,
-.following > h4 {
+.points > h4,
+.connections > h4 {
     margin: 0;
     font-size: 14px;
 }
@@ -134,11 +132,6 @@ hr {
 @media only screen and (max-width: 768px) {
     .username > h2 {
         font-size: 20px;
-    }
-
-    h3,
-    .host-rating > h3 {
-        font-size: 14px;
     }
 
     .profile-btn {
@@ -166,6 +159,10 @@ hr {
 
     .line-one {
         margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .line-two {
         margin-bottom: 5px;
     }
 
