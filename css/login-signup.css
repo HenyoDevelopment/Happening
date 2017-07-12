@@ -69,7 +69,6 @@ h3 {
 
 input {
     margin: 10px auto;
-    height: 34px;
     width: 100%;
     padding: 6px 12px;
     line-height: 1.42857143;
@@ -81,6 +80,11 @@ input {
 }
 input:focus {
     border-bottom: 1px solid #282828;
+}
+
+label#password-label {
+    display: block;
+    font-size: 10px;
 }
 
 .btn-holder {

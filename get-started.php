@@ -141,7 +141,7 @@
 
 								<div class="tab-pane" id="2b">
 									<div class="text-container">
-										<h3>Sign up to see the best events from your friends.</h3>
+										<h3>Sign up now to reserve your username</h3>
 									</div>
 									<!--SIGN UP FORM START (Input): Enter Username, and Password 
 										Notes: 
@@ -157,7 +157,7 @@
 										<input type="text" name="username" placeholder="Username" required="true"/><br/>
 										<input type="password" name="password" placeholder="Password" required="true" /><br/>
 										<div class="btn-holder">
-											<input type="submit" name="submit" value="Create Account">
+											<input type="submit" name="submit" value="Sign Up">
 										</div>
 									</form>
 									<!--SIGN UP FORM END-->
