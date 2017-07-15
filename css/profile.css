@@ -5,8 +5,6 @@
 }
 
 .profile-img-container {
-    width: 100%;
-    height: auto;
     overflow:hidden;
     border-radius: 5px;
 }
@@ -46,6 +44,11 @@
     float: right;
 }
 
+.dropdown-menu {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
 .profile-settings-btn {
     float: right;
     vertical-align: top;
@@ -55,6 +58,7 @@
 
 .div-inline{
     display:inline-block;
+    width: 100%; 
 }
 
 .dropdown-toggle:focus,
@@ -68,11 +72,14 @@
 
 a.dropdown-item {
     padding: 5px;
+    margin: 0 15px;
     text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 a.dropdown-item:hover {
-    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid #282828;
 }
 
 .line-two {
@@ -112,12 +119,31 @@ h3 {
     width: 49%;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
 }
 
 .points > h4,
-.connections > h4 {
+.connections-btn > h4 {
     margin: 0;
     font-size: 14px;
+}
+
+.connections-btn {
+    padding: 0px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+}
+
+.connections-dropdown {
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+}
+
+.connections-dropdown:hover {
+    text-align: center;
+    font-weight: 300;
 }
 
 h4 > b {
@@ -153,13 +179,35 @@ hr {
         margin-top: 100px;
     }
 
+    h3 > b {
+        font-size: 16px;
+    }
+
+    .bio > p {
+        font-size: 12px;
+    }
+
     .profile-container {
         margin-bottom: 0px;
     }
 
+    .profile-img-container {
+        max-width: 80%;
+        max-height: 80%;
+        margin: 0 auto;
+    }
+
     .line-one {
         margin-top: 15px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
+    }
+
+    .dropdown-menu {
+        min-width: 120px;
     }
 
     .line-two {
@@ -170,9 +218,8 @@ hr {
         margin-bottom: 0px;
     }
 
-    .events-hosted > h4,
-    .followers > h4,
-    .following > h4 {
+    .points > h4,
+    .connections-btn > h4 {
         font-size: 12px;
     }
 }

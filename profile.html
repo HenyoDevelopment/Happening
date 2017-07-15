@@ -15,6 +15,9 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/profile.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         
     </head> 
 
@@ -60,7 +63,7 @@
                                             <button class="btn profile-settings-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 &#9662;
                                             </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-menu dropdown-menu-right profile-settings-dropdown" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">Account Settings</a>
                                                 <a class="dropdown-item" href="#">Log Out</a>
                                             </div>
@@ -87,8 +90,16 @@
                                         <h4>points</h4>
                                     </div>
                                     <div class="connections">
-                                        <h4><b>415</b></h4>
-                                        <h4>connections</h4>
+                                        <div class="dropdown div-inline">
+                                            <button class="btn connections-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <h4><b>415</b></h4>
+                                                <h4>connections</h4>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><b>200</b> Followers</a>
+                                                <a class="dropdown-item" href="#"><b>215</b> Following</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -154,6 +165,4 @@
 
         </div>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
