@@ -134,7 +134,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
 }
 
 .navbar-secondary {
-    border: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;
 }

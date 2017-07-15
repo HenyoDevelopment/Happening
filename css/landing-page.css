@@ -69,7 +69,7 @@ h3 > a:hover {
 .get-started-button:hover,
 .get-started-button:focus  {
     font-weight: bold;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     margin-top: 20px;
     color: #ffffff;
