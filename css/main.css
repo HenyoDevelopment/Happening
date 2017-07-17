@@ -17,6 +17,11 @@ a.tags {
     color: #1c94e0;
 }
 
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
 h1, h2, h3, h4, h5, h6, h7 p {
     font-family: 'Lato', 'Roboto', sans-serif;
 	font-weight: 300;
@@ -298,6 +303,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .interest-btn {
     margin-top: 5px;
+    background: transparent;
 }
 
 .star-interest {

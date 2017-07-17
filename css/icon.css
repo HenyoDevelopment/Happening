@@ -1,0 +1,15 @@
+.card-icon {
+    background-size: 100%;
+    outline: none;
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+
+.icon-star {
+    background-image: url('../img/star.png');
+}
+
+.icon-star-grey {
+    background-image: url('../img/star-grey.png');
+}
