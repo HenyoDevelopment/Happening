@@ -19,7 +19,7 @@ a.tags {
 
 .btn:focus,
 .btn:active {
-    outline: none;
+    outline: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, h7 p {

@@ -13,3 +13,10 @@
 .icon-star-grey {
     background-image: url('../img/star-grey.png');
 }
+
+@media only screen and (max-width: 767px){
+    .card-icon {
+        height: 27px;
+        width: 27px;
+    }
+}
