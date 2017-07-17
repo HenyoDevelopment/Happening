@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.card-rating-container {
+.card-btn-container {
     height: 85px;
     width: 40px;
     margin-top: 10px;
@@ -283,18 +283,16 @@ h1, h2, h3, h4, h5, h6, h7 p {
     border-radius: 4px;
 }
 
-.lit-rating-container {
+.card-btn {
     float: right;
     width: 40px;
     height: 40px;
     padding: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
 
 .lit-rating-container:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.05);
 }
 
 .lit-rating {
@@ -302,19 +300,12 @@ h1, h2, h3, h4, h5, h6, h7 p {
     width: 100%;
 }
 
-.interest-container {
-    float: right;
-    width: 40px;
-    height: 40px;
+.interest-btn {
     margin-top: 5px;
-    padding: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
 }
 
 .interest-container:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.05);
 }
 
 .star-interest {
@@ -417,12 +408,10 @@ h1, h2, h3, h4, h5, h6, h7 p {
         display: block;
     }
 
-    .lit-rating-container,
-    .interest-container {
+    .card-btn {
         width: 35px;
         height: 35px;
     }
-
 
     .footer > h6 {
         display: inline-block;
