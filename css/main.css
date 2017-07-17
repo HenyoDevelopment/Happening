@@ -272,24 +272,42 @@ h1, h2, h3, h4, h5, h6, h7 p {
 }
 
 .card-rating-container {
-    height: 70px;
-    width: 20%;
+    height: 85px;
+    width: 40px;
     margin-top: 10px;
     float: right;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 .lit-rating-container {
-    vertical-align: top;
     float: right;
-    width: 60px;
-    height: 60px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .lit-rating {
     height: 100%;
     width: 100%;
+}
+
+.interest-container {
+    margin-top: 5px;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.star-interest {
+    height: 100%;
+    width: 100%;
+}
+
+.interest-btn {
+    vertical-align: top;
+    float: right;
+    width: 40px;
+    height: 40px;
 }
 
 /* fixed width for cards */
@@ -380,10 +398,12 @@ h1, h2, h3, h4, h5, h6, h7 p {
         display: block;
     }
 
-    .lit-rating-container {
-        width: 50px;
-        height: 50px;
+    .lit-rating-container,
+    .interest-container {
+        width: 30px;
+        height: 30px;
     }
+
 
     .footer > h6 {
         display: inline-block;
