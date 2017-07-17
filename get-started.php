@@ -165,10 +165,9 @@
 							</div>
 						</div>
 					</div>
-	
 				</div>
 
-															<!--FOOTER START-->
+			<!--FOOTER START-->
             <div class="row">
                 <div class="footer"> 
                     <h6><a>About Us</a></h6>

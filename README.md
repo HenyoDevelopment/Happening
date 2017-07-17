@@ -37,8 +37,3 @@ HTML starting template: https://www.w3schools.com/html/html5_intro.asp
 
 
 =================================================================================
-
-TO DO: 
-
-Login Page: 
-- Fix mobile view
