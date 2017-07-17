@@ -291,10 +291,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
     border-radius: 4px;
 }
 
-.lit-rating-container:hover {
-    cursor: pointer;
-}
-
 .lit-rating {
     height: 100%;
     width: 100%;
@@ -304,20 +300,9 @@ h1, h2, h3, h4, h5, h6, h7 p {
     margin-top: 5px;
 }
 
-.interest-container:hover {
-    cursor: pointer;
-}
-
 .star-interest {
     height: 100%;
     width: 100%;
-}
-
-.interest-btn {
-    vertical-align: top;
-    float: right;
-    width: 40px;
-    height: 40px;
 }
 
 /* fixed width for cards */
