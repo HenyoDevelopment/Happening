@@ -326,19 +326,24 @@ h1, h2, h3, h4, h5, h6, h7 p {
     outline: none;
 }
 
-.dropdown-item {
-    display: block;
+.dropdown-menu {
+    min-width: 100px;
 }
 
-a.dropdown-item {
+.interest-item {
+    display: block;
+    width: 110px;
+}
+
+a.interest-item {
+    font-size: 14px;
     padding: 5px;
-    margin: 0 15px;
+    margin: 0 5px;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
-a.dropdown-item:hover {
+a.interest-item:hover {
     border-bottom: 1px solid #282828;
 }
 
@@ -375,6 +380,7 @@ a.dropdown-item:hover {
     color: #1c94e0;
 }
 
+/*MOBILE SIZE FIXES*/
 @media only screen and (max-width: 767px){
 
     /*CARD TEXT*/
@@ -433,6 +439,15 @@ a.dropdown-item:hover {
     .card-btn {
         width: 35px;
         height: 35px;
+    }
+
+    .interest-item {
+        display: block;
+        width: 90px;
+    }
+
+    a.interest-item {
+        font-size: 12px;
     }
 
     .footer > h6 {

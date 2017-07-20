@@ -15,7 +15,12 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/explore.css">
+        <link rel="stylesheet" href="css/icon.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        <script src="js/card.js"></script>
     </head> 
 
     <body>
@@ -52,7 +57,7 @@
                         </ul>
                     </div>
 
-                    <!--BITCAMP CARD START-->
+                    <!--MOONRISE CARD START-->
                     <div class="card">
                         <div class="card-header">
                             <div class="header-user">
@@ -67,23 +72,33 @@
                         <div class="card-block">
                             <div class="card-text-container">
                                 <h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
-                                <p class="card-text">AUG 12 @ 10:00 AM &#183; 26 miles away</p>
-                                <p class="card-text">Huge Event &#183; 32 Friends Going</p>
+                                <p class="card-event-info">Sat Aug 12 @ 10:00 am &#183; 26 miles away</p>
+                                <p class="card-event-info">Huge Event &#183; 724 attendees</p>
+                                <p class="card-text">anhnestle, beefsta, and 48 others</p>
                                 <p class="card-tags">
                                     <a class="tags">#musicfestival</a>
                                 </p>
                             </div>
                             <div class="card-btn-container">
-                                <div class="btn card-btn">
-                                    <img class="lit-rating" src="img/one-quarter-lit.png" alt="one quarter lit">
+                                <div class="card-btn">
+                                    <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
                                 </div>
-                                <div class="btn card-btn interest-btn">
-                                    <img class="star-interest" src="img/star.png" alt="Saved">
+                                <div class="dropdown-container">
+                                    <div class="dropdown div-inline">
+                                        <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i id="event-interest" class="card-icon icon-checkmark"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <a class="interest-item not-interested">Not Interested</a>
+                                            <a class="interest-item interested">Interested</a>
+                                            <a class="interest-item going">Going</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--BITCAMP CARD END-->
+                    <!--MOONRISE CARD END-->
 
                 </div>
             </div> 

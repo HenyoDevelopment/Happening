@@ -42,11 +42,6 @@
     float: right;
 }
 
-.dropdown-menu {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0,0,0,0.1);
-}
-
 .profile-settings-btn {
     float: right;
     vertical-align: top;
@@ -54,21 +49,12 @@
     background: #fff;
 }
 
-.div-inline{
-    display:inline-block;
-    width: 100%; 
-}
-
-.dropdown-toggle:focus,
-.dropdown-toggle:active {
-    outline: none;
-}
-
 .dropdown-item {
     display: block;
 }
 
 a.dropdown-item {
+    min-width: 130px;
     padding: 5px;
     margin: 0 15px;
     text-decoration: none;
@@ -211,7 +197,7 @@ hr {
     }
 }
 
-/*MOBILE MARGINS FIX*/
+/*MOBILE SIZE FIXES*/
 @media only screen and (max-width: 767px) { 
     .main-content {
         margin-top: 100px;
@@ -244,8 +230,8 @@ hr {
         font-size: 10px;
     }
 
-    .dropdown-menu {
-        min-width: 120px;
+    a.dropdown-item {
+        min-width: 90px;
     }
 
     .line-two {

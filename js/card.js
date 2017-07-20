@@ -6,12 +6,17 @@
 
 $(document).ready(function() {
     $(".not-interested").click(function() {
-        $("#event-interest").attr('class', 'card-icon icon-star-grey');
+        $(this).parent()
+               .siblings('.btn')
+               .children('#event-interest')
+               .attr('class', 'card-icon icon-star-grey');
     });
     $(".interested").click(function() {
-        $("#event-interest").attr('class', 'card-icon icon-star');
+        $(this).parent().siblings('.btn').children('#event-interest')
+               .attr('class', 'card-icon icon-star');
     });
     $(".going").click(function() {
-        $("#event-interest").attr('class', 'card-icon icon-checkmark');
+        $(this).parent().siblings('.btn').children('#event-interest')
+               .attr('class', 'card-icon icon-checkmark');
     });
 });
