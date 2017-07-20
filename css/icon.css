@@ -14,6 +14,10 @@
     background-image: url('../img/star-grey.png');
 }
 
+.icon-checkmark {
+    background-image: url('../img/checkmark.png');
+}
+
 @media only screen and (max-width: 767px){
     .card-icon {
         height: 27px;

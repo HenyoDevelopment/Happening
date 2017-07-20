@@ -311,6 +311,37 @@ h1, h2, h3, h4, h5, h6, h7 p {
     width: 100%;
 }
 
+.dropdown-menu {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.div-inline{
+    display:inline-block;
+    width: 100%; 
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+    outline: none;
+}
+
+.dropdown-item {
+    display: block;
+}
+
+a.dropdown-item {
+    padding: 5px;
+    margin: 0 15px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+a.dropdown-item:hover {
+    border-bottom: 1px solid #282828;
+}
+
 /* fixed width for cards */
 .col-fixed {
     width: 600px;
