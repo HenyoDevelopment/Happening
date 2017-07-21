@@ -9,6 +9,14 @@ body {
 h3 {
     font-size: 22px;
     font-weight: bold;
+    margin-top: 0;
+    line-height: 120%;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
 }
 
 .login-container {
@@ -24,6 +32,7 @@ h3 {
 }
 .text-container {
     text-align: center;
+    margin-top: 20px
 }
 
 .error,
@@ -118,6 +127,14 @@ input[type=submit]:active {
 
     #exTab3 .nav-pills > li {
         width: 150px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 14px;
     }
 }
 

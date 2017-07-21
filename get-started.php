@@ -141,6 +141,7 @@
 
 								<div class="tab-pane" id="2b">
 									<div class="text-container">
+										<h4>Happening is currently in limited release</h4>
 										<h3>Sign up now to reserve your username</h3>
 									</div>
 									<!--SIGN UP FORM START (Input): Enter Username, and Password 
@@ -157,7 +158,9 @@
 										<input type="text" name="username" placeholder="Username" required="true"/><br/>
 										<input type="password" name="password" placeholder="Password" required="true" /><br/>
 										<div class="btn-holder">
-											<input type="submit" name="submit" value="Sign Up">
+											<input type="submit" name="submit" value="Give Me Access!">
+										</div>
+										<div class="text-container">
 										</div>
 									</form>
 									<!--SIGN UP FORM END-->

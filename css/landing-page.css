@@ -11,6 +11,7 @@
 .navbar-brand-full {
     height: 47px;
     width: auto;
+    margin-top: 2px;
 }
 
 .navbar-fixed-top {
@@ -18,7 +19,7 @@
 }
 
 .box-container {
-    height: 590px;
+    height: 570px;
 }
 
 .text-container {
