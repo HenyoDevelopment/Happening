@@ -87,7 +87,7 @@
         <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
 
-        <title>Sign Up</title>
+        <title>Happening</title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
@@ -103,12 +103,13 @@
             <div class="row box-container">
                 <div class="login-container">
 
-						<a class= "navbar-brand-logo" href="index.html">
+						<a class= "navbar-brand-logo" href="get-started.php">
                     		<img class="navbar-brand-full" alt="Happening Logo" src="img/happening-full.png">
 						</a>
 						<div id="exTab3">	
 							<ul class="nav nav-pills center-pills">
 								<li class="active"><a href="#1b" data-toggle="tab">Sign In</a></li>
+								<?php $_SESSION["dir"] = "#1b"?>
 								<li><a href="#2b" data-toggle="tab">Sign Up</a></li>
 							</ul>
 							<div class="tab-content clearfix">
@@ -146,8 +147,8 @@
 									</div>
 									<!--SIGN UP FORM START (Input): Enter Username, and Password 
 										Notes: 
-											sign-up-validation.php - Inserts Data to DATABASE if it passes validateForm()
-											validateForm()		   - Validates if the User Input Valid/acceptable
+											sign-up-validation.php - Inserts Data to DATABASE if ()		   - Vait passes validateForm()
+											validateFormlidates if the User Input Valid/acceptable
 									-->
 									<form name="sign-up-form" action="sign-up-validation.php" method="post" onSubmit="return validateForm()">
 										<div class="text-container error">

@@ -83,6 +83,7 @@
 						going_events varchar(100),
 						followers varchar(100),
 						following varchar(100),
+						points int,
 						private int
 						)");
 	}
