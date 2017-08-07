@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    $(".img-container").css({'width': (   
+        $('.friend-card').width()+'px')
+    });
+    function setEventCardSize() {
+        $(".img-container").css({'width': (   
+            $('.friend-card').width()+'px')
+        });
+    }
+    $('.friend-card').resize(setEventCardSize);
     $(".not-interested").click(function() {
         $(this).parent()
                .siblings('.btn')
@@ -13,4 +22,5 @@ $(document).ready(function() {
         $(this).parent().siblings('.btn').children('#event-interest')
                .attr('class', 'card-icon icon-checkmark');
     });
+            
 });
