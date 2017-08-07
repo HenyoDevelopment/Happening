@@ -29,13 +29,17 @@
     line-height: 34px;
 }
 
-.profile-btn {
+.own-profile-btn {
     float: right;
     vertical-align:top;
     margin-left: 10px;
     margin-right: 10px;
     width: 30%;
     border: 1px solid rgba(0,0,0,0.1);
+}
+
+.other-profile-btn {
+    
 }
 
 .dropdown-container {
@@ -129,6 +133,10 @@ a.dropdown-item:hover {
     background-color: transparent;
     width: 100%;
     position: relative;
+}
+
+.connections-btn:active {
+    box-shadow: none;
 }
 
 .connections-dropdown {
