@@ -182,18 +182,20 @@ h1, h2, h3, h4, h5, h6, h7 p {
 .friend-events {
     display: block;
     width: auto;
-    overflow-x: scroll;
-    overflow-y: hidden; 
-    white-space: nowrap;
 }
 
 .friend-events-container {
-    margin: 10px 10px 0 10px;
-}
-
-.event-break {
-    display: inline-block;
-    width: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    white-space: nowrap;
+    /* -webkit-scroll-snap-points-x: repeat(100%);
+    -ms-scroll-snap-points-x: repeat(100%);
+        scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 50% 50%;
+    -ms-overflow-style: -ms-autohiding-scrollbar; */
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 .friend-info {
@@ -205,6 +207,12 @@ h1, h2, h3, h4, h5, h6, h7 p {
     background: white;
     border-radius: 2px;
     white-space: normal;
+    margin: 10px 5px 0px 5px;
+    /* scroll-snap-coordinate: 50% 50%; */
+}
+
+.event-switchers {
+    margin: 0 0 10px 0;
 }
 
 .card-header {
@@ -292,9 +300,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 }
 
 .card-block {
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 10px;
     white-space: nowrap;
 }
 
@@ -434,10 +440,6 @@ a.interest-item:hover {
 
     p {
         font-size: 12px;
-    }
-
-    .event-card {
-        min-width: 288px;
     }
 
     .navbar-default {

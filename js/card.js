@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function setEventCardSize() {
-        var eventCardWidth = $('.friend-card').width() - 20
-        $(".img-container").css({'width': (eventCardWidth +'px')});
+        var eventCardWidth = $('.friend-card').width() - 40
+        $(".event-card").css({'width': (eventCardWidth +'px')});
     };
     setEventCardSize();
     $(window).resize(function() {
@@ -20,6 +20,9 @@ $(document).ready(function() {
     $(".going").click(function() {
         $(this).parent().siblings('.btn').children('#event-interest')
                .attr('class', 'card-icon icon-checkmark');
+    });
+    $('#flip').click(function() {
+        $('#panel').toggle('slide', {direction: 'down'}, 300);
     });
             
 });
