@@ -194,12 +194,16 @@ h1, h2, h3, h4, h5, h6, h7 p {
     scroll-snap-type: mandatory;
     scroll-snap-destination: 50% 50%;
     -ms-overflow-style: -ms-autohiding-scrollbar; */
-    padding-left: 5px;
-    padding-right: 10px;
+    padding: 0 5px;
 }
 
 .friend-info {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.center-event-cards {
+    display: table;
+    margin: 0 auto;
 }
 
 .event-card {
