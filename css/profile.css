@@ -38,6 +38,18 @@
     border: 1px solid rgba(0,0,0,0.1);
 }
 
+.own-profile-btn:before {
+    content: 'Edit Profile';
+}
+
+.other-profile-following:before {
+    content: 'Following';
+}
+
+.other-profile-follow:before {
+    content: 'Follow';
+}
+
 .dropdown-container {
     float: right;
 }
@@ -129,6 +141,10 @@ a.dropdown-item:hover {
     background-color: transparent;
     width: 100%;
     position: relative;
+}
+
+.connections-btn:active {
+    box-shadow: none;
 }
 
 .connections-dropdown {
