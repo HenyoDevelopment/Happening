@@ -177,8 +177,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
     background: white;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    scroll-snap-points-x: repeat(100%);
-    scroll-snap-type: mandatory;
 }
 
 .friend-events {
@@ -187,6 +185,10 @@ h1, h2, h3, h4, h5, h6, h7 p {
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
+}
+
+.friend-events-container {
+    margin: 10px 10px 0 10px;
 }
 
 .event-break {

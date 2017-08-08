@@ -1,13 +1,12 @@
 $(document).ready(function() {
-    $(".img-container").css({'width': (   
-        $('.friend-card').width()+'px')
-    });
     function setEventCardSize() {
-        $(".img-container").css({'width': (   
-            $('.friend-card').width()+'px')
-        });
-    }
-    $('.friend-card').resize(setEventCardSize);
+        var eventCardWidth = $('.friend-card').width() - 20
+        $(".img-container").css({'width': (eventCardWidth +'px')});
+    };
+    setEventCardSize();
+    $(window).resize(function() {
+        setEventCardSize();
+    });
     $(".not-interested").click(function() {
         $(this).parent()
                .siblings('.btn')
