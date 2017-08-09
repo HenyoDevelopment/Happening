@@ -1,4 +1,3 @@
-
 <?php
 	require_once("open-database.php"); 
 ?>
