@@ -58,7 +58,7 @@
 						event_date date, 
 						event_time time, 
 						address varchar(100), 
-						description varchar(81), 
+						description varchar(500), 
 						image MEDIUMBLOB,
 						tags varchar(100),
 						users_going varchar(100),
