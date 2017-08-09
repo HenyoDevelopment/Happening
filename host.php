@@ -69,32 +69,98 @@
 
         /************************/
         /*    Input VALIDATION   /
-        /************************/ 
-        var event_name = document.getElementById('event-name').value;
-        var location = document.getElementById('location').value;
-        var date_start = document.getElementById('date-start').value;
-        var time_start = document.getElementById('time-start').value;
-        var date_end = document.getElementById('date-end').value;
-        var time_end = document.getElementById('time-end').value;
-        var event_size = document.getElementById('event-size').value;
-        var description = document.getElementById('description').value;
+        /************************/
 
+        //NAME VALIDATION 
+        var event_name = document.getElementById('event-name').value;
         if (event_name.length > 50) {
             error += "<br>Event Name is too long.";
             return_value = false;
         }
 
+        //LOCATION VALIDATION
+        var location = document.getElementById('location').value;
         if (location.length > 100) {
             error += "<br>Location is too long.";
             return_value = false;
         }
 
-        if (description.length > 500) {
-            error += "<br>Description is too long.";
+        //START DATE & TIME VALIDATION
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth() + 1;
+        var day = today.getDate();
+        var time = today.getHours();
+
+        alert(time);
+
+        var date_start = document.getElementById('date-start').value;
+        var time_start = document.getElementById('time-start').value;
+        var start_date = date_start.split("-");
+        var hour = time_start.split(":");
+
+        alert(hour[0] < time);
+
+        if (start_date[0] > year + 2) {
+            error += "<br>Start date should within 2 years from now.";
             return_value = false;
+        } else if (start_date[0] < year) {
+            error += "<br>Start date Year already passed.";
+            return_value = false;
+        } else {
+            if (start_date[1] < month) {
+                error += "<br>Start date Month already passed.";
+                return_value = false;
+            }             
+            if (start_date[1] == month && date[2] < day) {
+                error += "<br>Start date Day already passed.";
+                return_value = false;
+            } else {
+                if ((start_date[1] == month) && (start_date[2] == day) && (hour[0] + 1 < 25)) { 
+                    if (hour[0] + 1 == time || hour[0] < time) {
+                        error += "<br>Start Time is too soon or has already passed.";
+                        return_value = false;
+                    }
+                }
+            } 
         }
 
+        //START DATE & TIME VALIDATION
+        var date_end = document.getElementById('date-end').value;
+        var time_end = document.getElementById('time-end').value;
+        var end_date = date_end.split("-");
+        var end_hour = time_start.split(":");
+
+        if (end_date[0] < start_date[0]) {
+            error += "<br>End date Year is invalid.";
+            return_value = false;
+        } else if (end_date[0] > start_date[0] + 2) {
+            error += "<br>End date is too far in the future.";
+            return_value = false;
+        } else {
+            if (end_date[1] < start_date[1]) {
+                error += "<br>End date Month is invalid.";
+                return_value = false;
+            }
+            if (end_date[1] == start_date[1] &&
+                end_date[2] < start_date[2]) {
+                error += "<br>End date Day is invalid.";
+                return_value = false;
+            }
+        }
+
+        // var event_size = document.getElementById('event-size').value;
+
+        //DESCRIPTION VALIDATION
+        // var description = document.getElementById('description').value;
+        // if (description.length > 500) {
+        //     error += "<br>Description is too long.";
+        //     return_value = false;
+        // }
+
         document.getElementById("error").innerHTML  = error;
+
+
         return return_value;
 
         // jQuery(function($) {
@@ -149,10 +215,10 @@
             <br/><br/><br/><br/>
             <p id="error"> </p>
             <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                <input type="text" name="event-name" id="event-name" placeholder="Event Name" required="true"/><br/>
-                <input type="text" name="location" id="location" placeholder="Location" required="true"/><br/>
+                <input type="text" name="event-name" id="event-name" placeholder="Event Name" /><br/>
+                <input type="text" name="location" id="location" placeholder="Location" /><br/>
 
-                Start: <input type="date" name="date-start" id="date-start" required="true"/> <input type="time" name="time-start" id="time-start" required="true"/><br/>
+                Start: <input type="date" name="date-start" id="date-start" /> <input type="time" name="time-start" id="time-start" /><br/>
                 End: <input type="date" name="date-end" id="date-end" /> <input type="time" name="time-end" id="time-end"/><br/>
                 Expected Attendance: 
                 <select name="event-size" id="event-size">
@@ -164,7 +230,7 @@
 
                 <textarea name="description" id="description" rows="4" cols="50"  placeholder="Description"></textarea><br/>
                 <img id="preview" style="max-width: 400px;" />
-                <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" > 
                 <input type="submit" name="submit" value="Create Event" />
             </form>
         </div>
