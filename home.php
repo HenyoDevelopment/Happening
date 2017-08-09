@@ -43,141 +43,197 @@
         </div>
         <!--NAVIGATION BAR END-->
 
-        <!--EVENT CARDS-->
+        <!--USERS START-->
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-8 col-sm-offset-2">
 
-                    <!--MOONRISE CARD START-->
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="header-user">
-                                <img class="header-user-img" src="img/events/moonrise-user.jpg" alt="">
-                            </div>
-                            <div class="header-text"><a class="user">moonrise</a></div>
-                        </div>
-                        <div class="img-container vertical-align">
-                            <img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
-                        </div>
-                        <div class="event-size-indicator-huge"></div>
-                        <div class="card-block">
-                            <div class="card-text-container">
-                                <h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
-                                <p class="card-event-info">Sat Aug 12 @ 10:00 am &#183; 26 miles away</p>
-                                <p class="card-event-info">Huge Event &#183; 724 attendees</p>
-                                <p class="card-text">anhnestle, beefsta, and 48 others</p>
-                                <p class="card-tags">
-                                    <a class="tags">#musicfestival</a>
-                                </p>
-                            </div>
-                            <div class="card-btn-container">
-                                <div class="card-btn">
-                                    <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
-                                </div>
-                                <div class="dropdown-container">
-                                    <div class="dropdown div-inline">
-                                        <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i id="event-interest" class="card-icon icon-checkmark"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                            <a class="interest-item not-interested">Not Interested</a>
-                                            <a class="interest-item interested">Interested</a>
-                                            <a class="interest-item going">Going</a>
+                    <!--USER ONE START-->
+                    <div class="friend-card">
+                        <div class="friend-events">
+                            <div class="friend-events-container">
+                                <!--MOONRISE CARD START-->
+                                <div class="event-card">
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
+                                    </div>
+                                    <div class="event-size-indicator-huge"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
+                                            <p class="card-event-info">Sat Aug 12 @ 10:00 am &#183; 26 miles away</p>
+                                            <p class="card-event-info">Huge Event &#183; 724 attendees</p>
+                                            <p class="card-text">anhnestle, beefsta, and 48 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#musicfestival</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
+                                            </div>
+                                            <div class="dropup-container">
+                                                <div class="dropup div-inline">
+                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i id="event-interest" class="card-icon icon-checkmark"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="interest-item not-interested">Not Interested</a>
+                                                        <a class="interest-item interested">Interested</a>
+                                                        <a class="interest-item going">Going</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--MOONRISE CARD END-->
+                                <!--MOONRISE CARD END-->
 
-                    <!--BITCAMP CARD START-->
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="header-user">
-                                <img class="header-user-img" src="img/events/bitcamp.png" alt="">
-                            </div>
-                            <div class="header-text"><a class="user">bitcamp</a></div>
-                        </div>
-                        <div class="img-container vertical-align">
-                            <img class="card-event-img" src="img/events/bitcamp.png" alt="Bitcamp 2017">
-                        </div>
-                        <div class="event-size-indicator-large"></div>
-                        <div class="card-block">
-                            <div class="card-text-container">
-                                <h4 class="card-title"><a class="event-link">Free &#9679; Bitcamp 2017</a></h4>
-                                <p class="card-event-info">Sat Apr 1 @ 5:00 PM &#183; 2 miles away</p>
-                                <p class="card-event-info">Large Event &#183; 489 attendees</p>
-                                <p class="card-text">yoyyenn, farahpg, and 10 others</p>
-                                <p class="card-tags">
-                                    <a class="tags">#freefood</a> &#183; 
-                                    <a class="tags">#freeswag</a>
-                                </p>
-                            </div>
-                            <div class="card-btn-container">
-                                <div class="card-btn">
-                                    <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
-                                </div>
-                                <div class="dropdown-container">
-                                    <div class="dropdown div-inline">
-                                        <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i id="event-interest" class="card-icon icon-star"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                            <a class="interest-item not-interested">Not Interested</a>
-                                            <a class="interest-item interested">Interested</a>
-                                            <a class="interest-item going">Going</a>
+                                <!--BITCAMP CARD START-->
+                                <div class="event-card">
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/bitcamp.png" alt="Bitcamp 2017">
+                                    </div>
+                                    <div class="event-size-indicator-large"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">Free &#9679; Bitcamp 2017</a></h4>
+                                            <p class="card-event-info">Sat Apr 1 @ 5:00 PM &#183; 2 miles away</p>
+                                            <p class="card-event-info">Large Event &#183; 489 attendees</p>
+                                            <p class="card-text">yoyyenn, farahpg, and 10 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#freefood</a> &#183; 
+                                                <a class="tags">#freeswag</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="dropup-container">
+                                                <div class="dropup div-inline">
+                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i id="event-interest" class="card-icon icon-star"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="interest-item not-interested">Not Interested</a>
+                                                        <a class="interest-item interested">Interested</a>
+                                                        <a class="interest-item going">Going</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--BITCAMP CARD END-->
+                                <!--BITCAMP CARD END-->
+                            
+                                <!--TECHNICA CARD START-->
+                                <div id="event-3" class="event-card">
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
+                                    </div>
+                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
+                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                            <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#womenshackathon</a> &#183; 
+                                                <a class="tags">#freefood</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="dropup-container">
+                                                <div class="dropup div-inline">
+                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="interest-item not-interested">Not Interested</a>
+                                                        <a class="interest-item interested">Interested</a>
+                                                        <a class="interest-item going">Going</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--TECHNICA CARD END-->
 
-                    <!--TECHNICA CARD START-->
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="header-user">
-                                <img class="header-user-img" src="img/events/technica-user.png" alt="">
                             </div>
-                            <div class="header-text"><a class="user">technica</a></div>
                         </div>
-                        <div class="img-container vertical-align">
-                            <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
-                        </div>
-                        <div class="event-size-indicator-midsize"></div>
-                        <div class="card-block">
-                            <div class="card-text-container">
-                                <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
-                                <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
-                                <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
-                                <p class="card-tags">
-                                    <a class="tags">#womenshackathon</a> &#183; 
-                                    <a class="tags">#freefood</a>
-                                </p>
-                            </div>
-                            <div class="card-btn-container">
-                                <div class="card-btn">
-                                    <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                        <div class="friend-info">
+                            <div class="card-header">
+                                <div class="header-user">
+                                    <img class="header-user-img" src="img/profile-photos/gabe.png" alt="">
                                 </div>
-                                <div class="dropdown-container">
-                                    <div class="dropdown div-inline">
-                                        <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i id="event-interest" class="card-icon icon-star-grey"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                            <a class="interest-item not-interested">Not Interested</a>
-                                            <a class="interest-item interested">Interested</a>
-                                            <a class="interest-item going">Going</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="header-text"><a class="user">mrshuly</a></div>
                             </div>
                         </div>
                     </div>
-                    <!--TECHNICA CARD END-->
+                    <!--USER ONE END-->
+
+                    
+                    <!--USER TWO START-->
+                    <div class="friend-card">
+                        <div class="friend-events">
+                            <div class="friend-events-container">
+                                <div class="center-event-cards"> <!-- ONLY HAVE THIS DIV FOR USERS WITH ONE EVENT CARD -->
+                                    <!--TECHNICA CARD START-->
+                                    <div class="event-card">
+                                        <div class="img-container vertical-align">
+                                            <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
+                                        </div>
+                                        <div class="event-size-indicator-midsize"></div>
+                                        <div class="card-block">
+                                            <div class="card-text-container">
+                                                <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
+                                                <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                                <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                                <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
+                                                <p class="card-tags">
+                                                    <a class="tags">#womenshackathon</a> &#183; 
+                                                    <a class="tags">#freefood</a>
+                                                </p>
+                                            </div>
+                                            <div class="card-btn-container">
+                                                <div class="card-btn">
+                                                    <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                </div>
+                                                <div class="dropup-container">
+                                                    <div class="dropup div-inline">
+                                                        <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                            <a class="interest-item not-interested">Not Interested</a>
+                                                            <a class="interest-item interested">Interested</a>
+                                                            <a class="interest-item going">Going</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--TECHNICA CARD END-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend-info">
+                            <div class="card-header">
+                                <div class="header-user">
+                                    <img class="header-user-img" src="img/profile-photos/sani.png" alt="">
+                                </div>
+                                <div class="header-text"><a class="user">sanisideup</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--USER TWO END-->
 
                 </div>
             </div>
@@ -194,4 +250,6 @@
             
         </div>
     </body>
+    <!-- <script src="js/polyfill.js"></script>
+    <script src="js/scrollsnap.js"></script> -->
 </html>
