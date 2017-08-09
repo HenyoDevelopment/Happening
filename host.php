@@ -187,6 +187,8 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/host.css">
+
     </head> 
 
     <body>
@@ -209,32 +211,41 @@
             </ul>
         </div>
 
-        <!-- FORM START -->
-        <div>   
+        <div class="container main-content">
+            <div class="row row-centered">
+                <div class="col-sm-8 col-sm-offset-2">
 
-            <br/><br/><br/><br/>
-            <p id="error"> </p>
-            <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                <input type="text" name="event-name" id="event-name" placeholder="Event Name" /><br/>
-                <input type="text" name="location" id="location" placeholder="Location" /><br/>
+                <!-- FORM START -->
+                <p id="error"> </p>
+                <div class="form-container">
+                    <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
+                        <div
+                        <div class="event-img-preview">
+                          <img id="preview" style="max-width: 400px;"/>
+                        </div>
+                        <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                        Event Title: <input type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title" /><br/>
+                        Location: <input type="text" name="location" id="location" placeholder="Make sure its easy to find"/><br/>
 
-                Start: <input type="date" name="date-start" id="date-start" /> <input type="time" name="time-start" id="time-start" /><br/>
-                End: <input type="date" name="date-end" id="date-end" /> <input type="time" name="time-end" id="time-end"/><br/>
-                Expected Attendance: 
-                <select name="event-size" id="event-size">
-                    <option value="huge">Huge (150 or more)</option>
-                    <option value="big">Big (80-149)</option>
-                    <option value="medium">Medium (26-80)</option>
-                    <option value="small">Small (25 and below)</option>
-                </select> <br/>
+                        Start: <input type="date" name="date-start" id="date-start" /> <input type="time" name="time-start" id="time-start" /><br/>
+                        End: <input type="date" name="date-end" id="date-end" /> <input type="time" name="time-end" id="time-end"/><br/>
+                        Expected Attendance: 
+                        <select name="event-size" id="event-size">
+                            <option value="huge">Huge (150 or more)</option>
+                            <option value="big">Big (80-149)</option>
+                            <option value="medium">Medium (26-80)</option>
+                            <option value="small">Small (25 and below)</option>
+                        </select> <br/>
 
-                <textarea name="description" id="description" rows="4" cols="50"  placeholder="Description"></textarea><br/>
-                <img id="preview" style="max-width: 400px;" />
-                <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" > 
-                <input type="submit" name="submit" value="Create Event" />
-            </form>
+                        Description: <textarea name="description" id="description" rows="4" cols="50"  placeholder="More details leads to better turnout!"></textarea><br/>
+                        Tags: <input type="text" name="tags" id="tags" placeholder="Choose important ones!" /><br/>
+                        <input type="submit" name="submit" value="Create Event" />
+                    </form>
+                </div>
+                <!-- FORM END -->
+
+            </div>
         </div>
-        <!-- FORM END -->
 
         <!--FOOTER START-->
         <div class="row">
