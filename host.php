@@ -87,80 +87,100 @@
 
         //START DATE & TIME VALIDATION
         var today = new Date();
-        var year = today.getFullYear();
-        var month = today.getMonth() + 1;
-        var day = today.getDate();
-        var time = today.getHours();
-
-        alert(time);
+        var current_year = today.getFullYear();
+        var current_month = today.getMonth() + 1;
+        var current_day = today.getDate();
+        var current_time = today.getHours();
 
         var date_start = document.getElementById('date-start').value;
         var time_start = document.getElementById('time-start').value;
         var start_date = date_start.split("-");
         var hour = time_start.split(":");
 
-        alert(hour[0] < time);
+        var same_year = (start_date[0] == current_year );
+        var same_month = (start_date[1] == current_month);
+        var same_day = (start_date[2] == current_day);
 
-        if (start_date[0] > year + 2) {
-            error += "<br>Start date should within 2 years from now.";
+
+        if (start_date[0] > current_year + 2) {
+            error += "<br>Start date should be within 2 years from now.";
             return_value = false;
-        } else if (start_date[0] < year) {
+        } 
+        
+        if (start_date[0] < current_year) {
             error += "<br>Start date Year already passed.";
             return_value = false;
-        } else {
-            if (start_date[1] < month) {
+        } 
+
+        if (same_year) {
+            if (start_date[1] < current_month) {
                 error += "<br>Start date Month already passed.";
                 return_value = false;
-            }             
-            if (start_date[1] == month && date[2] < day) {
-                error += "<br>Start date Day already passed.";
-                return_value = false;
-            } else {
-                if ((start_date[1] == month) && (start_date[2] == day) && (hour[0] + 1 < 25)) { 
-                    if (hour[0] + 1 == time || hour[0] < time) {
+            }    
+
+            if (same_month){
+                if (start_date[2] < current_day) {
+                        error += "<br>Start date Day already passed.";
+                        return_value = false;
+                }
+                if (same_day) {
+                    if (hour[0] + 1 <= current_time) {
                         error += "<br>Start Time is too soon or has already passed.";
                         return_value = false;
                     }
                 }
-            } 
+            }         
         }
 
-        //START DATE & TIME VALIDATION
+        //End DATE & TIME VALIDATION
         var date_end = document.getElementById('date-end').value;
         var time_end = document.getElementById('time-end').value;
         var end_date = date_end.split("-");
         var end_hour = time_start.split(":");
 
+        var same_year = (start_date[0] == end_date[0]);
+        var same_month = (start_date[1] == end_date[1]);
+        var same_day = (start_date[2] == end_date[2]);
+
         if (end_date[0] < start_date[0]) {
             error += "<br>End date Year is invalid.";
             return_value = false;
-        } else if (end_date[0] > start_date[0] + 2) {
+        }
+
+        if (end_date[0] > start_date[0] + 2) {
             error += "<br>End date is too far in the future.";
             return_value = false;
-        } else {
+        } 
+
+        if (same_year) {
             if (end_date[1] < start_date[1]) {
                 error += "<br>End date Month is invalid.";
                 return_value = false;
             }
-            if (end_date[1] == start_date[1] &&
-                end_date[2] < start_date[2]) {
-                error += "<br>End date Day is invalid.";
-                return_value = false;
+
+            if (same_month) {
+                if (end_date[2] < start_date[2]) {
+                    error += "<br>End date Day is invalid.";
+                    return_value = false;   
+                }
+
+                if (same_day) {
+                    if (end_hour[0] + 1 <= hour[0] + 1) {
+                        error += "<br>Start Time is too soon or has already passed.";
+                        return_value = false;
+                    }
+                }              
             }
         }
 
-        // var event_size = document.getElementById('event-size').value;
-
         //DESCRIPTION VALIDATION
-        // var description = document.getElementById('description').value;
-        // if (description.length > 500) {
-        //     error += "<br>Description is too long.";
-        //     return_value = false;
-        // }
+        var description = document.getElementById('description').value;
+        if (description.length > 500) {
+            error += "<br>Description is too long.";
+            return_value = false;
+        }
 
         document.getElementById("error").innerHTML  = error;
-
-
         return return_value;
 
         // jQuery(function($) {
