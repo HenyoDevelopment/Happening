@@ -283,7 +283,7 @@
                             <div class="col-sm-4 input-description">Tags:</div> 
                             <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose attractive tags"/>
                         </div>
-                        <input class="btn "id="submit-event" type="submit" name="submit" value="Create"/>
+                        <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
                     </form>
                 </div>
                 <!-- FORM END -->
