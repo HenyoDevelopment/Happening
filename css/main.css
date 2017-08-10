@@ -27,22 +27,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
 	font-weight: 300;
 }
 
-input {
-    margin: 10px auto;
-    width: 100%;
-    padding: 6px 12px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
-    outline: none;
-}
-
-input:focus {
-    border-bottom: 1px solid #282828;
-}
-
 .navbar {
     min-height: 0px;
 }

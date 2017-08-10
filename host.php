@@ -243,14 +243,12 @@
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Expected Attendance:</div>
-                            <div class="expected-attendance">
-                                <select class="col-sm-8" name="event-size" id="event-size">
-                                    <option value="small">Small (25 and below)</option>  
-                                    <option value="medium">Medium (26-80)</option>
-                                    <option value="big">Big (80-149)</option>
-                                    <option value="huge">Huge (150 or more)</option>
-                                </select>
-                            </div>
+                            <select class="col-sm-8" name="event-size" id="event-size">
+                                <option value="small">Small (25 and below)</option>  
+                                <option value="medium">Medium (26-80)</option>
+                                <option value="big">Big (80-149)</option>
+                                <option value="huge">Huge (150 or more)</option>
+                            </select>
                         </div>
 
                         <div class="row event-input-line">
