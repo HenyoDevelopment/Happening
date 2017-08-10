@@ -189,6 +189,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/host.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="js/host.js"></script>
+
     </head> 
 
     <body>
@@ -233,13 +237,13 @@
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Start:</div> 
-                            <input class="col-xs-4" type="date" name="date-start" id="date-start"/> 
-                            <input class="col-xs-4" type="time" name="time-start" id="time-start"/>
+                            <input class="col-sm-4" type="date" name="date-start" id="date-start"/> 
+                            <input class="col-sm-3 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">End:</div> 
-                            <input class="col-xs-4" type="date" name="date-end" id="date-end"/> 
-                            <input class="col-xs-4" type="time" name="time-end" id="time-end"/>
+                            <input class="col-sm-4" type="date" name="date-end" id="date-end"/> 
+                            <input class="col-sm-3 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Expected Attendance:</div>
@@ -253,13 +257,13 @@
 
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Description:</div> 
-                            <textarea class="col-sm-8" name="description" id="description" rows="4" cols="50"  placeholder="More details leads to better turnout!"></textarea>
+                            <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Tags:</div> 
-                            <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose memorable ones!"/>
+                            <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose attractive tags"/>
                         </div>
-                        <input class="btn "id="submit-event" type="submit" name="submit" value="Create Event"/>
+                        <input class="btn "id="submit-event" type="submit" name="submit" value="Create"/>
                     </form>
                 </div>
                 <!-- FORM END -->

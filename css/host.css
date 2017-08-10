@@ -31,7 +31,7 @@ input:hover {
 .input-description {
     text-align: right;
     float:left;
-    padding: 8px 15px;
+    padding: 8px 15px 8px 0;
     line-height: 20px;
 }
 
@@ -56,11 +56,19 @@ select:not([multiple]) {
     outline: none;
 }
 
+select:hover {
+    border-bottom: 1px solid #282828;
+}
+
 #description {
     padding: 5px;
     border-color: rgba(0, 0, 0, 0.2);
     outline: none;
+    height: 100px;
+}
 
+#description:hover {
+    border: 1px solid #282828;
 }
 
 #submit-event {
@@ -70,7 +78,7 @@ select:not([multiple]) {
     font-weight: bold;
     min-width: 200px;
     height: 50px;
-    margin-top: 10px;
+    margin: 20px auto 40px auto;
     color: #ffffff;
     background-color: #ff944d;
     border-color: #ff944d;
