@@ -1,9 +1,57 @@
 .form-container{
-    display: table;
     margin: 0 auto;
+    width: 90%;
 }
 
 .event-img-preview {
     display: table;
     margin: 0 auto;
+}
+
+.event-input-line {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    margin: 0;
+}
+
+.input-description {
+    text-align: right;
+    float:left;
+    padding: 8px 15px;
+    line-height: 20px;
+}
+
+#date-start,
+#time-start,
+#date-end,
+#time-end {
+    text-align: center;
+}
+
+.expected-attendance {
+    padding: 8px 0;
+}
+
+#description {
+    padding: 5px;
+}
+
+#submit-event {
+    width: 30%;
+    display: table;
+    margin: 0 auto;
+    font-weight: bold;
+    min-width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #ff944d;
+    border-color: #ff944d;
+    border-radius: 2px; 
+    outline: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+    padding: 14px 12px;
 }

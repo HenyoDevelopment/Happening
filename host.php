@@ -219,27 +219,49 @@
                 <p id="error"> </p>
                 <div class="form-container">
                     <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                        <div
                         <div class="event-img-preview">
                           <img id="preview" style="max-width: 400px;"/>
                         </div>
                         <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
-                        Event Title: <input type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title" /><br/>
-                        Location: <input type="text" name="location" id="location" placeholder="Make sure its easy to find"/><br/>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Event Title:</div> 
+                            <input class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
+                        </div>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Location:</div> 
+                            <input class="col-sm-8" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
+                        </div>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Start:</div> 
+                            <input class="col-xs-4" type="date" name="date-start" id="date-start"/> 
+                            <input class="col-xs-4" type="time" name="time-start" id="time-start"/>
+                        </div>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">End:</div> 
+                            <input class="col-xs-4" type="date" name="date-end" id="date-end"/> 
+                            <input class="col-xs-4" type="time" name="time-end" id="time-end"/>
+                        </div>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Expected Attendance:</div>
+                            <div class="expected-attendance">
+                                <select class="col-sm-8" name="event-size" id="event-size">
+                                    <option value="small">Small (25 and below)</option>  
+                                    <option value="medium">Medium (26-80)</option>
+                                    <option value="big">Big (80-149)</option>
+                                    <option value="huge">Huge (150 or more)</option>
+                                </select>
+                            </div>
+                        </div>
 
-                        Start: <input type="date" name="date-start" id="date-start" /> <input type="time" name="time-start" id="time-start" /><br/>
-                        End: <input type="date" name="date-end" id="date-end" /> <input type="time" name="time-end" id="time-end"/><br/>
-                        Expected Attendance: 
-                        <select name="event-size" id="event-size">
-                            <option value="huge">Huge (150 or more)</option>
-                            <option value="big">Big (80-149)</option>
-                            <option value="medium">Medium (26-80)</option>
-                            <option value="small">Small (25 and below)</option>
-                        </select> <br/>
-
-                        Description: <textarea name="description" id="description" rows="4" cols="50"  placeholder="More details leads to better turnout!"></textarea><br/>
-                        Tags: <input type="text" name="tags" id="tags" placeholder="Choose important ones!" /><br/>
-                        <input type="submit" name="submit" value="Create Event" />
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Description:</div> 
+                            <textarea class="col-sm-8" name="description" id="description" rows="4" cols="50"  placeholder="More details leads to better turnout!"></textarea>
+                        </div>
+                        <div class="row event-input-line">
+                            <div class="col-sm-4 input-description">Tags:</div> 
+                            <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose memorable ones!"/>
+                        </div>
+                        <input class="btn "id="submit-event" type="submit" name="submit" value="Create Event"/>
                     </form>
                 </div>
                 <!-- FORM END -->
