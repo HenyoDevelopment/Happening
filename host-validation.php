@@ -15,6 +15,8 @@
 	//If Submit Button is hit and an Image was chosen
 	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){ 
 
+		$name = trim($_POST["event-name"]);
+
 		$newName = time() . '_' . stripslashes($_FILES['fileToUpload']['name']);
 		if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $upload_path.$newName)) {
             echo 'File ' .$newName. ' succesfully copied';
@@ -23,7 +25,7 @@
         $conn = new mysqli($host, $user, $password,$database);
 
         //print_r($_SESSION);
-        $sqlQuery = "INSERT INTO events (image) VALUES ('{$newName}');";
+        $sqlQuery = "INSERT INTO events(name, image) VALUES ('$name','{$newName}');";
 		if ($conn->query($sqlQuery) === TRUE) {
 			echo "New record created successfully";
 		} else {
