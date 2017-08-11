@@ -1,3 +1,4 @@
+// going/interested/not interested event card function 
 $(document).ready(function(){
 $(".not-interested").click(function() {
         $(this).parent()

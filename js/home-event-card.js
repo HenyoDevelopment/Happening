@@ -1,3 +1,4 @@
+// event card size for home page
 $(document).ready(function() {
     function setEventCardSizeHome() {
         var eventCardWidth = $('#col-restriction').width() - 40;

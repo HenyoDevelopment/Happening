@@ -1,3 +1,4 @@
+// event card size for most pages
 $(document).ready(function() {
     function setEventCardSize() {
         var eventCardWidth = $('#col-restriction').width();

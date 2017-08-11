@@ -339,6 +339,4 @@
             
         </div>
     </body>
-    <!-- <script src="js/polyfill.js"></script>
-    <script src="js/scrollsnap.js"></script> -->
 </html>
