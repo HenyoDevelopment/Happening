@@ -281,7 +281,7 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/nandos.jpg" alt="Technica 2017">
                                     </div>
-                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="event-size-indicator-small"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
                                             <h4 class="card-title"><a class="event-link">Free &#9679; Free Chicken at Nandos College Park!</a></h4>
@@ -294,7 +294,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/one-quarter-lit.png" alt="one quarter lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
