@@ -161,8 +161,8 @@
 										<div class="btn-holder">
 											<input type="submit" name="submit" value="Give Me Access!">
 										</div>
-										<div class="text-container">
-										</div>
+										<!-- <div class="text-container">
+										</div> -->
 									</form>
 									<!--SIGN UP FORM END-->
 								</div>

@@ -85,9 +85,9 @@ input {
     background-color: #fff;
     border: 1px solid transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
     outline: none;
 }
+
 input:focus {
     border-bottom: 1px solid #282828;
 }

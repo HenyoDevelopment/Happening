@@ -31,7 +31,7 @@
             </a>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="navbar-search" placeholder="Search Event or User">
+                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
@@ -178,7 +178,6 @@
                     </div>
                     <!--USER ONE END-->
 
-                    
                     <!--USER TWO START-->
                     <div class="friend-card">
                         <div class="friend-events">
@@ -235,8 +234,97 @@
                     </div>
                     <!--USER TWO END-->
 
+                    <!--TAG ONE START-->
+                    <div class="friend-card">
+                        <div class="friend-events">
+                            <div class="friend-events-container">
+                                <!--TECHNICA CARD START-->
+                                <div class="event-card">
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
+                                    </div>
+                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
+                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                            <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#womenshackathon</a> &#183; 
+                                                <a class="tags">#freefood</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="dropup-container">
+                                                <div class="dropup div-inline">
+                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="interest-item not-interested">Not Interested</a>
+                                                        <a class="interest-item interested">Interested</a>
+                                                        <a class="interest-item going">Going</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--TECHNICA CARD END-->
+
+                                <!--NANDOS CARD START-->
+                                <div class="event-card">
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/nandos.jpg" alt="Technica 2017">
+                                    </div>
+                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">Free &#9679; Free Chicken at Nandos College Park!</a></h4>
+                                            <p class="card-event-info">August 16 @ 6:00 PM &#183; 0.9 miles away</p>
+                                            <p class="card-event-info">Midsize Event &#183; 278 attendees </p>
+                                            <p class="card-text">mrshuly, fetnaa, and 32 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#freefood</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="dropup-container">
+                                                <div class="dropup div-inline">
+                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="interest-item not-interested">Not Interested</a>
+                                                        <a class="interest-item interested">Interested</a>
+                                                        <a class="interest-item going">Going</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--NANDOS CARD END-->
+                            </div>
+                        </div>
+                        <div class="friend-info">
+                            <div class="card-header">
+                                <div class="header-text"><a class="user">#freefood</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--TAG ONE END-->
+                    
                 </div>
             </div>
+            <!--HOME FEED END-->
 
             <!--FOOTER START-->
             <div class="row">
