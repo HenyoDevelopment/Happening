@@ -93,7 +93,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/login-signup.css">
+		<link rel="stylesheet" href="css/get-started.css">
 		</script>
     </head> 
 

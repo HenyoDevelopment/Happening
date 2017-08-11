@@ -232,7 +232,7 @@
     <body>
         
         <!--NAVIGATION BAR-->
-<!--         <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
@@ -248,11 +248,10 @@
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
- -->
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-8 col-sm-offset-2">
-
+                  
                     <!-- FORM START -->
                     <p id="error"> </p>
                     <div class="form-container">
