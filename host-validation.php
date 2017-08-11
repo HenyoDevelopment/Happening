@@ -1,6 +1,8 @@
+
 <?php
 	require_once("open-database.php");
-	// if ($_SESSION['image_location']) { 	
+	//IGNORE THIS FOR NOW 
+	//if ($_SESSION['image_location']) { 	
 	// 	$_SESSION['og_location'] = $_SESSION['image_location'];
 	// } 
 	// require_once("open-sessions.php");
@@ -24,11 +26,8 @@
 		/************************/
         /*  Image Processing     /
         /************************/
-
 		$upload_dir = "img/event_images";	// The directory for the images to be saved in
 		$upload_path = $upload_dir."/";		// The path to where the image will be saved
-
-		echo $_SESSION['image_location'];
 
 		if ($image_name) {
 
@@ -38,8 +37,6 @@
 		} else {
 			$_SESSION['image_location'] = $_SESSION['og_location'];
 		}
-		
-		echo "<br>".$_SESSION['image_location']."asadasd";
 
 		//Create the upload directory with the right permissions if it doesn't exist
 		if(!is_dir($upload_dir)){
@@ -92,14 +89,14 @@
     <body>
         
         <!--NAVIGATION BAR-->
-<!--         <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
+            <form class="="form-group">
                     <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
-                </div>
+                </div>navbar-form navbar-left">
+                <div class
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="host-nav active" href="#">Host</a></li>
@@ -107,7 +104,7 @@
                 <li><a href="explore.html">Explore</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
-        </div> -->
+        </div>
 
         <div class="container main-content">
             <div class="row row-centered">

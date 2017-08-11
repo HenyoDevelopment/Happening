@@ -2,25 +2,32 @@
      //Access the Database and do things with it
     require_once("open-database.php"); 
 
+    $required = true;
+    //If not editting, CLEAR ALL SESSIONS
+    if(!isset($_POST["edit"])) {
+        require_once("open-sessions.php"); 
+        $required = false;
+    }
 
     //USED if the size of the image is Valid
-      function return_bytes($val) {
-        $val = trim($val);
-        $last = strtolower($val[strlen($val)-1]);
+    function return_bytes($val) { //2M
+        $val_len = strlen($val);
+        $bytes = substr($val_len, 0, $val_len - 1); // "2"
+        $last = strtolower($val[strlen($val)-1]); // "M"
         switch($last) {
             // The 'G' modifier is available since PHP 5.1.0
             case 'g':
-                $val *= (1024 * 1024 * 1024); //1073741824
+                $bytes *= (1024 * 1024 * 1024); //1073741824
                 break;
             case 'm':
-                $val *= (1024 * 1024); //1048576    
+                $bytes *= (1024 * 1024); //1048576    
                 break;
             case 'k':
-                $val *= 1024;
+                $bytes *= 1024;
                 break;
         }
 
-        return $val;
+        return $bytes;
     }
 
     $bytes = return_bytes(ini_get('upload_max_filesize'));
@@ -182,6 +189,12 @@
         }
 
         document.getElementById("error").innerHTML  = error;
+
+        //Makes the page go back up when there's an input error
+        if (!return_value) {
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+        }
+
         return return_value;
 
         // jQuery(function($) {
@@ -219,7 +232,7 @@
     <body>
         
         <!--NAVIGATION BAR-->
-        <div class="navbar navbar-default navbar-fixed-top">
+<!--         <div class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
@@ -229,96 +242,68 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="host-nav active" href="#host">Host</a></li>
+                <li><a class="host-nav active" href="#">Host</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="explore.html">Explore</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
-
-<<<<<<< HEAD
-        <!-- FORM START -->
-        <div>   
-
-            <br/><br/><br/><br/>
-            <p id="error"> </p>
-            <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                <input required type="text" name="event-name" id="event-name" placeholder="Event Name" /><br/>
-                <input required type="text" name="location" id="location" placeholder="Location" /><br/>
-
-                Start: <input required type="date" name="date-start" id="date-start" /> <input required type="time" name="time-start" id="time-start" /><br/>
-                End: <input required type="date" name="date-end" id="date-end" /> <input required type="time" name="time-end" id="time-end"/><br/>
-                Expected Attendance: 
-                <select required name="event-size" id="event-size">
-                    <option value="huge">Huge (150 or more)</option>
-                    <option value="big">Big (80-149)</option>
-                    <option value="medium">Medium (26-80)</option>
-                    <option value="small">Small (25 and below)</option>
-                </select> <br/>
-
-                <textarea name="description" id="description" rows="4" cols="50"  placeholder="Description"></textarea><br/>
-
-                <!-- Find a default image for this -->
-                <img id="preview" style="max-width: 400px;" />
-                <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" > 
-                <input type="submit" name="submit" value="Create Event" />
-            </form>
-=======
+ -->
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-8 col-sm-offset-2">
 
-                <!-- FORM START -->
-                <p id="error"> </p>
-                <div class="form-container">
-                    <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                        <div class="event-img-preview">
-                          <img id="preview" style="max-width: 400px;"/>
-                        </div>
-                        <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Event Title:</div> 
-                            <input class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
-                        </div>
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Location:</div> 
-                            <input class="col-sm-8" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
-                        </div>
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Start:</div> 
-                            <input class="col-sm-4" type="date" name="date-start" id="date-start"/> 
-                            <input class="col-sm-3 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
-                        </div>
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">End:</div> 
-                            <input class="col-sm-4" type="date" name="date-end" id="date-end"/> 
-                            <input class="col-sm-3 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
-                        </div>
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Expected Attendance:</div>
-                            <select class="col-sm-8" name="event-size" id="event-size">
-                                <option value="small">Small (25 and below)</option>  
-                                <option value="medium">Medium (26-80)</option>
-                                <option value="big">Big (80-149)</option>
-                                <option value="huge">Huge (150 or more)</option>
-                            </select>
-                        </div>
+                    <!-- FORM START -->
+                    <p id="error"> </p>
+                    <div class="form-container">
+                        <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
+                            <div class="event-img-preview">
+                              <img src="<?php echo $_SESSION['image_location']?>" id="preview" style="max-width: 400px;"/>
+                            </div>
+                            <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Event Title:</div> 
+                                <input required class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Location:</div> 
+                                <input required class="col-sm-8" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Start:</div> 
+                                <input required class="col-sm-4" type="date" name="date-start" id="date-start"/> 
+                                <input required class="col-sm-3 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">End:</div> 
+                                <input required class="col-sm-4" type="date" name="date-end" id="date-end"/> 
+                                <input required class="col-sm-3 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Expected Attendance:</div>
+                                <select required class="col-sm-8" name="event-size" id="event-size">
+                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="small">Small (25 and below)</option>  
+                                    <option value="medium">Medium (26-80)</option>
+                                    <option value="big">Big (80-149)</option>
+                                    <option value="huge">Huge (150 or more)</option>
+                                </select>
+                            </div>
 
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Description:</div> 
-                            <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
-                        </div>
-                        <div class="row event-input-line">
-                            <div class="col-sm-4 input-description">Tags:</div> 
-                            <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose attractive tags"/>
-                        </div>
-                        <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
-                    </form>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Description:</div> 
+                                <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Tags:</div> 
+                                <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
+                            </div>
+                            <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
+                        </form>
                 </div>
                 <!-- FORM END -->
 
             </div>
->>>>>>> origin/master
         </div>
 
         <!--FOOTER START-->
