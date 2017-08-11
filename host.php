@@ -236,34 +236,6 @@
             </ul>
         </div>
 
-<<<<<<< HEAD
-        <!-- FORM START -->
-        <div>   
-
-            <br/><br/><br/><br/>
-            <p id="error"> </p>
-            <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                <input required type="text" name="event-name" id="event-name" placeholder="Event Name" /><br/>
-                <input required type="text" name="location" id="location" placeholder="Location" /><br/>
-
-                Start: <input required type="date" name="date-start" id="date-start" /> <input required type="time" name="time-start" id="time-start" /><br/>
-                End: <input required type="date" name="date-end" id="date-end" /> <input required type="time" name="time-end" id="time-end"/><br/>
-                Expected Attendance: 
-                <select required name="event-size" id="event-size">
-                    <option value="huge">Huge (150 or more)</option>
-                    <option value="big">Big (80-149)</option>
-                    <option value="medium">Medium (26-80)</option>
-                    <option value="small">Small (25 and below)</option>
-                </select> <br/>
-
-                <textarea name="description" id="description" rows="4" cols="50"  placeholder="Description"></textarea><br/>
-
-                <!-- Find a default image for this -->
-                <img id="preview" style="max-width: 400px;" />
-                <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)" > 
-                <input type="submit" name="submit" value="Create Event" />
-            </form>
-=======
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-8 col-sm-offset-2">
@@ -278,7 +250,7 @@
                         <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Event Title:</div> 
-                            <input class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
+                            <input class="col-sm-8" type="text" name="event-name" id="event-name" required="true" placeholder="Add a short and sweet title"/>
                         </div>
                         <div class="row event-input-line">
                             <div class="col-sm-4 input-description">Location:</div> 
@@ -318,7 +290,6 @@
                 <!-- FORM END -->
 
             </div>
->>>>>>> origin/master
         </div>
 
         <!--FOOTER START-->
