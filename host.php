@@ -124,7 +124,7 @@
                         return_value = false;
                 }
                 if (same_day) {
-                    if (hour[0] + 1 <= current_time) {
+                    if (parseInt(s) + 1 <= current_time) {
                         error += "<br>Start Time is too soon or has already passed.";
                         return_value = false;
                     }
@@ -147,7 +147,8 @@
             return_value = false;
         }
 
-        if (end_date[0] > start_date[0] + 2) {
+        if (end_date[0] > parseInt(start_date[0]) + 2) {
+            alert(end_date[0] + " " + start_date[0])
             error += "<br>End date is too far in the future.";
             return_value = false;
         } 
@@ -239,7 +240,7 @@
                 <input required type="text" name="location" id="location" placeholder="Location" /><br/>
 
                 Start: <input required type="date" name="date-start" id="date-start" /> <input required type="time" name="time-start" id="time-start" /><br/>
-                End: <input type="date" name="date-end" id="date-end" /> <input type="time" name="time-end" id="time-end"/><br/>
+                End: <input required type="date" name="date-end" id="date-end" /> <input required type="time" name="time-end" id="time-end"/><br/>
                 Expected Attendance: 
                 <select required name="event-size" id="event-size">
                     <option value="huge">Huge (150 or more)</option>
