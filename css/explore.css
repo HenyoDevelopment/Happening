@@ -1,5 +1,5 @@
 .search-query {
-    margin-bottom: 15px;
+    margin: 0 10px 15px 10px;
 }
 
 .search-query > h3 {
@@ -45,11 +45,11 @@
 }
 
 .no-results {
-    margin-bottom: 400px;
+    margin: 0 5px 400px 5px;
 }
 
 @media only screen and (max-width: 767px){    
     .main-content{
-        margin-top: 140px;
+        margin-top: 120px;
     }
 }
