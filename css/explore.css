@@ -1,3 +1,10 @@
+.search-query {
+    margin-bottom: 15px;
+}
+
+.search-query > h3 {
+    margin-top: 0;
+}
 
 #search-stream .nav-pills {
     text-align: center;

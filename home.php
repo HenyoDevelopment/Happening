@@ -312,6 +312,7 @@
                                     </div>
                                 </div>
                                 <!--NANDOS CARD END-->
+                                
                             </div>
                         </div>
                         <div class="friend-info">
