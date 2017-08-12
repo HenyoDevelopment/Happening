@@ -188,12 +188,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
-    /* -webkit-scroll-snap-points-x: repeat(100%);
-    -ms-scroll-snap-points-x: repeat(100%);
-        scroll-snap-points-x: repeat(100%);
-    scroll-snap-type: mandatory;
-    scroll-snap-destination: 50% 50%;
-    -ms-overflow-style: -ms-autohiding-scrollbar; */
     padding: 0 5px;
 }
 
@@ -206,17 +200,21 @@ h1, h2, h3, h4, h5, h6, h7 p {
     margin: 0 auto;
 }
 
-.event-card {
+.card {
     display: inline-block;
     background: white;
     border-radius: 2px;
     white-space: normal;
     margin: 10px 5px 0px 5px;
-    /* scroll-snap-coordinate: 50% 50%; */
 }
 
-.event-switchers {
-    margin: 0 0 10px 0;
+.event-card {
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-card:hover {
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .card-header {

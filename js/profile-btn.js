@@ -1,5 +1,6 @@
+// toggle between following and not following
 $(document).ready(function() {
-    //toggle class on click
+    //toggles class on click
     $(".profile-btn").on('click', '.other-profile-following', function() {
         $(this).attr('class', 'other-profile-follow');
     });

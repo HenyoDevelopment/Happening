@@ -19,7 +19,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         
-        <script src="js/card.js"></script>
+        <script src="js/home-event-card.js"></script>
+        <script src="js/interested.js"></script>
     </head> 
 
     <body>
@@ -46,14 +47,14 @@
         <!--USERS START-->
         <div class="container main-content">
             <div class="row row-centered">
-                <div class="col-sm-8 col-sm-offset-2">
+                <div id="col-restriction" class="col-sm-8 col-sm-offset-2">
 
                     <!--USER ONE START-->
                     <div class="friend-card">
                         <div class="friend-events">
                             <div class="friend-events-container">
                                 <!--MOONRISE CARD START-->
-                                <div class="event-card">
+                                <div class="card">
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
                                     </div>
@@ -90,7 +91,7 @@
                                 <!--MOONRISE CARD END-->
 
                                 <!--BITCAMP CARD START-->
-                                <div class="event-card">
+                                <div class="card">
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/bitcamp.png" alt="Bitcamp 2017">
                                     </div>
@@ -128,7 +129,7 @@
                                 <!--BITCAMP CARD END-->
                             
                                 <!--TECHNICA CARD START-->
-                                <div id="event-3" class="event-card">
+                                <div id="event-3" class="card">
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
@@ -184,7 +185,7 @@
                             <div class="friend-events-container">
                                 <div class="center-event-cards"> <!-- ONLY HAVE THIS DIV FOR USERS WITH ONE EVENT CARD -->
                                     <!--TECHNICA CARD START-->
-                                    <div class="event-card">
+                                    <div class="card">
                                         <div class="img-container vertical-align">
                                             <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                         </div>
@@ -239,7 +240,7 @@
                         <div class="friend-events">
                             <div class="friend-events-container">
                                 <!--TECHNICA CARD START-->
-                                <div class="event-card">
+                                <div class="card">
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
@@ -277,7 +278,7 @@
                                 <!--TECHNICA CARD END-->
 
                                 <!--NANDOS CARD START-->
-                                <div class="event-card">
+                                <div class="card">
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/nandos.jpg" alt="Technica 2017">
                                     </div>
@@ -338,6 +339,4 @@
             
         </div>
     </body>
-    <!-- <script src="js/polyfill.js"></script>
-    <script src="js/scrollsnap.js"></script> -->
 </html>

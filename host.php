@@ -1,6 +1,13 @@
 <?php 
      //Access the Database and do things with it
     require_once("open-database.php"); 
+
+    $required = true;
+    //If not editting, CLEAR ALL SESSIONS
+    if(!isset($_POST["edit"])) {
+        require_once("open-sessions.php"); 
+        $required = false;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +31,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <script src="js/host.js"></script>
-        <script type = "text/javascript" src = "host-validation.js"> </script>
-
+        <script type="text/javascript" src="js/event-validation.js"></script>
     </head> 
 
     <body>
