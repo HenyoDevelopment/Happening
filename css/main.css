@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 }
 
 .event-card:hover {
-    border-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.4);
 }
 
 .card-header {

@@ -215,7 +215,7 @@
         <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
 
-        <title>Create an Event</title>
+        <title>Create Event</title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
