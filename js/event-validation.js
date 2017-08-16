@@ -137,8 +137,7 @@ function validateForm() {
         return_value = false;
     }
 
-    if (end_date[0] > parseInt(start_date[0]) + 2) {
-        alert(end_date[0] + " " + start_date[0])
+    if (end_date[0] > parseInt(start_date[0]) + 2) {z
         error += "<br>End date is too far in the future.";
         return_value = false;
     } 

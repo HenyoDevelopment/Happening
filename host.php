@@ -2,12 +2,12 @@
      //Access the Database and do things with it
     require_once("open-database.php"); 
 
-    $required = true;
-    //If not editting, CLEAR ALL SESSIONS
-    if(!isset($_POST["edit"])) {
-        require_once("open-sessions.php"); 
-        $required = false;
-    }
+    // $required = true;
+    // //If not editting, CLEAR ALL SESSIONS
+    // if(!isset($_POST["edit"])) {
+    //     require_once("open-sessions.php"); 
+    //     $required = false;
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -63,9 +63,17 @@
                     <div class="form-container">
                         <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
                             <div class="event-img-preview">
-                              <img src="<?php echo $_SESSION['image_location']?>" id="preview" style="max-width: 400px;"/>
+                              <img id="preview" style="max-width: 400px;"/>
                             </div>
                             <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                            <div class="row event-input-line">
+                                <div class="col-sm-4 input-description">Privacy: </div>
+                                <select required class="col-sm-8" name="privacy" id="privacy">
+                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="public">Public (Everyone can see it)</option>  
+                                    <option value="private">Private (Only people you invite can see it)</option>
+                                </select>
+                            </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-4 input-description">Event Title:</div> 
                                 <input required class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>

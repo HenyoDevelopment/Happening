@@ -109,7 +109,6 @@
 						<div id="exTab3">	
 							<ul class="nav nav-pills center-pills">
 								<li class="active"><a href="#1b" data-toggle="tab">Sign In</a></li>
-								<?php $_SESSION["dir"] = "#1b"?>
 								<li><a href="#2b" data-toggle="tab">Sign Up</a></li>
 							</ul>
 							<div class="tab-content clearfix">

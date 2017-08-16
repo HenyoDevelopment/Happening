@@ -13,30 +13,27 @@
 	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){ 
 
 		$image_name = time() . '_' . stripslashes($_FILES['fileToUpload']['name']);
-		$_SESSION['event_name'] = $event_name = trim($_POST["event-name"]);
-		$_SESSION['location'] 	= $location = trim($_POST["location"]);
-		$_SESSION['start_date'] = $start_date = trim($_POST["date-start"]);
-		$_SESSION['start_time'] = $start_time = trim($_POST["time-start"]);
-		$_SESSION['end_date'] 	= $end_date = trim($_POST["date-end"]);
-		$_SESSION['end_time'] 	= $end_time = trim($_POST["time-end"]);
-		$_SESSION['size'] 		= $size = trim($_POST["event-size"]);
-		$_SESSION['description']= $description = trim($_POST["description"]);
-		$_SESSION['tags'] 		= $tags = trim($_POST["tags"]);
-		
+		$privacy = trim($_POST["privacy"]);
+		$event_name = trim($_POST["event-name"]);
+		$location = trim($_POST["location"]);
+		$start_date = trim($_POST["date-start"]);
+		$start_time = trim($_POST["time-start"]);
+		$end_date = trim($_POST["date-end"]);
+		$end_time = trim($_POST["time-end"]);
+		$size = trim($_POST["event-size"]);
+		$description = trim($_POST["description"]);
+		$tags = explode("," , trim($_POST["tags"]));
+		$tags = json_encode($tags);
+
+		$event_host = $_SESSION['usernameValue'];
+		$event_id = $event_host."%".$event_name."%".$start_date;
+
+		//print_r($_SESSION);
 		/************************/
         /*  Image Processing     /
         /************************/
 		$upload_dir = "img/event_images";	// The directory for the images to be saved in
-		$upload_path = $upload_dir."/";		// The path to where the image will be saved
-
-		if ($image_name) {
-
-			//Delete the old picture then change
-			$_SESSION['image_name'] =  $image_name; 
-			$_SESSION['image_location'] = $upload_path.$image_name;		
-		} else {
-			$_SESSION['image_location'] = $_SESSION['og_location'];
-		}
+		$upload_path = $upload_dir."/";		// The path to where the image will be imap_savebody(imap_stream, file, msg_number)
 
 		//Create the upload directory with the right permissions if it doesn't exist
 		if(!is_dir($upload_dir)){
@@ -46,19 +43,40 @@
 
 		move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $upload_path.$image_name);
 
-		// if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $upload_path.$image_name)) {
-  //           echo 'File ' .$image_name. ' succesfully copied';
-  //       }
 
-  //       $conn = new mysqli($host, $user, $password,$database);
 
-  //       //print_r($_SESSION);
-  //       $sqlQuery = "INSERT INTO events(name, image) VALUES ('$name','{$image_name}');";
-		// if ($conn->query($sqlQuery) === TRUE) {
-		// 	echo "New record created successfully";
-		// } else {
-		// 	echo "Error: " . $conn->error;
-		// }
+		/************************/
+        /*  Database Processing     /
+        /************************/
+        $conn = new mysqli($host, $user, $password,$database);
+
+        //print_r($_SESSION);
+        $sqlQuery = "INSERT INTO events(event_id, name, host, image, location, start_date, start_time, end_date, end_time, size, description, tags, privacy) VALUES (
+        						'$event_id',
+      							'$event_name',
+        						'$event_host',
+        						'{$image_name}',
+        						'$location',
+        						'$start_date',
+        						'$start_time',
+        						'$end_date',
+        						'$end_time', 
+        						'$size',
+        						'$description',
+        						'$tags',
+        						'privacy'
+       					 );";
+
+		if ($conn->query($sqlQuery) === TRUE) {
+			echo "New record created successfully";
+		} else {
+
+			//Check if event Already Exists
+			$str = $conn->error;
+			if (strpos($str, 'Duplicate') !== false) {
+				echo "Error: Event Already Exists.";
+			}
+		}
     }	
 ?>
 
@@ -88,39 +106,17 @@
 
     <body>
         
-        <!--NAVIGATION BAR-->
-        <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="explore.html">
-                <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
-            </a>
-            <form class="="form-group">
-                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
-                </div>navbar-form navbar-left">
-                <div class
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="host-nav active" href="#">Host</a></li>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="profile.html">Profile</a></li>
-            </ul>
-        </div>
+    	<!-- FOR DEBUGGING PURPOSES ONLY -->
 
         <div class="container main-content">
             <div class="row row-centered">
                 <div class="col-sm-8 col-sm-offset-2">
 
                 	Preview: <br>
-					
-					<form action="home.php">
-					    <input type="submit" value="Publish" />
-					</form>
 
-					<form action="edit.php" method="post">
-					    <input type="submit" value="Edit" name="edit" />
-					</form>
-
-	                <img src="<?php echo $_SESSION['image_location']?>" style="max-width: 400px;"> <br>
+	                <img src="<?php echo $upload_path.$image_name?>" style="max-width: 400px;"> <br>
+	                <?php //echo $event_id."<br>" ?>
+	                Privacy: 			<?php echo $privacy."<br>" ?>
 					Name: 				<?php echo $event_name."<br>" ?>
 					Location:			<?php echo $location."<br>" ?>
 					Start: 				<?php echo $start_date." " ?>

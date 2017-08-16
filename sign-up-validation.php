@@ -28,7 +28,7 @@
 			
 			 //SAVE CREDENTIALS TO LOCAL MEMORY	
 			$_SESSION["passwordValue"] = $password;
-			$_SESSION["usernameValue"] = $email;
+			$_SESSION["usernameValue"] = $username;
 						
 			//Redirect to their own home page
 			header("Location: home.php");

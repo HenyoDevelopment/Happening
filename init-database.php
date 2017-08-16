@@ -50,20 +50,22 @@
 		//Create table for ALL events
 		//Notes: Image is 16MB at most
 		//Private is either 1 or 0; 0 is FALSE and 1 is TRUE
-		//event_ID = event-name + date + host
+		//event_ID = host + event-name + start-date
 		$conn->query("CREATE TABLE $table2(
-						event_ID varchar(100) primary key,
+						event_id varchar(100) primary key,
 						name varchar(50), 
-						host varchar(50), 
-						event_date date, 
-						event_time time, 
-						address varchar(100), 
+						host varchar(50),
+						start_date date, 
+						start_time time, 
+						end_date date, 
+						end_time time, 
+						location varchar(100), 
 						description varchar(500), 
 						image MEDIUMBLOB,
 						tags varchar(100),
 						users_going varchar(100),
-						expected int,
-						private int
+						size varchar(10),
+						privacy varchar(10)
 						)");
 		
 		//Create table for users
