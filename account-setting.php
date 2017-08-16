@@ -27,6 +27,9 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+        <script src="js/host.js"></script>
+        <script type="text/javascript" src="js/account-setting.js"></script>
+
     </head> 
 
     <body>
@@ -55,9 +58,9 @@
                     <!-- FORM START -->
                     <p id="error"> </p>
                     <div class="form-container">
-                        <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
+                        <form name="create-event-form" action="php-helper/account-setting-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
                             <div class="event-img-preview">
-                              <img id="preview" style="max-width: 400px;"/>
+                              <img required id="preview" style="max-width: 400px;"/>
                             </div>
                             <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
                             <div class="row event-input-line">
