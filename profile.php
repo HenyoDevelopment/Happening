@@ -29,7 +29,7 @@
 
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="explore.html">
+            <a class="navbar-brand" href="explore.php">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -40,7 +40,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="host-nav" href="host.php">Host</a></li>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
+                <li><a href="explore.php">Explore</a></li>
                 <li><a class="active" href="#profile">Profile</a></li>
             </ul>
         </div>
