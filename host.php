@@ -70,7 +70,7 @@
                             <div class="event-img-preview">
                               <img id="preview" style="max-width: 400px;"/>
                             </div>
-                            <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                            <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
                             <div class="row event-input-line">
                                 <div class="col-sm-4 input-description">Privacy: </div>
                                 <select required class="col-sm-8" name="privacy" id="privacy">

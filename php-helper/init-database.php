@@ -78,7 +78,7 @@
 						email varchar(50) primary key,
 						username varchar(50), 
 						password varchar(250),
-						name varchar(50),
+						name varchar(50) NOT NULL,
 						profile_picture MEDIUMBLOB,
 						hosted_events varchar(100),
 						interested_events varchar(100),

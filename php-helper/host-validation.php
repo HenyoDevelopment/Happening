@@ -32,7 +32,7 @@
 		/************************/
         /*  Image Processing     /
         /************************/
-		$upload_dir = "img/event_images";	// The directory for the images to be saved in
+		$upload_dir = "../img/event_images";	// The directory for the images to be saved in
 		$upload_path = $upload_dir."/";		// The path to where the image will be imap_savebody(imap_stream, file, msg_number)
 
 		//Create the upload directory with the right permissions if it doesn't exist
@@ -94,13 +94,13 @@
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/host.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/host.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="js/host.js"></script>
+        <script src="../js/host.js"></script>
 
     </head> 
 
