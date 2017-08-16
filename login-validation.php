@@ -31,14 +31,14 @@
 					$passed = true;
                     
                     //Redirect to HOME
-                    header("Location: ../home.php");
+                    header("Location: home.php");
                 }
             }
 			
 			if ($passed == false) {
 				//Username & Password do not match. Ask to input again
 				$_SESSION["invalid_match"] = true;
-				header("Location: ../get-started.php");
+				header("Location: get-started.php");
 			}
     } else {
         $error = "Retrieving records failed.".mysqli_error($db);

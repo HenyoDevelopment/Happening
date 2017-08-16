@@ -1,13 +1,3 @@
-<?php
-    require_once("php-helper/open-database.php");
-
-    //If user is not logged in, prompt user to login
-    if (!isset($_SESSION["usernameValue"])) {
-        header("Location: get-started.php");
-    }
-?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,7 +27,7 @@
         
         <!--NAVIGATION BAR START-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="explore.php">
+            <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -48,8 +38,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="host-nav" href="host.php">Host</a></li>
                 <li><a class="active" href="#home">Home</a></li>
-                <li><a href="explore.php">Explore</a></li>
-                <li><a href="profile.php">Profile</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
         <!--NAVIGATION BAR END-->

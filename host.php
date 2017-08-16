@@ -1,11 +1,6 @@
 <?php 
      //Access the Database and do things with it
-    require_once("php-helper/open-database.php"); 
-
-    //If user is not logged in, prompt user to login
-    if (!isset($_SESSION["usernameValue"])) {
-        header("Location: get-started.php");
-    }
+    require_once("open-database.php"); 
 
     // $required = true;
     // //If not editting, CLEAR ALL SESSIONS
@@ -43,7 +38,7 @@
         
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="explore.php">
+            <a class="navbar-brand" href="explore.html">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -54,8 +49,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="host-nav active" href="#">Host</a></li>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="explore.php">Explore</a></li>
-                <li><a href="profile.php">Profile</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="profile.html">Profile</a></li>
             </ul>
         </div>
 
@@ -66,7 +61,7 @@
                     <!-- FORM START -->
                     <p id="error"> </p>
                     <div class="form-container">
-                        <form name="create-event-form" action="php-helper/host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
+                        <form name="create-event-form" action="host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
                             <div class="event-img-preview">
                               <img id="preview" style="max-width: 400px;"/>
                             </div>

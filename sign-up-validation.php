@@ -31,7 +31,7 @@
 			$_SESSION["usernameValue"] = $username;
 						
 			//Redirect to their own home page
-			header("Location: ../home.php");
+			header("Location: home.php");
 		}
 	}
 ?>
