@@ -1,3 +1,13 @@
+<?php
+    require_once("php-helper/open-database.php");
+
+    //If user is not logged in, prompt user to login
+    if (!isset($_SESSION["usernameValue"])) {
+        header("Location: get-started.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,7 +39,7 @@
 
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
-            <a class="navbar-brand" href="explore.html">
+            <a class="navbar-brand" href="explore.php">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
             </a>
             <form class="navbar-form navbar-left">
@@ -40,7 +50,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="host-nav" href="host.php">Host</a></li>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
+                <li><a href="explore.php">Explore</a></li>
                 <li><a class="active" href="#profile">Profile</a></li>
             </ul>
         </div>
@@ -68,8 +78,9 @@
                                                 &#9662;
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right profile-settings-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item settings-item" href="#">Account Settings</a>
-                                                <a class="dropdown-item settings-item" href="#">Log Out</a>
+                                                <a class="dropdown-item settings-item" href="account-setting.php">Account Settings</a>
+
+                                                <a class="dropdown-item settings-item" href="get-started.php">Log Out</a>
                                             </div>
                                         </div>
                                     </div>
