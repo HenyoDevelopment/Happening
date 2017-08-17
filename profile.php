@@ -33,7 +33,7 @@
         $followers = $recordArray['followers'];
         $following = $recordArray['following'];
         $hosted_events = $recordArray['hosted_events'];
-        $interested = $recordArray['interested_events'];
+        $interested_events = $recordArray['interested_events'];
         $going_events = $recordArray['going_events'];
     }
 
@@ -50,14 +50,19 @@
          //echo $profile_pic;
     }
 
+    //OBTAIN FOLLOWERS/FOLLOWING Data and count
     $followers = json_decode($followers, true);
     $followers_len = count($followers);
     $following = json_decode($following, true);
     $following_len = count($following);
 
+    //Obtain all events info
     $hosted_events = json_decode($hosted_events, true);
     $interested_events = json_decode($interested_events, true);
     $going_events = json_decode($going_events, true);
+
+    //Combine all events and sort which one is in the past.
+    $all_events = array_merge($hosted_events, $interested_events, $going_events)
 
 ?>
 
@@ -71,7 +76,7 @@
         <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
 
-        <title>Happening Discover Page</title>
+        <title><?php echo "@".$username?></title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
@@ -90,7 +95,7 @@
 
     <body>
 
-        <!--NAVIGATION BAR
+        <!--NAVIGATION BAR -->
         <div class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="explore.php">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
@@ -107,7 +112,6 @@
                 <li><a class="active" href="#profile">Profile</a></li>
             </ul>
         </div>
-        -->
     
         <div class="container main-content">
             <div class="row row-centered">
@@ -148,6 +152,9 @@
                                 </div>
                                 <div class="line-three">
                                     <div class="bio">
+                                        <p><?php echo $description?></p>
+                                        <p></p>
+                                        <p></p>
                                     </div>
                                 </div>
                                 <hr>

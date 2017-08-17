@@ -77,7 +77,7 @@
 		$conn->query("CREATE TABLE $table1(
 						email varchar(50),
 						username varchar(15), 
-						password varchar(50),
+						password varchar(250),
 						name varchar(50) NOT NULL,
 						profile_picture varchar(250) NOT NULL,
 						hosted_events varchar(1000) NOT NULL DEFAULT '{}',

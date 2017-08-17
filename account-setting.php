@@ -73,7 +73,7 @@
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-4 input-description">Description:</div> 
-                                <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
+                                <textarea class="col-sm-8" name="description" id="description"  placeholder="Say something about yourself"></textarea>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Update Profile"/>
                             <input class="btn" id="submit-event" type="submit" name="cancel" value="Cancel"/>

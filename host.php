@@ -110,6 +110,11 @@
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
                         </form>
+
+                        <form action="home.php">
+                             <input class="btn" id="submit-event" type="submit" name="submit" value="Cancel"/>
+                        </form>
+
                 </div>
                 <!-- FORM END -->
 

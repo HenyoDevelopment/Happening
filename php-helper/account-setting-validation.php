@@ -16,6 +16,10 @@
 		$description = trim($_POST["description"]);
 		$username = $_SESSION['usernameValue'];
 
+		if(stripslashes($_FILES['fileToUpload']['name']) == "") {
+			$image_name = "";
+		}
+
 		//print_r($_SESSION);
 		/************************/
         /*  Image Processing     /
