@@ -55,7 +55,7 @@
         						'$event_id',
       							'$event_name',
         						'$event_host',
-        						'{$image_name}',
+        						'$image_name',
         						'$location',
         						'$start_date',
         						'$start_time',

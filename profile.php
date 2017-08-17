@@ -1,3 +1,55 @@
+<?php
+    require_once("php-helper/open-database.php");
+
+    //If user is not logged in, prompt user to login
+    if (!isset($_SESSION["usernameValue"])) {
+        header("Location: get-started.php");
+    }
+?>
+
+<?php
+    $username = $_SESSION["usernameValue"];
+    $profile_pic = "";
+    $points = 0;
+    $name = "";
+    $description = "";
+
+    $followers = "";
+    $following = "";
+
+    $hosted_events = "";
+    $interested_events = "";
+    $going_events = "";
+
+    $sqlQuery = "SELECT * FROM `users` WHERE username ='$username';";
+    $result = mysqli_query($db, $sqlQuery);
+
+    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        $profile_pic = $recordArray['profile_picture'];
+        $points = $recordArray['points'];
+        $name = $recordArray['name'];
+        $description = $recordArray['description'];
+        $followers = $recordArray['followers'];
+        $following = $recordArray['following'];
+        $hosted_events = $recordArray['hosted_events'];
+        $interested = $recordArray['interested_events'];
+        $going_events = $recordArray['going_events'];
+    }
+
+    $upload_dir = "img/";
+    $img_dir = "profile-photos/";
+    $default_img = "default0.jpg";
+
+    //USE DEFAULT PHOTO IF USER HAS NOT UPLOADED A PROFILE PHOTO
+    if ($profile_pic == "") {
+        $profile_pic = $upload_dir."default-img/".$default_img;
+        //echo "empty";
+    } else {
+        $profile_pic = $upload_dir.$img_dir.$profile_pic;
+         //echo $profile_pic;
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,7 +79,7 @@
 
     <body>
 
-        <!--NAVIGATION BAR-->
+        <!--NAVIGATION BAR
         <div class="navbar navbar-default navbar-fixed-top">
             <a class="navbar-brand" href="explore.php">
                 <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
@@ -44,7 +96,7 @@
                 <li><a class="active" href="#profile">Profile</a></li>
             </ul>
         </div>
-
+    -->
         <div class="container main-content">
             <div class="row row-centered">
                 <div id="col-restriction" class="col-sm-8 col-sm-offset-2">
@@ -53,14 +105,14 @@
                     <div class="row row-centered profile-container">
                         <div class="col-sm-4">
                             <div class="profile-img-container">
-                                <img class="profile-photo" src="img/profile-photos/sani.png" alt="profile photo"> </img>
+                                <img class="profile-photo" src="<?php echo $profile_pic?>" alt="profile photo"> </img>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="user-info">
                                 <div class="line-one">
                                     <div class="username">
-                                        <h2>@sanisideup</h2>
+                                        <h2>@<?php echo $username?></h2>
                                     </div>
                                     <div class="dropdown-container">
                                         <div class="dropdown div-inline">
@@ -68,8 +120,8 @@
                                                 &#9662;
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right profile-settings-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item settings-item" href="#">Account Settings</a>
-                                                <a class="dropdown-item settings-item" href="#">Log Out</a>
+                                                <a class="dropdown-item settings-item" href="account-setting.php">Account Settings</a>
+                                                <a class="dropdown-item settings-item" href="get-started.php">Log Out</a>
                                             </div>
                                         </div>
                                     </div>
@@ -79,7 +131,7 @@
                                 </div>
                                 <div class="line-two">
                                     <div class="fullname">
-                                        <h3>Sani Djaya</h3>
+                                        <h3><?php echo $name?></h3>
                                     </div>
                                 </div>
                                 <div class="line-three">
@@ -92,7 +144,7 @@
                                 <hr>
                                 <div class="line-four">
                                     <div class="points">
-                                        <h4><b>8</b></h4>
+                                        <h4><b><?php echo $points?></b></h4>
                                         <h4>points</h4>
                                     </div>
                                     <div class="connections">

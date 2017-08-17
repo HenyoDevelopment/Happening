@@ -61,7 +61,7 @@
 						end_time time, 
 						location varchar(100), 
 						description varchar(500), 
-						image MEDIUMBLOB,
+						image varchar(250),
 						tags varchar(100),
 						users_going varchar(100),
 						size varchar(10),
@@ -75,18 +75,20 @@
 		//profile_picture is 16MB at most
 		//Private is either 1 or 0; 0 is FALSE and 1 is TRUE
 		$conn->query("CREATE TABLE $table1(
-						email varchar(50) primary key,
+						email varchar(50),
 						username varchar(50), 
 						password varchar(250),
 						name varchar(50) NOT NULL,
-						profile_picture MEDIUMBLOB,
+						profile_picture varchar(250) NOT NULL,
 						hosted_events varchar(100),
 						interested_events varchar(100),
 						going_events varchar(100),
 						followers varchar(100),
 						following varchar(100),
-						points int,
-						private int
+						points int NOT NULL DEFAULT 0,
+						privacy varchar(10),
+						description varchar(500),
+						CONSTRAINT user_id PRIMARY KEY (email, username)
 						)");
 	}
 	

@@ -1,5 +1,9 @@
-<?php 
-	require_once("open-database.php"); 
+<?php
+    require_once("php-helper/open-database.php");
+
+    //For Loggint out
+	unset($_SESSION["passwordValue"]);
+    unset($_SESSION["usernameValue"]);
 ?>
 
 <?php 
@@ -117,7 +121,7 @@
 										<h3>Log in to continue</h3>
 									</div>
 									<!--LOGIN FORM START: Enter Username, and Password-->
-									<form action="login-validation.php" method="post">
+									<form action="php-helper/login-validation.php" method="post">
 										<div class="text-container error">
 											<?php 
 												//If login_validation.php detects invalid match = true
@@ -149,7 +153,7 @@
 											sign-up-validation.php - Inserts Data to DATABASE if ()		   - Vait passes validateForm()
 											validateFormlidates if the User Input Valid/acceptable
 									-->
-									<form name="sign-up-form" action="sign-up-validation.php" method="post" onSubmit="return validateForm()">
+									<form name="sign-up-form" action="php-helper/sign-up-validation.php" method="post" onSubmit="return validateForm()">
 										<div class="text-container error">
 											<p id="invalid-password"> </p>
 										</div>

@@ -5,6 +5,7 @@
 
 <?php
 	if (isset($_POST["submit"])) {
+
 		//Get USER INPUT
 		$email = trim($_POST["email"]);
 		$name = NULL;
@@ -17,12 +18,14 @@
 		}
 		
 		//INSERT USERT INPUT TO DATABASE w/ private being false
-		$sqlQuery = sprintf("insert into $table1 (email, username, password, name, private) values ('%s', '%s', '%s', '%s', 0)", $email, $username, $password, $name);
+		$sqlQuery = sprintf("insert into $table1 (email, username, password, name, privacy) values ('%s', '%s', '%s', '%s', 0)", $email, $username, $password, $name);
 		$result = mysqli_query($db, $sqlQuery);
 		
 		//Check if successful
 		if (!$result) {
+
 			$error = "Inserting records failed.".mysqli_error($db);
+			echo $error;
 			//echo $error; //Debugging purposes
 		} else {
 			
@@ -31,7 +34,7 @@
 			$_SESSION["usernameValue"] = $username;
 						
 			//Redirect to their own home page
-			header("Location: home.php");
+			header("Location: ../home.php");
 		}
-	}
+	} 
 ?>

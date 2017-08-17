@@ -37,12 +37,12 @@
         $sqlQuery = "UPDATE users SET profile_picture='$image_name', privacy='$privacy', description='$description' WHERE username='$username'";
 
 		if ($conn->query($sqlQuery) === TRUE) {
-			echo "New record created successfully";
+			header("Location: ../profile.php");
 		} else {
 
 			//Check if event Already Exists
 			$str = $conn->error;
-			echo "Error:". $str
+			echo "Error:". $str;
 		}
     }	
 ?>
