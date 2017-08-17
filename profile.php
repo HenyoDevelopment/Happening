@@ -24,6 +24,7 @@
     $sqlQuery = "SELECT * FROM `users` WHERE username ='$username';";
     $result = mysqli_query($db, $sqlQuery);
 
+    //OBTAINING DATA FROM DATABASE
     while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $profile_pic = $recordArray['profile_picture'];
         $points = $recordArray['points'];
@@ -48,6 +49,16 @@
         $profile_pic = $upload_dir.$img_dir.$profile_pic;
          //echo $profile_pic;
     }
+
+    $followers = json_decode($followers, true);
+    $followers_len = count($followers);
+    $following = json_decode($following, true);
+    $following_len = count($following);
+
+    $hosted_events = json_decode($hosted_events, true);
+    $interested_events = json_decode($interested_events, true);
+    $going_events = json_decode($going_events, true);
+
 ?>
 
 <!DOCTYPE html>
@@ -96,7 +107,8 @@
                 <li><a class="active" href="#profile">Profile</a></li>
             </ul>
         </div>
-    -->
+        -->
+    
         <div class="container main-content">
             <div class="row row-centered">
                 <div id="col-restriction" class="col-sm-8 col-sm-offset-2">
@@ -136,9 +148,6 @@
                                 </div>
                                 <div class="line-three">
                                     <div class="bio">
-                                        <p>21 | 5'2" // D [M] V</p> 
-                                        <p>Indonesian by blood</p>
-                                        <p>Do what you love. Be a good person. Those are your only two jobs in life.</p>
                                     </div>
                                 </div>
                                 <hr>
@@ -150,12 +159,12 @@
                                     <div class="connections">
                                         <div class="dropdown div-inline connections-center">
                                             <button class="btn connections-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <h4><b>415</b></h4>
+                                                <h4><b><?php echo $followers_len + $following_len?></b></h4>
                                                 <h4>connections</h4>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><b>200</b> followers</a>
-                                                <a class="dropdown-item" href="#"><b>215</b> following</a>
+                                                <a class="dropdown-item" href="#"><b><?php echo $followers_len?></b> followers</a>
+                                                <a class="dropdown-item" href="#"><b><?php echo $following_len?></b> following</a>
                                             </div>
                                         </div>
                                     </div>

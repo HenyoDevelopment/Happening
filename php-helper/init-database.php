@@ -53,7 +53,7 @@
 		//event_ID = host + event-name + start-date
 		$conn->query("CREATE TABLE $table2(
 						event_id varchar(100) primary key,
-						name varchar(50), 
+						name varchar(15), 
 						host varchar(50),
 						start_date date, 
 						start_time time, 
@@ -76,18 +76,18 @@
 		//Private is either 1 or 0; 0 is FALSE and 1 is TRUE
 		$conn->query("CREATE TABLE $table1(
 						email varchar(50),
-						username varchar(50), 
-						password varchar(250),
+						username varchar(15), 
+						password varchar(50),
 						name varchar(50) NOT NULL,
 						profile_picture varchar(250) NOT NULL,
-						hosted_events varchar(100),
-						interested_events varchar(100),
-						going_events varchar(100),
-						followers varchar(100),
-						following varchar(100),
+						hosted_events varchar(1000) NOT NULL DEFAULT '{}',
+						interested_events varchar(1000) NOT NULL DEFAULT '{}',
+						going_events varchar(1000 )NOT NULL DEFAULT '{}',
+						followers varchar(1000) NOT NULL DEFAULT '{}',
+						following varchar(1000) NOT NULL DEFAULT '{}',
 						points int NOT NULL DEFAULT 0,
-						privacy varchar(10),
-						description varchar(500),
+						privacy varchar(10) NOT NULL DEFAULT 'public',
+						description varchar(500) NOT NULL DEFAULT '',
 						CONSTRAINT user_id PRIMARY KEY (email, username)
 						)");
 	}

@@ -4,6 +4,10 @@
 ?>
 
 <?php
+	if(isset($_POST["cancel"])) {
+		header("Location: ../profile.php");
+	}
+
 	//If Submit Button is hit and an Image was chosen
 	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){ 
 

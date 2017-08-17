@@ -65,7 +65,7 @@
                             <input type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
                             <div class="row event-input-line">
                                 <div class="col-sm-4 input-description">Privacy: </div>
-                                <select required class="col-sm-8" name="privacy" id="privacy">
+                                <select class="col-sm-8" name="privacy" id="privacy">
                                     <option value="" disabled selected>Select your option</option>
                                     <option value="public">Public (Everyone can see your profile)</option>  
                                     <option value="private">Private (Only people who follows you can see your profile)</option>
@@ -76,6 +76,7 @@
                                 <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Update Profile"/>
+                            <input class="btn" id="submit-event" type="submit" name="cancel" value="Cancel"/>
                         </form>
                 </div>
                 <!-- FORM END -->

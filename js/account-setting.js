@@ -44,9 +44,12 @@ function validateForm() {
     //Uploaded file MUST be an Image
     var dotIndex = image.lastIndexOf('.');
     var ext = (image.substring(dotIndex).toLowerCase());
-    if ((ext != ".jpg") && (ext != ".jpeg") && (ext != ".png") && (ext != ".gif")) {
-        error += "<br>Upload a valid image file.";
-        return_value = false;
+    
+    if (image) {
+        if ((ext != ".jpg") && (ext != ".jpeg") && (ext != ".png") && (ext != ".gif")) {
+            error += "<br>Upload a valid image file.";
+            return_value = false;
+        }
     }
 
     //IF image size is bigger than maximum possible size
