@@ -138,6 +138,7 @@ a.tags {
 }
 
 .host-info {
+    margin-top: 5px;
     display: inline-block;
 }
 
@@ -156,25 +157,24 @@ a.tags {
 }
 
 .fullname > h3 {
-    font-size: 18px;
     font-weight: 600;
     margin: 0px;
 }
 
 .user-stats {
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .points,
 .connections {
-    width: 40%;
+    width: 30%;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
 }
 
 .points {
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .connections-center {
@@ -184,7 +184,7 @@ a.tags {
 .points > h4,
 .connections-btn > h4 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .connections-btn {
@@ -210,9 +210,28 @@ a.tags {
     font-weight: 300;
 }
 
+.dropdown-item {
+    display: block;
+}
+
+a.dropdown-item {
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item > b {
+    margin-right: 3px;
+}
+
+a.dropdown-item:hover {
+    border-bottom: 1px solid #282828;
+}
+
 .host-img-container {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     float: right;
     overflow: hidden;
     border-radius: 50%;
@@ -231,9 +250,8 @@ a.tags {
     margin: auto;
 }
 
-.bio > p {
-    margin: 0px;
-    color: rgba(0,0,0,0.6);
+.bio {
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 767px){
@@ -247,11 +265,16 @@ a.tags {
         font-size: 12px;
     }
 
+    .username > h2 {
+        font-size: 18px;
+    }
+
     .main-content {
         margin-top: 100px;
     }
 
-
+    .points > h4,
+    .connections-btn > h4,
     #event-info .nav-pills > li > a { 
         font-size: 12px;
     }
@@ -259,5 +282,10 @@ a.tags {
     .host-img-container {
         height: 80px;
         width: 80px;
+    }
+
+    .dropdown-item {
+        min-width: 60px;
+        font-size: 10px;
     }
 }
