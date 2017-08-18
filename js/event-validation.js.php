@@ -50,7 +50,7 @@ function validateForm() {
     }
 
     //IF image size is bigger than maximum possible size
-    var bytes = return_bytes("<?php echo ini_get('upload_max_filesize')?>");
+    var bytes = return_bytes("<?php echo ini_get('upload_max_filesize');?>"); //2m
     var upload_max_filesize = bytes;
     if (file && file.size > upload_max_filesize) {
         error += "<br>File is too large. Must be 2MB or less.";
@@ -113,9 +113,11 @@ function validateForm() {
                     error += "<br>Start date Day already passed.";
                     return_value = false;
             }
+
             if (same_day) {
-                if (parseInt(s) + 1 <= current_time) {
-                    error += "<br>Start Time is too soon or has already passed.";
+
+                if (parseInt(hour[0]) + 1 <= current_time) {
+                    error += "<br>Start Time is too soon or has already passed";
                     return_value = false;
                 }
             }
@@ -126,7 +128,8 @@ function validateForm() {
     var date_end = document.getElementById('date-end').value;
     var time_end = document.getElementById('time-end').value;
     var end_date = date_end.split("-");
-    var end_hour = time_start.split(":");
+    var time_end = document.getElementById('time-end').value;
+    var end_hour = time_end.split(":");
 
     var same_year = (start_date[0] == end_date[0]);
     var same_month = (start_date[1] == end_date[1]);
@@ -155,8 +158,9 @@ function validateForm() {
             }
 
             if (same_day) {
-                if (end_hour[0] + 1 <= hour[0] + 1) {
-                    error += "<br>Start Time is too soon or has already passed.";
+                alert(parseInt(end_hour[0]) + 1 <= parseInt(hour[0]) + 1)
+                if (parseInt(end_hour[0]) + 1 <= parseInt(hour[0]) + 1) {
+                    error += "<br>End Time is too soon or has already passed.";
                     return_value = false;
                 }
             }              

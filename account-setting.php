@@ -28,7 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <script src="js/host.js"></script>
-        <script type="text/javascript" src="js/account-setting.js"></script>
+        <script type="text/javascript" src="js/account-setting.js.php"></script>
 
     </head> 
 
@@ -76,8 +76,12 @@
                                 <textarea class="col-sm-8" name="description" id="description"  placeholder="Say something about yourself"></textarea>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Update Profile"/>
-                            <input class="btn" id="submit-event" type="submit" name="cancel" value="Cancel"/>
                         </form>
+
+                        <form action="profile.php">
+                             <input class="btn" id="submit-event" type="submit" name="submit" value="Cancel"/>
+                        </form>
+
                 </div>
                 <!-- FORM END -->
 

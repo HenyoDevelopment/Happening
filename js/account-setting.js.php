@@ -1,3 +1,7 @@
+//THIS FILE IS IN PHP SO THAT JAVASCRIPT CCAN READ 
+//Php echo ini_get('upload_max_filesize')
+
+
 //Function for showing the image preview
 function preview_image(event) {
     var reader = new FileReader();
@@ -53,7 +57,7 @@ function validateForm() {
     }
 
     //IF image size is bigger than maximum possible size
-    var bytes = return_bytes("<?php echo ini_get('upload_max_filesize')?>");
+    var bytes = return_bytes("<?php echo ini_get('upload_max_filesize');?>"); //
     var upload_max_filesize = bytes;
     if (file && file.size > upload_max_filesize) {
         error += "<br>File is too large. Must be 2MB or less.";

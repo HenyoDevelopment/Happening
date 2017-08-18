@@ -6,14 +6,22 @@
 	// 	$_SESSION['og_location'] = $_SESSION['image_location'];
 	// } 
 	// require_once("open-sessions.php");
+
+	function getExtension($str) {
+         $i = strrpos($str,".");
+         if (!$i) { return ""; } 
+         $l = strlen($str) - $i;
+         $ext = substr($str,$i+1,$l);
+         return $ext;
+	}
 ?>
 
 <?php
 
 	//If Submit Button is hit and an Image was chosen
-	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){ 
+	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){
 
-		$image_name = time() . '_' . stripslashes($_FILES['fileToUpload']['name']);
+		$image_name = time() . '_' . $filename;
 		$privacy = trim($_POST["privacy"]);
 		$event_name = trim($_POST["event-name"]);
 		$location = trim($_POST["location"]);
@@ -43,8 +51,6 @@
 		}
 
 		move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $upload_path.$image_name);
-
-
 
 		/************************/
         /*  Database Processing     /

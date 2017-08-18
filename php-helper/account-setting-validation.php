@@ -4,16 +4,21 @@
 ?>
 
 <?php
-	if(isset($_POST["cancel"])) {
-		header("Location: ../profile.php");
-	}
-
 	//If Submit Button is hit and an Image was chosen
 	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){ 
 
 		$image_name = time() . '_' . stripslashes($_FILES['fileToUpload']['name']);
-		$privacy = trim($_POST["privacy"]);
-		$description = trim($_POST["description"]);
+		$privacy = "public";
+		$description = "";
+		
+		if (isset($_POST["privacy"])) {
+			$privacy = trim($_POST["privacy"]);
+		}
+
+		if (isset($_POST["description"])) {
+			$description = trim($_POST["description"]);
+		}
+
 		$username = $_SESSION['usernameValue'];
 
 		if(stripslashes($_FILES['fileToUpload']['name']) == "") {
@@ -34,6 +39,26 @@
 		}
 
 		move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $upload_path.$image_name);
+
+
+		///////////////////////////////////////
+		//	Deletes the old profile photo    //
+		//////////////////////////////////////
+	    $sqlQuery = "SELECT profile_picture FROM `users` WHERE username ='$username';";
+	    $result = mysqli_query($db, $sqlQuery);
+
+	    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+	    	$image = $recordArray['profile_picture'];
+
+	    	echo $image;
+	    	if ($image) {
+	    		$upload_dir = "img/";
+   				$img_dir = "profile-photos/";
+
+   				unlink("../".$upload_dir.$img_dir.$image);
+	    	}
+	    }
+
 
 
 		/************************/
