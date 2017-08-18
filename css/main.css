@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
     background: white;
     border-radius: 2px;
     white-space: normal;
-    margin: 10px 5px 0px 5px;
+    margin-top: 10px;
 }
 
 .event-card {
@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .dropdown-menu {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .div-inline{
@@ -404,7 +404,7 @@ a.interest-item:hover {
 }
 
 .row-centered {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -422,6 +422,11 @@ a.interest-item:hover {
 
 .footer > h6 > a {
     color: #1c94e0;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0 10px 0;
 }
 
 /*MOBILE SIZE FIXES*/

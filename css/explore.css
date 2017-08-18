@@ -10,7 +10,6 @@
     text-align: center;
     margin-bottom: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 #search-stream .nav-pills > li {
@@ -51,5 +50,9 @@
 @media only screen and (max-width: 767px){    
     .main-content{
         margin-top: 120px;
+    }
+
+    #search-stream .nav-pills > li > a {
+        font-size: 12px;
     }
 }

@@ -170,7 +170,6 @@ hr {
     text-align: center;
     margin-bottom: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 #event-stream .nav-pills > li {
@@ -271,7 +270,8 @@ hr {
     }
 
     .points > h4,
-    .connections-btn > h4 {
+    .connections-btn > h4,
+    #event-stream .nav-pills > li > a {
         font-size: 12px;
     }
 }

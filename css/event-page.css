@@ -1,0 +1,138 @@
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.event-main-container {
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.event-img-container {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;
+}
+
+.event-img {
+    width: 100%;
+    height: auto;
+}
+
+.event-block-container {
+    margin: 2px 10px 0 10px;
+}
+
+.top-row {
+    margin-bottom: 10px;
+}
+
+.event-title {
+    display: inline-block;
+    margin-top: -10px;
+    width: 80%;
+}
+
+.event-size-text {
+    border-bottom: 2px solid lightsalmon;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.interest-btn {
+    margin-top: -2px;
+}
+
+.card-btn-container {
+    margin: 0;
+}
+
+#event-info .nav-pills {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#event-info .nav-pills > li {
+    margin: 0 auto;
+    width: 50%;
+    float: left; 
+    text-align: center;
+}
+
+#event-info .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+    display: block;
+    width: 100%; 
+    height: 40px;
+    padding: 0px; 
+    line-height: 40px;
+    background-color: #fff;
+    color: #282828;
+}
+
+#event-info .nav-pills > li > a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#event-info .nav-pills > li.active > a {
+    font-weight: bold;
+    border-bottom: 2px solid #ff944d;
+}
+
+#event-info .tab-content {
+    background-color: #fff;
+}
+
+.description-info-container > p > a {
+    color: #1c94e0;
+}
+
+.google-map-container {
+    width: 100%;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+.google-map {
+    border: 0;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px){
+    h1 {
+        font-size: 20px;
+    }
+
+    h2,
+    h3,
+    p {
+        font-size: 12px;
+    }
+
+    #event-info .nav-pills > li > a { 
+        font-size: 12px;
+    }
+}

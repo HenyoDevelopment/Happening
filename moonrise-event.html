@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
+
+        <title>Happening Discover Page</title>
+        <meta name="description" content="Happening App">
+        <meta name="author" content="The Happening Team">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/event-page.css">
+        <link rel="stylesheet" href="css/icon.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        <script src="js/general-event-card.js"></script>
+        <script src="js/interested.js"></script>
+    </head> 
+
+    <body>
+
+        <!--NAVIGATION BAR-->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <a class="navbar-brand" href="explore.html">
+                <img class="navbar-brand-logo" alt="Happening Logo" src="img/happening-logo.png">
+            </a>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="host-nav" href="host.php">Host</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="explore.php">Explore</a></li>
+                <li><a href="profile.php">Profile</a></li>
+            </ul>
+        </div>
+
+        <div class="container main-content">
+            <div class="row row-centered">
+                <div id="col-restriction" class="col-sm-10 col-sm-offset-1">
+                    <div class="event-main-container">
+                        <div class="event-img-container vertical-align">
+                            <img class="event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
+                        </div>
+                        <div class="event-size-indicator-huge"></div>
+                        <div class="event-block-container">
+                            <div class="top-row">
+                                <div class="event-title">
+                                    <h1>Moonrise Festival 2017</h1>
+                                    <h2>Sat Aug 12 @ 10:00 am</h2>
+                                    <h2>5201 Park Heights Ave, Baltimore, MD 21215</h2>
+                                    <h2 class="event-size-text">Huge Event<h2>
+                                    <p class="card-tags">
+                                        <a class="tags">#musicfestival</a>
+                                    </p>
+                                </div>
+                                <div class="card-btn-container">
+                                    <div class="card-btn">
+                                        <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
+                                    </div>
+                                    <div class="dropup-container">
+                                        <div class="dropup div-inline">
+                                            <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i id="event-interest" class="card-icon icon-checkmark"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="interest-item not-interested">Not Interested</a>
+                                                <a class="interest-item interested">Interested</a>
+                                                <a class="interest-item going">Going</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="event-info">
+                            <ul class="nav nav-pills center-pills">
+                                <li class="active"><a href="#1b" data-toggle="tab">Event Info</a></li>
+                                <li><a href="#2b" data-toggle="tab">Host Info</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content clearfix">
+                        <div class="tab-pane active" id="1b">
+                            <div class="description-info-container col-sm-10 col-sm-offset-1">
+                                <h3> Description </h3>
+                                <p>Offical Event Page for Moonrise Festival 2017</p>
+                                <p>Join Dillstradamus, Porter Robinson, Pretty Lights LIVE, RL Grime, Run The Jewels, Madeon, Migos & more at Moonrise Festival, returning to Pimlico Race Course on August 12th & 13th</p>
+                                <p>For the full lineup, latest news, && tickets visit us at www.MoonriseFestival.com</p>
+                                <p>For add ons such as lockers, shuttles, parking & hotels please visit us at <a>http://moonrisefestival.com/addons/index.html</a></p>
+                                <p>Relive the Magic of Moonrise Festival 2016 with the Official Aftermovie: <a>https://youtu.be/f2zCGx0cnS0</a></p>
+                                <p>Enter for FREE tickets: <a>https://www.hive.co/l/2rnbw</a></p>
+                                <p><a>www.MoonriseFestival.com</a></p>
+                                <div class="google-map-container">
+                                    <iframe class="google-map" src="https://www.google.com/maps/embed/v1/place?q=5201 Park Heights Ave, Baltimore, MD 21215&key=AIzaSyCjQSM5o0Dg1iSo8LXohGxBJyo_OHo-jKs" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane active" id="2b">
+                            <div class="host-info-container col-sm-10 col-sm-offset-1">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!--FOOTER START-->
+            <div class="row">
+                <div class="footer"> 
+                    <h6><a>About Us</a></h6>
+                    <h6>&copy; 2017 Happening</h6>
+                    <h6><a>Contact</a></h6>
+                </div>
+            </div>
+            <!--FOOTER END-->
+
+        </div>
+    </body>
+</html>
