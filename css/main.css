@@ -513,6 +513,10 @@ hr {
     a.interest-item {
         font-size: 12px;
     }
+    
+    .follow-btn {
+        width: 30%;
+    }
 
     .footer > h6 {
         display: inline-block;

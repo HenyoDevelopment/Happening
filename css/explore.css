@@ -95,13 +95,6 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.follow-btn {
-    float: right;
-    vertical-align: middle;
-    width: 20%;
-    border: 1px solid rgba(0,0,0,0.1);
-}
-
 .no-results {
     margin: 0 5px 400px 5px;
 }
