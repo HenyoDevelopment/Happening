@@ -104,12 +104,12 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/bitcamp.png" alt="Bitcamp 2017">
                                     </div>
-                                    <div class="event-size-indicator-large"></div>
+                                    <div class="event-size-indicator-big"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
                                             <h4 class="card-title"><a class="event-link">Free &#9679; Bitcamp 2017</a></h4>
                                             <p class="card-event-info">Sat Apr 1 @ 5:00 PM &#183; 2 miles away</p>
-                                            <p class="card-event-info">Large Event &#183; 489 attendees</p>
+                                            <p class="card-event-info">Big Event &#183; 489 attendees</p>
                                             <p class="card-text">yoyyenn, farahpg, and 10 others</p>
                                             <p class="card-tags">
                                                 <a class="tags">#freefood</a> &#183; 
@@ -142,12 +142,12 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
-                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="event-size-indicator-medium"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
                                             <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
                                             <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                            <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
                                             <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                             <p class="card-tags">
                                                 <a class="tags">#womenshackathon</a> &#183; 
@@ -198,12 +198,12 @@
                                         <div class="img-container vertical-align">
                                             <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                         </div>
-                                        <div class="event-size-indicator-midsize"></div>
+                                        <div class="event-size-indicator-medium"></div>
                                         <div class="card-block">
                                             <div class="card-text-container">
                                                 <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
                                                 <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                                <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                                <p class="card-event-info">Medium Event &#183; 907 attendees </p>
                                                 <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                                 <p class="card-tags">
                                                     <a class="tags">#womenshackathon</a> &#183; 
@@ -253,12 +253,12 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
-                                    <div class="event-size-indicator-midsize"></div>
+                                    <div class="event-size-indicator-medium"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
                                             <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
                                             <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                            <p class="card-event-info">Midsize Event &#183; 907 attendees </p>
+                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
                                             <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                             <p class="card-tags">
                                                 <a class="tags">#womenshackathon</a> &#183; 
@@ -296,7 +296,7 @@
                                         <div class="card-text-container">
                                             <h4 class="card-title"><a class="event-link">Free &#9679; Free Chicken at Nandos College Park!</a></h4>
                                             <p class="card-event-info">August 16 @ 6:00 PM &#183; 0.9 miles away</p>
-                                            <p class="card-event-info">Midsize Event &#183; 278 attendees </p>
+                                            <p class="card-event-info">Small Event &#183; 278 attendees </p>
                                             <p class="card-text">mrshuly, fetnaa, and 32 others</p>
                                             <p class="card-tags">
                                                 <a class="tags">#freefood</a>

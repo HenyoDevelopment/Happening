@@ -60,10 +60,32 @@ a.tags {
     width: 80%;
 }
 
-.event-size-text {
+.event-size-text-huge:before {
     border-bottom: 2px solid lightsalmon;
     display: inline-block;
     margin-top: 0px;
+    content: "Huge Event";
+}
+
+.event-size-text-big:before {
+    border-bottom: 2px solid orange;
+    display: inline-block;
+    margin-top: 0px;
+    content: "Big Event";
+}
+
+.event-size-text-medium:before {
+    border-bottom: 2px solid red;
+    display: inline-block;
+    margin-top: 0px;
+    content: "Medium Event";
+}
+
+.event-size-text-small:before {
+    border-bottom: 2px solid darkred;
+    display: inline-block;
+    margin-top: 0px;
+    content: "Small Event";
 }
 
 .interest-btn {

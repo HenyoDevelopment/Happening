@@ -277,13 +277,13 @@ h1, h2, h3, h4, h5, h6, h7 p {
     background-color: lightsalmon;
 }
 
-.event-size-indicator-large {
+.event-size-indicator-big {
     width: 100%;
     height: 5px;
     background-color: orange;
 }
 
-.event-size-indicator-midsize {
+.event-size-indicator-medium {
     width: 100%;
     height: 5px;
     background-color: red;
@@ -293,7 +293,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
     width: 100%;
     height: 5px;
     background-color: darkred;
-
 }
 
 .card-title {
