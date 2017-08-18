@@ -1,71 +1,3 @@
-<?php
-    require_once("php-helper/open-database.php");
-
-    //If user is not logged in, prompt user to login
-    if (!isset($_SESSION["usernameValue"])) {
-        header("Location: get-started.php");
-    }
-?>
-
-<?php
-    $username = $_SESSION["usernameValue"];
-    $profile_pic = "";
-    $points = 0;
-    $name = "";
-    $description = "";
-
-    $followers = "";
-    $following = "";
-
-    $hosted_events = "";
-    $interested_events = "";
-    $going_events = "";
-
-    $sqlQuery = "SELECT * FROM `users` WHERE username ='$username';";
-    $result = mysqli_query($db, $sqlQuery);
-
-    //OBTAINING DATA FROM DATABASE
-    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-        $profile_pic = $recordArray['profile_picture'];
-        $points = $recordArray['points'];
-        $name = $recordArray['name'];
-        $description = $recordArray['description'];
-        $followers = $recordArray['followers'];
-        $following = $recordArray['following'];
-        $hosted_events = $recordArray['hosted_events'];
-        $interested_events = $recordArray['interested_events'];
-        $going_events = $recordArray['going_events'];
-    }
-
-    $upload_dir = "img/";
-    $img_dir = "profile-photos/";
-    $default_img = "default0.jpg";
-
-    //USE DEFAULT PHOTO IF USER HAS NOT UPLOADED A PROFILE PHOTO
-    if ($profile_pic == "") {
-        $profile_pic = $upload_dir."default-img/".$default_img;
-        //echo "empty";
-    } else {
-        $profile_pic = $upload_dir.$img_dir.$profile_pic;
-         //echo $profile_pic;
-    }
-
-    //OBTAIN FOLLOWERS/FOLLOWING Data and count
-    $followers = json_decode($followers, true);
-    $followers_len = count($followers);
-    $following = json_decode($following, true);
-    $following_len = count($following);
-
-    //Obtain all events info
-    $hosted_events = json_decode($hosted_events, true);
-    $interested_events = json_decode($interested_events, true);
-    $going_events = json_decode($going_events, true);
-
-    //Combine all events and sort which one is in the past.
-    $all_events = array_merge($hosted_events, $interested_events, $going_events)
-
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -76,7 +8,7 @@
         <link rel="shortcut icon" href="/Happening/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Happening/favicon.ico" type="image/x-icon">
 
-        <title><?php echo "@".$username?></title>
+        <title id="title"></title>
         <meta name="description" content="Happening App">
         <meta name="author" content="The Happening Team">
 
@@ -91,6 +23,8 @@
         <script src="js/general-event-card.js"></script>
         <script src="js/interested.js"></script>
         <script src="js/profile-btn.js"></script>
+
+        <script type="text/javascript" src="js/profile-data.js.php"></script>
     </head> 
 
     <body>
@@ -121,14 +55,14 @@
                     <div class="row row-centered profile-container">
                         <div class="col-sm-4">
                             <div class="profile-img-container">
-                                <img class="profile-photo" src="<?php echo $profile_pic?>" alt="profile photo"> </img>
+                                <img id="profile_picture" class="profile-photo" src="" alt="profile photo"> </img>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="user-info">
                                 <div class="line-one">
                                     <div class="username">
-                                        <h2>@<?php echo $username?></h2>
+                                        <h2 id="username"></h2>
                                     </div>
                                     <div class="dropdown-container">
                                         <div class="dropdown div-inline">
@@ -147,31 +81,29 @@
                                 </div>
                                 <div class="line-two">
                                     <div class="fullname">
-                                        <h3><?php echo $name?></h3>
+                                        <h3 id="name"></h3>
                                     </div>
                                 </div>
                                 <div class="line-three">
                                     <div class="bio">
-                                        <p><?php echo $description?></p>
-                                        <p></p>
-                                        <p></p>
+                                        <p id="description"></p>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="line-four">
                                     <div class="points">
-                                        <h4><b><?php echo $points?></b></h4>
+                                        <h4><b id="points"></b></h4>
                                         <h4>points</h4>
                                     </div>
                                     <div class="connections">
                                         <div class="dropdown div-inline connections-center">
                                             <button class="btn connections-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <h4><b><?php echo $followers_len + $following_len?></b></h4>
+                                                <h4><b id="connections"></b></h4>
                                                 <h4>connections</h4>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><b><?php echo $followers_len?></b> followers</a>
-                                                <a class="dropdown-item" href="#"><b><?php echo $following_len?></b> following</a>
+                                                <a class="dropdown-item" href="#"><b id="followers" ></b> followers</a>
+                                                <a class="dropdown-item" href="#"><b id="following" ></b> following</a>
                                             </div>
                                         </div>
                                     </div>
