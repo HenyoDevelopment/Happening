@@ -30,6 +30,7 @@
         
         <script src="js/general-event-card.js"></script>
         <script src="js/interested.js"></script>
+        <script src="js/follow-btn.js"></script>
     </head> 
 
     <body>
@@ -211,57 +212,39 @@
 
                             <!--EVENT RESULTS START-->
                             <div class="tab-pane" id="2b">
-
-                                <!--NANDOS CARD START-->
-                                <div class="card event-card">
-                                    <div class="card-header">
-                                        <div class="header-user">
-                                            <img class="header-user-img" src="img/profile-photos/nandos-user.png" alt="">
-                                        </div>
-                                        <div class="header-text"><a class="user">nandos-cp</a></div>
-                                    </div>
-                                    <div class="img-container vertical-align">
-                                        <img class="card-event-img" src="img/events/nandos.jpg" alt="Technica 2017">
-                                    </div>
-                                    <div class="event-size-indicator-small"></div>
-                                    <div class="card-block">
-                                        <div class="card-text-container">
-                                            <h4 class="card-title"><a class="event-link">Free &#9679; Free Chicken at Nandos College Park!</a></h4>
-                                            <p class="card-event-info">August 16 @ 6:00 PM &#183; 0.9 miles away</p>
-                                            <p class="card-event-info">Small Event &#183; 278 attendees </p>
-                                            <p class="card-text">mrshuly, fetnaa, and 32 others</p>
-                                            <p class="card-tags">
-                                                <a class="tags">#freefood</a>
-                                            </p>
-                                        </div>
-                                        <div class="card-btn-container">
-                                            <div class="card-btn">
-                                                <img class="lit-rating" src="img/one-quarter-lit.png" alt="one quarter lit">
-                                            </div>
-                                            <div class="dropup-container">
-                                                <div class="dropup div-inline">
-                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                        <a class="interest-item not-interested">Not Interested</a>
-                                                        <a class="interest-item interested">Interested</a>
-                                                        <a class="interest-item going">Going</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="no-results">
+                                    <h3 class="no-results-text"></h3>
                                 </div>
-                                <!--NANDOS CARD END-->
-
                             </div>
                             <!--EVENT RESULTS END-->
 
                             <!--PEOPLE RESULTS START-->
                             <div class="tab-pane" id="3b">
-                                <div class="no-results">
-                                    <h3>There were no results :(</h3>
+                                <div class="people-results">
+                                    <div class="user-card">
+                                        <div class="user-img-container">
+                                            <img class="user-img" src="img/profile-photos/gabe.png" alt="">
+                                        </div> 
+                                        <div class="user-info-container">
+                                            <div class="username-text"><a class="user">@mrshuly</a></div>   
+                                            <div class="fullname-text"><p>Gabriel Vallangca</p></div>
+                                        </div>
+                                        <div class="btn follow-btn">
+                                            <div class="other-profile-following"></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-card">
+                                        <div class="user-img-container">
+                                            <img class="user-img" src="img/profile-photos/sani.png" alt="">
+                                        </div> 
+                                        <div class="user-info-container">
+                                            <div class="username-text"><a class="user">@sanisideup</a></div>   
+                                            <div class="fullname-text"><p>Sani Djaya</p></div>
+                                        </div>
+                                        <div class="btn follow-btn">
+                                            <div class="other-profile-following"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!--PEOPLE RESULTS END-->

@@ -43,8 +43,71 @@
     background-color: #fff;
 }
 
+.user-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 70px;
+    margin-bottom: 15px;
+    
+}
+
+.user-img-container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    vertical-align: top;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.user-info-container {
+    display: inline-block;
+}
+
+.username-text {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 300;
+    height: auto;
+    margin-left: 10px;
+    color: #282828;
+}
+
+.fullname-text {
+    display: block;
+    font-size: 14px;
+    height: auto;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.follow-btn {
+    float: right;
+    vertical-align: middle;
+    width: 20%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
 .no-results {
     margin: 0 5px 400px 5px;
+}
+
+.no-results-text:before {
+    content: "There were no results :("
 }
 
 @media only screen and (max-width: 767px){    

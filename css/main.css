@@ -406,6 +406,21 @@ a.interest-item:hover {
     margin-bottom: 30px;
 }
 
+.other-profile-following:before {
+    content: 'Following';
+}
+
+.other-profile-follow:before {
+    content: 'Follow';
+}
+
+.follow-btn {
+    float: right;
+    vertical-align: middle;
+    width: 20%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
 .footer {
     position: absolute;
     bottom: 0;
