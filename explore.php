@@ -221,6 +221,7 @@
                             <!--PEOPLE RESULTS START-->
                             <div class="tab-pane" id="3b">
                                 <div class="people-results">
+                                    
                                     <div class="user-card">
                                         <div class="user-img-container">
                                             <img class="user-img" src="img/profile-photos/gabe.png" alt="">
@@ -233,6 +234,7 @@
                                             <div class="other-profile-following"></div>
                                         </div>
                                     </div>
+
                                     <div class="user-card">
                                         <div class="user-img-container">
                                             <img class="user-img" src="img/profile-photos/sani.png" alt="">
@@ -242,9 +244,23 @@
                                             <div class="fullname-text"><p>Sani Djaya</p></div>
                                         </div>
                                         <div class="btn follow-btn">
-                                            <div class="other-profile-following"></div>
+                                            <div class="other-profile-follow"></div>
                                         </div>
                                     </div>
+
+                                    <div class="user-card">
+                                        <div class="user-img-container">
+                                            <img class="user-img" src="img/profile-photos/technica-user.png" alt="">
+                                        </div> 
+                                        <div class="user-info-container">
+                                            <div class="username-text"><a class="user">@technica</a></div>   
+                                            <div class="fullname-text"><p>Technica</p></div>
+                                        </div>
+                                        <div class="btn follow-btn">
+                                            <div class="other-profile-follow"></div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <!--PEOPLE RESULTS END-->
