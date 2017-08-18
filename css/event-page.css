@@ -29,8 +29,7 @@ a.tags {
 
 .event-main-container {
     border-radius: 2px;
-    overflow: hidden;
-    border-bottom: 0;
+    border-bottom: 0;  
 }
 
 .event-img-container {
@@ -215,6 +214,7 @@ a.tags {
     background-color: transparent;
     width: 100%;
     position: relative;
+    overflow: visible;
 }
 
 .connections-btn:active {
@@ -284,7 +284,7 @@ a.dropdown-item:hover {
     h2,
     h3,
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .username > h2 {

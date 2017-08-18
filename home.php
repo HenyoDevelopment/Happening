@@ -70,7 +70,7 @@
                                     <div class="event-size-indicator-huge"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
-                                            <h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
+                                            <h4 class="card-title"><a href="moonrise-event.html"class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>
                                             <p class="card-event-info">Sat Aug 12 @ 10:00 am &#183; 26 miles away</p>
                                             <p class="card-event-info">Huge Event &#183; 724 attendees</p>
                                             <p class="card-text">anhnestle, beefsta, and 48 others</p>
