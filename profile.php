@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    //If user is not logged in, prompt user to login
+    if (!isset($_SESSION["usernameValue"])) {
+        header("Location: get-started.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

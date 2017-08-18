@@ -2,8 +2,7 @@
     require_once("php-helper/open-database.php");
 
     //For Loggint out
-	unset($_SESSION["passwordValue"]);
-    unset($_SESSION["usernameValue"]);
+	session_destroy();
 ?>
 
 <?php 

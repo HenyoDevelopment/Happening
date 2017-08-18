@@ -1,10 +1,5 @@
 <?php
     require_once("../php-helper/open-database.php");
-
-    //If user is not logged in, prompt user to login
-    if (!isset($_SESSION["usernameValue"])) {
-        header("Location: get-started.php");
-    }
 ?>
 
 <?php
@@ -65,12 +60,12 @@
     $all_events = array_merge($hosted_events, $interested_events, $going_events)
 ?>
 
-
-//////////////////////////////////
-// User's info in profile page  //
-//////////////////////////////////
 window.addEventListener('load', 
   function() { 
+
+    //////////////////////////////////
+    // User's info in profile page  //
+    //////////////////////////////////
     document.getElementById("title").innerHTML = "@" + "<?php echo $username;?>";
     document.getElementById("username").innerHTML = "@" + "<?php echo $username;?>";
     document.getElementById("profile_picture").src = "<?php echo $profile_pic?>";
