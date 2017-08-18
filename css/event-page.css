@@ -6,7 +6,7 @@ h1 {
 h2 {
     font-size: 16px;
     margin: 5px 0 5px 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h3 {
@@ -19,10 +19,18 @@ p {
     font-weight: 300;
 }
 
+a.tags {
+    font-weight: normal;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
 .event-main-container {
     border-radius: 2px;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
 }
 
 .event-img-container {
@@ -68,8 +76,8 @@ p {
 
 #event-info .nav-pills {
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 #event-info .nav-pills > li {
@@ -111,6 +119,7 @@ p {
     width: 100%;
     padding-bottom: 75%;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .google-map {
@@ -131,6 +140,11 @@ p {
     p {
         font-size: 12px;
     }
+
+    .main-content {
+        margin-top: 100px;
+    }
+
 
     #event-info .nav-pills > li > a { 
         font-size: 12px;
