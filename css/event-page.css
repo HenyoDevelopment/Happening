@@ -74,6 +74,10 @@ a.tags {
     margin: 0;
 }
 
+#event-info {
+    margin-bottom: 15px;
+}
+
 #event-info .nav-pills {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -117,9 +121,8 @@ a.tags {
 
 .google-map-container {
     width: 100%;
-    padding-bottom: 75%;
+    padding-bottom: 56.25%;
     position: relative;
-    margin-bottom: 15px;
 }
 
 .google-map {
@@ -128,6 +131,109 @@ a.tags {
     top: 0; bottom: 0; left: 0; right: 0;
     width: 100%;
     height: 100%;
+}
+
+.host-info-container {
+    margin-top: 20px;
+}
+
+.host-info {
+    display: inline-block;
+}
+
+.username {
+    margin-bottom: 10px;
+}
+
+.username > h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.fullname {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.fullname > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.user-stats {
+    margin: 5px;
+}
+
+.points,
+.connections {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.points {
+    padding: 5px;
+}
+
+.connections-center {
+    width: 70%;
+}
+
+.points > h4,
+.connections-btn > h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.connections-btn {
+    border: 0;
+    padding: 5px 0;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+}
+
+.connections-btn:active {
+    box-shadow: none;
+}
+
+.connections-dropdown {
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+}
+
+.connections-dropdown:hover {
+    text-align: center;
+    font-weight: 300;
+}
+
+.host-img-container {
+    height: 120px;
+    width: 120px;
+    float: right;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.host-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bio > p {
+    margin: 0px;
+    color: rgba(0,0,0,0.6);
 }
 
 @media only screen and (max-width: 767px){
@@ -148,5 +254,10 @@ a.tags {
 
     #event-info .nav-pills > li > a { 
         font-size: 12px;
+    }
+
+    .host-img-container {
+        height: 80px;
+        width: 80px;
     }
 }

@@ -136,7 +136,12 @@ a.dropdown-item:hover {
     font-size: 14px;
 }
 
+.points {
+    padding: 5px;
+}
+
 .connections-btn {
+    border: 0;
     padding: 5px 0;
     background-color: transparent;
     width: 100%;
