@@ -131,7 +131,7 @@
                         <div class="tab-content clearfix">
                             <div class="tab-pane active" id="1b">
                                 <!--MOONRISE CARD START-->
-                                <div class="card event-card">
+                                <div id="1" class="card event-card">
                                     <div class="card-header">
                                         <div class="header-user">
                                             <img class="header-user-img" src="img/profile-photos/moonrise-user.jpg" alt="">

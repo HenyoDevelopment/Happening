@@ -75,6 +75,13 @@
        					 );";
 
 		if ($conn->query($sqlQuery) === TRUE) {
+		    $sqlQuery = "SELECT * FROM `users` WHERE username ='$event_host';";
+		    $result = mysqli_query($db, $sqlQuery);
+
+		    //OBTAINING DATA FROM DATABASE
+		    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+			
+			
 			echo "New record created successfully";
 		} else {
 

@@ -2,6 +2,10 @@
     require_once("../php-helper/open-database.php");
 ?>
 
+
+/////////////////////////////////////////
+// This PHP is used for profile info   //
+/////////////////////////////////////////
 <?php
     $username = $_SESSION["usernameValue"];
     $profile_pic = "";
@@ -60,9 +64,55 @@
     $all_events = array_merge($hosted_events, $interested_events, $going_events)
 ?>
 
+///////////////////////////////
+//  PHP HELPER METHODS START  //
+///////////////////////////////
+<?php
+
+    //Returns all the details of an event based on Event_Id given
+    //INCLUDING HOST'S PROFILE PHOTO
+    function get_event($event_id) {
+        $event_info = array();
+
+        $sqlQuery = "SELECT * FROM `events` WHERE username ='$event_id';";
+        $result = mysqli_query($db, $sqlQuery);
+
+        //OBTAINING DATA FROM DATABASE
+        while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            $event_info = array (
+                'name' => $recordArray['name'],
+                'host' => $recordArray['host'],
+                'start_date' => $recordArray['start_date'],
+                'start_time' => $recordArray['start_time'],
+                'end_date' => $recordArray['end_date'],
+                'end_time' => $recordArray['end_time'],
+                'location' => $recordArray['location'],
+                'description' => $recordArray['description'],
+                'image' => $recordArray['image'],
+                'tags' => $recordArray['tags'],
+                'users_going' => $recordArray['users_going'],
+                'size' => $recordArray['size']
+                );
+        }
+
+        return $event_info;
+    }
+
+    $present = array();
+    $past = array();
+
+    //Function that returns an array of all event info from $all_events 
+    function get_all_events($event_list){
+
+    }
+?>
+///////////////////////////////
+//  PHP HELPER METHODS END    //
+///////////////////////////////
+
 window.addEventListener('load', 
   function() { 
-
+    
     //////////////////////////////////
     // User's info in profile page  //
     //////////////////////////////////
@@ -75,5 +125,14 @@ window.addEventListener('load',
     document.getElementById("connections").innerHTML = "<?php echo $followers_len + $following_len?>";
     document.getElementById("followers").innerHTML = "<?php echo $followers_len?>";
     document.getElementById("following").innerHTML = "<?php echo $following_len?>";
+
+
+    //////////////////////
+    //   DIV CLONING    //
+    //////////////////////
+    var div = document.getElementById('1');
+    var clone = div.cloneNode(true);
+
+    document.getElementById("1b").appendChild(clone);
 
   }, false);
