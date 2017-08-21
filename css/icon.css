@@ -18,6 +18,10 @@
     background-image: url('../img/checkmark.png');
 }
 
+.icon-exclamation {
+    background-image: url('../img/exclamation.png');
+}
+
 @media only screen and (max-width: 767px){
     .card-icon {
         height: 27px;

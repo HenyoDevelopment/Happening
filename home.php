@@ -80,7 +80,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
+                                                <img class="lit-rating" src="img/full-lit.png" alt="It's lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
@@ -161,7 +161,7 @@
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
                                                     <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                        <i id="event-interest" class="card-icon icon-exclamation"></i>
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                         <a class="interest-item not-interested">Not Interested</a>
@@ -217,7 +217,7 @@
                                                 <div class="dropup-container">
                                                     <div class="dropup div-inline">
                                                         <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                            <i id="event-interest" class="card-icon icon-exclamation"></i>
                                                         </button>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                             <a class="interest-item not-interested">Not Interested</a>
@@ -272,7 +272,7 @@
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
                                                     <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
+                                                        <i id="event-interest" class="card-icon icon-exclamation"></i>
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                         <a class="interest-item not-interested">Not Interested</a>

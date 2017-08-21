@@ -154,7 +154,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/really-lit.png" alt="It's lit">
+                                                <img class="lit-rating" src="img/full-lit.png" alt="It's lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
