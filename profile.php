@@ -203,8 +203,11 @@
                                             <div class="card-btn">
                                                 <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
-                                            <div class="btn card-btn" type="button">
+                                            <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-unhappy"></i>
+                                                <div class="rating-percentage">
+                                                    <p>15%</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -239,8 +242,11 @@
                                             <div class="card-btn">
                                                 <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
-                                            <div class="btn card-btn" type="button">
+                                            <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-really-happy"></i>
+                                                <div class="rating-percentage">
+                                                    <p>94%</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -275,8 +281,11 @@
                                             <div class="card-btn">
                                                 <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
-                                            <div class="btn card-btn" type="button">
+                                            <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-happy"></i>
+                                                <div class="rating-percentage">
+                                                    <p>52%</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
