@@ -105,62 +105,21 @@
     function get_all_events($event_list){
         //$event_list consists of Event_id strings
 
+        //for each event 
+        //  obtain info with get_event
+        //  check if the date is past with end_date
+        //      if past put it in past array
+        //      else put in present array
+        //end for
 
     }
 ?>
 ///////////////////////////////
-//  PHP HELPER METHODS END    //
+//  PHP HELPER METHODS END   //
 ///////////////////////////////
 
-function template() {
-    var template = [
-        '<div id="1" class="card event-card">',
-                    '<div class="card-header">',
-                        '<div class="header-user">',
-                            '<img class="header-user-img" src="img/profile-photos/moonrise-user.jpg" alt="">',
-                        '</div>',
-                        '<div class="header-text"><a class="user">moonrise</a></div>',
-                    '</div>',
-                    '<div class="img-container vertical-align">',
-                        '<img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">',
-                    '</div>',
-                    '<div class="event-size-indicator-huge"></div>',
-                    '<div class="card-block">',
-                        '<div class="card-text-container">',
-                            '<h4 class="card-title"><a class="event-link">$109.50 &#9679; Moonrise Festival 2017</a></h4>',
-                            '<p class="card-event-info">Sat Aug 12 @ 10:00 am &#183; 26 miles away</p>',
-                            '<p class="card-event-info">Huge Event &#183; 724 attendees</p>',
-                            '<p class="card-text">anhnestle, beefsta, and 48 others</p>',
-                            '<p class="card-tags">',
-                                '<a class="tags">#musicfestival</a>',
-                            '</p>',
-                        '</div>',
-                        '<div class="card-btn-container">',
-                            '<div class="card-btn">',
-                                '<img class="lit-rating" src="img/full-lit.png" alt="It is lit">',
-                            '</div>',
-                            '<div class="dropup-container">',
-                                '<div class="dropup div-inline">',
-                                   '<button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">',
-                                        '<i id="event-interest" class="card-icon icon-checkmark"></i>',
-                                   '</button>',
-                                    '<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">',
-                                        '<a class="interest-item not-interested">Not Interested</a>',
-                                        '<a class="interest-item interested">Interested</a>',
-                                        '<a class="interest-item going">Going</a>',
-                                    '</div>',
-                                '</div>',
-                            '</div>',
-                        '</div>',
-                    '</div>',
-                '</div>'
-    ].join("\n");
 
-    return template;
-}
-
-window.addEventListener('load', 
-  function() { 
+window.addEventListener('load', function() { 
     
     //////////////////////////////////
     // User's info in profile page  //
@@ -176,14 +135,20 @@ window.addEventListener('load',
     document.getElementById("following").innerHTML = "<?php echo $following_len?>";
 
 
-    //////////////////////
-    //   DIV CLONING    //
-    //////////////////////
-    //var div = document.getElementById('1');
-    //var clone = div.cloneNode(true);
+    
+}, false);
 
-    //document.getElementById("1b").appendChild(template());
 
-    var html = template();
-    $("#1b").append(html)
-  }, false);
+//MUST WAIT FOR js/event-card-template.js before loading anything
+$.getScript('js/event-card-template.js').done(function(){
+         //////////////////////
+        //   DIV CLONING    //
+        //////////////////////
+        //var div = document.getElementById('1');
+        //var clone = div.cloneNode(true);
+
+        //document.getElementById("1b").appendChild(template());
+
+        var html = template();
+        $("#1b").append(html);
+});

@@ -130,7 +130,7 @@
                         </ul>
                         <div class="tab-content clearfix">
                             <div class="tab-pane active" id="1b">
-                               
+                                <!-- GO TO JS/event-card-template -->                 
                             </div>
 
 
