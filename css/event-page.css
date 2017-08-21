@@ -92,7 +92,7 @@ a.tags {
 }
 
 .card-btn-container {
-    margin: 0;
+    margin-top: 8px;
 }
 
 #event-info {
@@ -164,7 +164,8 @@ a.tags {
 }
 
 .username {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
 }
 
 .username > h2 {
@@ -206,6 +207,7 @@ a.tags {
 .connections-btn > h4 {
     margin: 0;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .connections-btn {
@@ -252,8 +254,8 @@ a.dropdown-item:hover {
 }
 
 .host-img-container {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     float: right;
     overflow: hidden;
     border-radius: 50%;
