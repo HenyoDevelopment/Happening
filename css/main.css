@@ -417,6 +417,17 @@ a.interest-item:hover {
     border: 1px solid rgba(0,0,0,0.1);
 }
 
+.event-rating {
+    margin-top: 5px;
+}
+
+.rating-percentage > p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -511,6 +522,10 @@ hr {
     }
 
     a.interest-item {
+        font-size: 12px;
+    }
+    
+    .rating-percentage > p {
         font-size: 12px;
     }
     
