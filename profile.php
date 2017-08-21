@@ -85,7 +85,7 @@
                                         </div>
                                     </div>
                                     <div class="btn profile-btn">
-                                        <div class="own-profile-btn"></div>
+                                        <div href="home.html" class="own-profile-btn"></div>
                                     </div>
                                 </div>
                                 <div class="line-two">
@@ -203,22 +203,86 @@
                                             <div class="card-btn">
                                                 <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
-                                            <div class="dropup-container">
-                                                <div class="dropup div-inline">
-                                                    <button class="btn card-btn interest-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i id="event-interest" class="card-icon icon-star-grey"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                        <a class="interest-item not-interested">Not Interested</a>
-                                                        <a class="interest-item interested">Interested</a>
-                                                        <a class="interest-item going">Going</a>
-                                                    </div>
-                                                </div>
+                                            <div class="btn card-btn" type="button">
+                                                <i id="event-interest" class="card-icon icon-unhappy"></i>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!--TECHNICA CARD END-->
+
+                                <div class="tab-pane" id="2b">
+                                <!--TECHNICA CARD START-->
+                                <div class="card event-card">
+                                    <div class="card-header">
+                                        <div class="header-user">
+                                            <img class="header-user-img" src="img/profile-photos/technica-user.png" alt="">
+                                        </div>
+                                        <div class="header-text"><a class="user">technica</a></div>
+                                    </div>
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
+                                    </div>
+                                    <div class="event-size-indicator-medium"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
+                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
+                                            <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#womenshackathon</a> &#183; 
+                                                <a class="tags">#freefood</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="btn card-btn" type="button">
+                                                <i id="event-interest" class="card-icon icon-really-happy"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--TECHNICA CARD END-->
+
+                                <div class="tab-pane" id="2b">
+                                <!--TECHNICA CARD START-->
+                                <div class="card event-card">
+                                    <div class="card-header">
+                                        <div class="header-user">
+                                            <img class="header-user-img" src="img/profile-photos/technica-user.png" alt="">
+                                        </div>
+                                        <div class="header-text"><a class="user">technica</a></div>
+                                    </div>
+                                    <div class="img-container vertical-align">
+                                        <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
+                                    </div>
+                                    <div class="event-size-indicator-medium"></div>
+                                    <div class="card-block">
+                                        <div class="card-text-container">
+                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
+                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
+                                            <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
+                                            <p class="card-tags">
+                                                <a class="tags">#womenshackathon</a> &#183; 
+                                                <a class="tags">#freefood</a>
+                                            </p>
+                                        </div>
+                                        <div class="card-btn-container">
+                                            <div class="card-btn">
+                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                            </div>
+                                            <div class="btn card-btn" type="button">
+                                                <i id="event-interest" class="card-icon icon-happy"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--TECHNICA CARD END-->
+
                             </div>
                         </div>
                     </div>

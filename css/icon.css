@@ -22,6 +22,18 @@
     background-image: url('../img/exclamation.png');
 }
 
+.icon-really-happy {
+    background-image: url('../img/really-happy.png');
+}
+
+.icon-happy {
+    background-image: url('../img/happy.png');
+}
+
+.icon-unhappy {
+    background-image: url('../img/unhappy.png');
+}
+
 @media only screen and (max-width: 767px){
     .card-icon {
         height: 27px;
