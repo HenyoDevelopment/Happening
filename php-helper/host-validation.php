@@ -1,11 +1,6 @@
 
 <?php
 	require_once("open-database.php");
-	//IGNORE THIS FOR NOW 
-	//if ($_SESSION['image_location']) { 	
-	// 	$_SESSION['og_location'] = $_SESSION['image_location'];
-	// } 
-	// require_once("open-sessions.php");
 
 	function getExtension($str) {
          $i = strrpos($str,".");
@@ -14,6 +9,31 @@
          $ext = substr($str,$i+1,$l);
          return $ext;
 	}
+
+	function update($current_user, $event_id, $db) {
+		$sqlQuery = "SELECT * FROM `users` WHERE username ='$current_user';";
+	    $result = mysqli_query($db, $sqlQuery);
+
+	    //OBTAINING DATA FROM DATABASE
+	    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+	        $hosted_events = $recordArray['hosted_events'];
+		}
+
+		//Obtain all events info
+    	$hosted_events = json_decode($hosted_events, true);
+    	//Add the created event
+    	array_push($hosted_events, $event_id);
+    	$hosted_events = json_encode($hosted_events);
+
+    	//Update user's events and points
+    	$sqlQuery = "UPDATE users SET points = points + 3, hosted_events = '$hosted_events' WHERE username = '$current_user';";
+    	$result = mysqli_query($db, $sqlQuery);
+
+    	if (!$result) {
+			echo mysqli_error($db);
+		}
+	}	
+
 ?>
 
 <?php
@@ -21,7 +41,7 @@
 	//If Submit Button is hit and an Image was chosen
 	if(isset($_POST["submit"]) && isset($_FILES["fileToUpload"])){
 
-		$image_name = time() . '_' . $filename;
+		$image_name = time() . '_' . stripslashes($_FILES['fileToUpload']['name']);
 		$privacy = trim($_POST["privacy"]);
 		$event_name = trim($_POST["event-name"]);
 		$location = trim($_POST["location"]);
@@ -75,12 +95,7 @@
        					 );";
 
 		if ($conn->query($sqlQuery) === TRUE) {
-		    $sqlQuery = "SELECT * FROM `users` WHERE username ='$event_host';";
-		    $result = mysqli_query($db, $sqlQuery);
-
-		    //OBTAINING DATA FROM DATABASE
-		    while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-			
+		    update($event_host, $event_id, $db);
 			
 			echo "New record created successfully";
 		} else {

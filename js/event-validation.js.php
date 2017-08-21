@@ -158,7 +158,6 @@ function validateForm() {
             }
 
             if (same_day) {
-                alert(parseInt(end_hour[0]) + 1 <= parseInt(hour[0]) + 1)
                 if (parseInt(end_hour[0]) + 1 <= parseInt(hour[0]) + 1) {
                     error += "<br>End Time is too soon or has already passed.";
                     return_value = false;
