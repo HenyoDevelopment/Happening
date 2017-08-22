@@ -1,5 +1,5 @@
 <?php
-    require_once("../php-helper/open-database.php");
+    require("../php-helper/open-database.php");
 ?>
 
 
@@ -69,14 +69,20 @@
 ///////////////////////////////
 <?php
 
+    $present = array();
+    $past = array();
+    get_all_events($all_events);
+    $present = json_encode($present);
+    $past = json_encode($past);
+
     //Returns all the details of an event based on Event_Id given
     //INCLUDING HOST'S PROFILE PHOTO
     function get_event($event_id) {
         $event_info = array();
+        global $db;
 
-        $sqlQuery = "SELECT * FROM `events` WHERE username ='$event_id';";
-        $result = mysqli_query($db, $sqlQuery);
-
+        $sqlQuery = "SELECT * FROM `events` WHERE event_id ='$event_id';";
+        $result = mysqli_query($db, $sqlQuery) or die(mysqli_error($db));
         //OBTAINING DATA FROM DATABASE
         while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $event_info = array (
@@ -98,12 +104,11 @@
         return $event_info;
     }
 
-    $present = array();
-    $past = array();
-
     //Function that returns an array of all event info from $all_events 
     function get_all_events($event_list){
         //$event_list consists of Event_id strings
+        global $past;
+        global $present;
 
         //for each event 
         //  obtain info with get_event
@@ -111,13 +116,29 @@
         //      if past put it in past array
         //      else put in present array
         //end for
+        foreach ($event_list as $event_id) {
+            $info = get_event($event_id);  
+            //print_r($info);   
 
+            if ($info['end_date'] < date("Y-m-d")) {
+                array_push($past, $info);
+            } else {
+                array_push($present, $info);
+            }
+        }
     }
+
+    //Function to see which friends are going to an event
+    //
 ?>
 ///////////////////////////////
 //  PHP HELPER METHODS END   //
 ///////////////////////////////
 
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
 
 window.addEventListener('load', function() { 
     
@@ -132,23 +153,80 @@ window.addEventListener('load', function() {
     document.getElementById("points").innerHTML = "<?php echo $points?>";
     document.getElementById("connections").innerHTML = "<?php echo $followers_len + $following_len?>";
     document.getElementById("followers").innerHTML = "<?php echo $followers_len?>";
-    document.getElementById("following").innerHTML = "<?php echo $following_len?>";
-
-
-    
+    document.getElementById("following").innerHTML = "<?php echo $following_len?>";  
 }, false);
 
 
 //MUST WAIT FOR js/event-card-template.js before loading anything
 $.getScript('js/event-card-template.js').done(function(){
-         //////////////////////
+
+        //Get all event information for PRESENT EVENTS
+
+        //////////////////////
         //   DIV CLONING    //
         //////////////////////
-        //var div = document.getElementById('1');
-        //var clone = div.cloneNode(true);
 
-        //document.getElementById("1b").appendChild(template());
+        //var events = JSON.stringify(<?php echo $present?>);
+        var events = <?php echo $present?>;
 
+        /*
+            variable-names              ID-names
+
+            events[i]['host']       -> event-host
+            events[i]['image']      -> event-image
+            events[i]['name']       -> event-name
+            events[i]['start_date'] -> date-time
+            events[i]['start_time'] -> date-time
+            events[i]['location']   ->  
+            events[i]['tags']       -> tags
+            events[i]['size']       -> capacity
+            events[i]['users_going'] -> capacity
+
+        */        
+
+
+        //debugging purposes only
+        //alert(events[0]['name']);
+        
         var html = template();
         $("#1b").append(html);
+
+        for (i = 0; i < events.length; i++) { 
+            /////////////
+            //  IMAGE  //
+            /////////////
+            events[i]['image'] = "img/event_images/" + events[0]['image'];
+            document.getElementById("event-image").setAttribute("id","event-image-" + i);
+            document.getElementById("event-image-" + i).setAttribute("src", events[i]['image']);
+
+
+            //document.getElementById("user-image").setAttribute("src", events[i]['image']);
+
+            //////////
+            // Host //
+            //////////
+            document.getElementById("event-host").setAttribute("id","event-host-" + i);
+            document.getElementById("event-host-" + i).innerHTML = events[i]['host'];
+
+            ////////////////
+            // Event Name //
+            ////////////////
+            document.getElementById("event-name").setAttribute("id","event-name-" + i);
+            document.getElementById("event-name-" + i).innerHTML = events[i]['name'];
+
+            ////////////////
+            // Date-Time  //
+            ////////////////
+            document.getElementById("event-date-time").setAttribute("id","event-date-time-" + i);
+            document.getElementById("event-date-time-" + i).innerHTML = events[i]['start_date'] + " @ " + events[i]['start_time'];
+
+            ///////////////////////////////////
+            // event-capacity & event-people //
+            ///////////////////////////////////
+            var cap = toTitleCase(events[i]['size']) + " Event &#183 " + events[i]['users_going'];
+            document.getElementById("event-capacity").setAttribute("id","event-capacity-" + i);
+            document.getElementById("event-capacity-" + i).innerHTML = cap;
+
+        }
+
 });

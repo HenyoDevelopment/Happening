@@ -10,6 +10,7 @@
 	$table2 = "events";
 	
 	$db = connectToDB($host, $user, $password, $database);
+	$_SESSION['db'] = $db;
 	
 	function connectToDB($host, $user, $password, $database) {
 		$db = mysqli_connect($host, $user, $password, $database);

@@ -91,7 +91,7 @@
         						'$size',
         						'$description',
         						'$tags',
-        						'privacy'
+        						'$privacy'
        					 );";
 
 		if ($conn->query($sqlQuery) === TRUE) {
