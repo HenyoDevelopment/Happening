@@ -191,6 +191,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
     overflow-y: hidden; 
     white-space: nowrap;
     padding: 0 5px;
+    margin-top: -5px;
 }
 
 .friend-info {
@@ -428,7 +429,7 @@ a.interest-item:hover {
 }
 
 .rating-percentage > p {
-    margin-top: 5px;
+    margin-top: 0;
     text-align: center;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
@@ -532,7 +533,7 @@ hr {
     }
     
     .rating-percentage > p {
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .follow-btn {
