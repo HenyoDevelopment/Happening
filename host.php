@@ -26,12 +26,14 @@
         <link rel="stylesheet" href="css/host.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtBCdPRCnQCF-MI78JOcc1e7Oly7Lth7I&libraries=places"></script>
+        
 
         <script src="js/host.js"></script>
-        <script type="text/javascript" src="js/event-validation.js.php"></script>
-    </head> 
-
-    <body>
+        <script src="js/google-autocomplete.js"></script>
+        <script src="js/event-validation.js.php"></script>
+    </head>
+    <body onload="initAutocomplete()">
         
         <!--NAVIGATION BAR-->
         <div class="navbar navbar-default navbar-fixed-top">
