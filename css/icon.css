@@ -14,7 +14,6 @@
     float: right;
     margin-bottom: -16px;
     margin-right: -10px;
-    z-index: 2;
 }
 
 .icon-star {
@@ -52,13 +51,7 @@
     }
 
     .interest-icon {
-        background-size: 100%;
-        outline: none;
         height: 15px;
         width: 15px;
-        float: right;
-        margin-bottom: -16px;
-        margin-right: -10px;
-        z-index: 2;
     }
 }

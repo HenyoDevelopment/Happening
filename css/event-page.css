@@ -38,6 +38,25 @@ a.tags {
     max-height: 400px;
     overflow: hidden;
     border-radius: 2px 2px 0 0;
+    position: relative;
+}
+
+.dropdown-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.event-options-btn,
+.event-options-btn:hover,
+.event-options-btn:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.option-item {
+    min-width: 120px;
+
 }
 
 .event-img {
@@ -312,6 +331,16 @@ a.dropdown-item:hover {
     h3,
     p {
         font-size: 14px;
+    }
+
+    .dropdown-container {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+
+    .event-options-btn {
+        font-size: 8px;
     }
 
     .username > h2 {
