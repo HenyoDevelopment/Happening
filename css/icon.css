@@ -6,6 +6,17 @@
     display: block;
 }
 
+.interest-icon {
+    background-size: 100%;
+    outline: none;
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-bottom: -16px;
+    margin-right: -10px;
+    z-index: 2;
+}
+
 .icon-star {
     background-image: url('../img/star.png');
 }
@@ -38,5 +49,16 @@
     .card-icon {
         height: 27px;
         width: 27px;
+    }
+
+    .interest-icon {
+        background-size: 100%;
+        outline: none;
+        height: 15px;
+        width: 15px;
+        float: right;
+        margin-bottom: -16px;
+        margin-right: -10px;
+        z-index: 2;
     }
 }
