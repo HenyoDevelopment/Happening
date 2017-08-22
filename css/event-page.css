@@ -95,6 +95,30 @@ a.tags {
     margin-top: 8px;
 }
 
+.user-going-container {
+    max-height: 120px;
+}
+
+.user-going {
+    display: inline-block;
+    margin: 0 5px;
+    max-width: 80px;
+}
+
+.user-img-container {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-going-name {
+    overflow: hidden;
+}
+
 #event-info {
     margin-bottom: 15px;
 }
@@ -253,22 +277,6 @@ a.dropdown-item:hover {
     border-bottom: 1px solid #282828;
 }
 
-.user-going {
-    display: inline-block;
-    margin: 0 5px;
-    max-width: 80px;
-}
-
-.user-img-container {
-    margin: 0 auto;
-    height: 80px;
-    width: 80px;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .host-img-container {
     float: right;
     height: 100px;
@@ -289,10 +297,6 @@ a.dropdown-item:hover {
     top: 0;
     bottom: 0;
     margin: auto;
-}
-
-.user-going-name {
-    overflow: hidden;
 }
 
 .bio {
@@ -324,6 +328,14 @@ a.dropdown-item:hover {
         font-size: 12px;
     }
 
+    .amount-going {
+        margin-bottom: 8px;
+    }
+
+    .user-going-container {
+        max-height: 95px;
+    }
+
     .user-going {
         max-width: 60px;
     }
@@ -333,14 +345,14 @@ a.dropdown-item:hover {
         width: 60px;
     }
 
+    .user-going-name {
+        font-size: 10px;
+    }  
+
     .host-img-container {
         height: 80px;
         width: 80px;
     }
-
-    .user-going-name {
-        font-size: 10px;
-    }  
 
     .dropdown-item {
         min-width: 60px;
