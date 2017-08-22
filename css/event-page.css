@@ -184,7 +184,7 @@ a.tags {
 }
 
 .user-stats {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .points,
@@ -253,17 +253,34 @@ a.dropdown-item:hover {
     border-bottom: 1px solid #282828;
 }
 
-.host-img-container {
+.user-going {
+    display: inline-block;
+    margin: 0 5px;
+    max-width: 80px;
+}
+
+.user-img-container {
+    margin: 0 auto;
     height: 80px;
     width: 80px;
-    float: right;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.host-img {
+.host-img-container {
+    float: right;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.host-img,
+.user-img {
     width: 100%;
     height: auto;
     position: absolute;
@@ -274,8 +291,12 @@ a.dropdown-item:hover {
     margin: auto;
 }
 
+.user-going-name {
+    overflow: hidden;
+}
+
 .bio {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 767px){
@@ -303,10 +324,23 @@ a.dropdown-item:hover {
         font-size: 12px;
     }
 
+    .user-going {
+        max-width: 60px;
+    }
+
+    .user-img-container {
+        height: 60px;
+        width: 60px;
+    }
+
     .host-img-container {
         height: 80px;
         width: 80px;
     }
+
+    .user-going-name {
+        font-size: 10px;
+    }  
 
     .dropdown-item {
         min-width: 60px;
