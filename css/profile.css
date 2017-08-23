@@ -222,6 +222,10 @@ hr {
     margin: 5px 0;
 }
 
+#event-stream {
+    margin-bottom: 30px;
+}
+
 #event-stream .nav-pills {
     text-align: center;
     margin-bottom: 15px;
