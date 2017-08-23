@@ -8,6 +8,26 @@
     margin: 0 auto;
 }
 
+.event-img-container {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-img-preview {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 .event-input-line {
     display: block;
     margin: 10px 0;
@@ -34,6 +54,8 @@ input:hover {
     float:left;
     padding: 8px 15px 8px 0;
     line-height: 20px;
+    font-weight: 600px;
+    font-size: 14px;
 }
 
 #date-start,

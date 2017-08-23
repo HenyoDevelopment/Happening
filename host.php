@@ -64,36 +64,44 @@
                             <div class="event-img-preview">
                               <img id="preview" style="max-width: 400px;"/>
                             </div>
-                            <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Privacy: </div>
-                                <select required class="col-sm-8" name="privacy" id="privacy">
+                                <div class="col-sm-2 input-description">Event Image:</div>
+                                <div class="col-sm-10">
+                                    <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                                    <div class="event-img-container">
+                                        <img id="profile_picture" class="event-img-preview" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row event-input-line">
+                                <div class="col-sm-2 input-description">Privacy:</div>
+                                <select required class="col-sm-10" name="privacy" id="privacy">
                                     <option value="" disabled selected>Select your option</option>
                                     <option value="public">Public (Everyone can see it)</option>  
                                     <option value="private">Private (Only people you invite can see it)</option>
                                 </select>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Event Title:</div> 
-                                <input required class="col-sm-8" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
+                                <div class="col-sm-2 input-description">Event Title:</div> 
+                                <input required class="col-sm-10" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Location:</div> 
-                                <input required class="col-sm-8" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
+                                <div class="col-sm-2 input-description">Location:</div> 
+                                <input required class="col-sm-10" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Start:</div> 
-                                <input required class="col-sm-4" type="date" name="date-start" id="date-start"/> 
-                                <input required class="col-sm-3 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
+                                <div class="col-sm-2 input-description">Start:</div> 
+                                <input required class="col-sm-5" type="date" name="date-start" id="date-start"/> 
+                                <input required class="col-sm-4 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">End:</div> 
-                                <input required class="col-sm-4" type="date" name="date-end" id="date-end"/> 
-                                <input required class="col-sm-3 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
+                                <div class="col-sm-2 input-description">End:</div> 
+                                <input required class="col-sm-5" type="date" name="date-end" id="date-end"/> 
+                                <input required class="col-sm-4 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Expected Attendance:</div>
-                                <select required class="col-sm-8" name="event-size" id="event-size">
+                                <div class="col-sm-2 input-description">Expected Attendance:</div>
+                                <select required class="col-sm-10" name="event-size" id="event-size">
                                     <option value="" disabled selected>Select your option</option>
                                     <option value="small">Small (25 and below)</option>  
                                     <option value="medium">Medium (26-80)</option>
@@ -103,12 +111,12 @@
                             </div>
 
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Description:</div> 
-                                <textarea class="col-sm-8" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
+                                <div class="col-sm-2 input-description">Description:</div> 
+                                <textarea class="col-sm-10" name="description" id="description"  placeholder="More details leads to a better turnout"></textarea>
                             </div>
                             <div class="row event-input-line">
-                                <div class="col-sm-4 input-description">Tags:</div> 
-                                <input class="col-sm-8" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
+                                <div class="col-sm-2 input-description">Tags:</div> 
+                                <input class="col-sm-10" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
                         </form>

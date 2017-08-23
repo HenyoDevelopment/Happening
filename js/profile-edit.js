@@ -39,8 +39,10 @@ $(document).ready(function() {
 		var new_name_id   = name_data.attr("id");
 		var c_name_input  = "#"+new_name_id+"-form";
 		var e_name_input  = $(c_name_input);
-		var new_name_val  = e_name_input.val();
-		e_name_input.remove();
+		var new_name_val  = e_name_input.val().replace(/[*^<>()|[\]\\]/g, " ");
+        e_name_input.remove();
+
+        console.log(new_name_val);        
         name_data.html(new_name_val);
         
         // save description
