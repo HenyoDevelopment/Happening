@@ -114,6 +114,69 @@ a.tags {
     margin-top: 8px;
 }
 
+.user-card-list {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.user-img-container-list {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    vertical-align: top;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-info-container-list {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.username-text-list {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 300;
+    height: auto;
+    color: #282828;
+}
+
+.fullname-text-list > p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+
+}
+
+.user-interest-indicator-list {
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.interest-icon-list {
+    display: block;
+    margin: auto; 
+    float: none;
+}
+
+.user-interest-indicator-list > p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.interest-icon-preview {
+    margin-bottom: -16px;
+    margin-right: -10px;
+}
+
 .user-going-container {
     max-height: 120px;
 }
@@ -354,6 +417,23 @@ a.dropdown-item:hover {
 
     .amount-going {
         margin-bottom: 8px;
+    }
+    
+    .username-text-list > a {
+        font-size: 16px; 
+    }
+
+    .fullname-text-list > p {
+        font-size: 12px;
+    }
+
+
+    .user-interest-indicator-list {
+        padding-top: 15px;
+    }
+
+    .user-interest-indicator-list > p {
+        font-size: 10px
     }
 
     .user-going-container {

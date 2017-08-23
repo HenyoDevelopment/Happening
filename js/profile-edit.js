@@ -61,7 +61,7 @@ $(document).ready(function() {
 function change_profile_photo(event) {
     var reader = new FileReader();
     reader.onload = function() {
-        var output = document.getElementById('profile-photo');
+        var output = document.getElementById('profile_picture');
         output.src = reader.result;
     }
     reader.readAsDataURL(event.target.files[0]);
