@@ -1,10 +1,12 @@
 .profile-container {
     padding: 15px 0;
+    margin-bottom: 0;
 }
 
 .profile-img-container {
-    height: 150px;
-    width: 150px;
+    float: right;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -31,7 +33,7 @@ input[type='text']:focus {
 
 .line-one {
     height: 34px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .username { 
@@ -44,6 +46,7 @@ input[type='text']:focus {
     margin: 0px; 
     font-size: 24px;
     line-height: 34px;
+    font-weight: 400;
 }
 
 .profile-btn,
@@ -84,6 +87,7 @@ input[type='text']:focus {
 }
 
 a.dropdown-item {
+    font-weight: 400;
     padding: 5px;
     margin: 0 10px;
     text-decoration: none;
@@ -126,14 +130,12 @@ a.dropdown-item:hover {
 .line-four {
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 5px;
 }
 
 .points,
 .connections {
-    width: 49%;
+    width: 30%;
     display: inline-block;
-    text-align: center;
     vertical-align: top;
 }
 
@@ -141,7 +143,13 @@ a.dropdown-item:hover {
     width: 70%;
 }
 
-.points > h4,
+.points > h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
 .connections-btn > h4 {
     margin: 0;
     font-size: 14px;
@@ -149,7 +157,7 @@ a.dropdown-item:hover {
 }
 
 .points {
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .connections-btn {
@@ -253,14 +261,15 @@ hr {
     .bio > p {
         font-size: 12px;
     }
+    
 
     .profile-container {
         margin-bottom: 0px;
     }
 
     .profile-img-container {
-        max-width: 80%;
-        max-height: 80%;
+        height: 100px;
+        width: 100px;
         margin: 0 auto;
     }
 
