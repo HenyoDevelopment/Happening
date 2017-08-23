@@ -22,7 +22,7 @@ $(document).ready(function() {
             $('<input type="text" name="'+new_bio_id+'" id="'+new_bio_id+'" value="'+curr_bio_val+'" class="live-edit">').appendTo(bio_data);
 
             // send change profile pic to DOM
-            $('<input type="file" class="default-upload-btn" name="fileToUpload" id="fileToUpload" onchange="change_profile_photo(event)">').insertAfter(".profile-photo");
+            $('<input type="file" class="default-upload-btn" name="fileToUpload" id="fileToUpload" onchange="change_profile_photo(event)">').insertAfter(".profile_picture");
             $('<label id="new-upload-btn" for="fileToUpload"> <div class="camera-container"> <img class="camera-outline" src="img/camera-outline-white.png"></div></img></label>').insertAfter("#fileToUpload");
 
             //change btn to save profile
