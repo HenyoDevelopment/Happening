@@ -39,8 +39,12 @@
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-.own-profile-btn:before {
+.edit-profile-btn:before {
     content: 'Edit Profile';
+}
+
+.save-profile-btn:before {
+    content: 'Save Changes';
 }
 
 .dropdown-container {
