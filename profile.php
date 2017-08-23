@@ -32,8 +32,10 @@
         <script src="js/general-event-card.js"></script>
         <script src="js/interested.js"></script>
         <script src="js/follow-btn.js"></script>
+        <script src="js/profile-edit.js"></script>
 
-        <script type="text/javascript" src="js/profile-data.js.php"></script>
+
+        <script src="js/profile-data.js.php"></script>
     </head> 
 
     <body>
