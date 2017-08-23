@@ -110,7 +110,7 @@
                     </div>
                     <div class="col-xs-3">
                         <div class="profile-img-container">
-                            <img id="profile-photo vertical-align" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                            <img id="profile-photo" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
                         </div>
                     </div>
                     <div class="col-xs-12">
