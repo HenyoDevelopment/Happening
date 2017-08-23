@@ -114,6 +114,15 @@ a.tags {
     margin-top: 8px;
 }
 
+#list-going {
+    max-height:400px;
+    overflow: scroll;   
+}
+
+.user-card-list-container {
+    margin-bottom: -15px;
+}
+
 .user-card-list {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -418,6 +427,10 @@ a.dropdown-item:hover {
     .amount-going {
         margin-bottom: 8px;
     }
+
+    .user-info-container-list {
+        margin-left: 5px
+    }
     
     .username-text-list > a {
         font-size: 16px; 
@@ -426,7 +439,6 @@ a.dropdown-item:hover {
     .fullname-text-list > p {
         font-size: 12px;
     }
-
 
     .user-interest-indicator-list {
         padding-top: 15px;
@@ -461,5 +473,13 @@ a.dropdown-item:hover {
     .dropdown-item {
         min-width: 60px;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .user-img-container-list {
+        height: 40px;
+        width: 40px;
+        margin: 5px 0;
     }
 }

@@ -34,8 +34,10 @@
         <script src="js/follow-btn.js"></script>
         <script src="js/profile-edit.js"></script>
 
-
         <script src="js/profile-data.js.php"></script>
+
+        <script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen"/>
     </head> 
 
     <body>
@@ -100,8 +102,74 @@
                                                 <h4><b id="connections"></b> connections</h4>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><b id="followers"></b> followers</a>
-                                                <a class="dropdown-item" href="#"><b id="following"></b> following</a>
+                                                <a class="dropdown-item" href="#followers-list" rel="modal:open"><b id="followers"></b> followers</a>
+                                                <div id="followers-list" style="display:none;">
+                                                    <div class="user-card-list-container">
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/sani.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@sanisideup</a></div>   
+                                                                <div class="fullname-text-list"><p>Sani Djaya</p></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/gabe.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@mrshuly</a></div>   
+                                                                <div class="fullname-text-list"><p>Gabriel Vallangca</p></div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/technica-user.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@technica</a></div>   
+                                                                <div class="fullname-text-list"><p>Technica</p></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="dropdown-item" href="#following-list" rel="modal:open"><b id="following"></b> following</a>
+                                                <div id="following-list" style="display:none;">
+                                                    <div class="user-card-list-container">
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/bitcamp-user.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@bitcamp</a></div>   
+                                                                <div class="fullname-text-list"><p>Bitcamp</p></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/gabe.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@mrshuly</a></div>   
+                                                                <div class="fullname-text-list"><p>Gabriel Vallangca</p></div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="user-card-list">
+                                                            <div class="user-img-container-list">
+                                                                <img class="user-img" src="img/profile-photos/technica-user.png" alt="">
+                                                            </div> 
+                                                            <div class="user-info-container-list">
+                                                                <div class="username-text-list"><a class="user">@technica</a></div>   
+                                                                <div class="fullname-text-list"><p>Technica</p></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

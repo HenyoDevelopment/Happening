@@ -13,7 +13,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.profile-photo {
+.profile-photo,
+.user-img {
     width: 100%;
     height: auto;
     position: absolute;
@@ -264,6 +265,88 @@ hr {
 }
 
 
+.user-card-list-container {
+    margin-bottom: -15px;
+}
+
+.user-card-list {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.user-img-container-list {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    vertical-align: top;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-info-container-list {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.username-text-list {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 300;
+    height: auto;
+    color: #282828;
+}
+
+.fullname-text-list > p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+
+}
+
+.user-interest-indicator-list {
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.interest-icon-list {
+    display: block;
+    margin: auto; 
+    float: none;
+}
+
+.user-interest-indicator-list > p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.user-info-container-list {
+    margin-left: 5px
+}
+
+.username-text-list > a {
+    font-size: 16px; 
+}
+
+.fullname-text-list > p {
+    font-size: 12px;
+}
+
+.user-interest-indicator-list {
+    padding-top: 15px;
+}
+
+.user-interest-indicator-list > p {
+    font-size: 10px
+}
+
 /*FONT RESIZING FOR IPAD AND MOBILE*/
 @media only screen and (max-width: 768px) {
     .username > h2 {
@@ -350,5 +433,10 @@ hr {
         height: 60px;
         width: 60px;
     }
-}
 
+    .user-img-container-list {
+        height: 40px;
+        width: 40px;
+        margin: 5px 0;
+    }
+}
