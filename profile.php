@@ -122,12 +122,9 @@
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
-                    <!--PROFILE END-->
-=======
                     <div class="col-xs-3">
                         <div class="profile-img-container">
-                            <img id="profile-photo" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                            <img id="profile_picture" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
                         </div>
                     </div>
                     <div class="col-xs-12">
@@ -139,7 +136,6 @@
                     </div>
                 </div>
                 <!--PROFILE END-->
->>>>>>> origin/master
 
                     <!--SECONDARY NAV START-->
                     <div id="event-stream">	
