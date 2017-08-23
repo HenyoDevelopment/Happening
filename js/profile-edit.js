@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".edit-profile-btn").on("click", function(e) {
+	$(".edit-profile-btn").on("click", function() {
         if ($(".save-profile-btn")[0]){
             save_profile();
         } else {
@@ -23,10 +23,13 @@ $(document).ready(function() {
 
             // change profile pic to DOM
             $('<input type="file" class="default-upload-btn" name="fileToUpload" id="fileToUpload" onchange="change_profile_photo(event)">').insertAfter(".profile-photo");
-            $('<label id="new-upload-btn" for="fileToUpload">Choose a file</label>').insertAfter("#fileToUpload");
+            $('<label id="new-upload-btn" for="fileToUpload"><img width="50px" height="50px"src="img/camera-outline.png"></img></label>').insertAfter("#fileToUpload");
 
             //change btn to save profile
             $(this).attr('class', 'save-profile-btn');
+
+            // make focus on changing name field 
+            document.getElementById(new_name_id).focus();
         }
     });
     // save profile changes function

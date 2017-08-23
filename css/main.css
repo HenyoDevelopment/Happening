@@ -466,11 +466,8 @@ hr {
 	z-index: -1;
 }
 
-.default-upload-btn + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: black;
+#new-upload-btn {
+    color: black;
     display: inline-block;
     cursor: pointer;
 }

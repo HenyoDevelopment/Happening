@@ -81,7 +81,7 @@
                         <form action="profile.php">
                              <input class="btn" id="submit-event" type="submit" name="submit" value="Cancel"/>
                         </form>
-
+                    </div>
                 </div>
                 <!-- FORM END -->
 
