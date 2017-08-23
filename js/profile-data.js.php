@@ -1,7 +1,12 @@
+/*
+    Docuement: profile-data.js.php
+        This script is responsible for outputting all the data in every user's profile page including user info and events that they are going/interested/went
+
+*/
+
 <?php
     require("../php-helper/open-database.php");
 ?>
-
 
 /////////////////////////////////////////
 // This PHP is used for profile info   //
@@ -255,10 +260,6 @@ $.getScript('js/event-card-template.js').done(function(){
             document.getElementById("event-capacity").setAttribute("id","event-capacity-" + i);
             document.getElementById("event-capacity-" + i).innerHTML = cap;
 
-            ////////////////////
-            // Friends Going  //
-            ////////////////////
-
             //////////
             // TAGS //
             //////////
@@ -277,6 +278,54 @@ $.getScript('js/event-card-template.js').done(function(){
 
                 $("#event-tags-" + i).append(tag);
             }
+
+            ///////////////////
+            // LITNESS SCALE //
+            ///////////////////
+            document.getElementById("event-rating").setAttribute("id","event-rating-" + i);
+            var size = events[i]['size'];
+            var denominator = 25;
+            if (size == "medium") {
+                denominator = 53;
+            }
+            if (size == "big") {
+                denominator = 115;
+            } 
+            if (size == "huge") {
+                denominator = 250;
+            }    
+
+            var nominator = people.length;
+            alert(nominator);
+            var percentage = (nominator / denominator) * 100;
+            var lit_scale = "img/default-img/";
+
+            //NOT LIT
+            if (percentage < 25){
+                lit_scale = lit_scale + "not-lit.png";
+            }
+
+            //QUARTER LIT
+            else if (percentage < 50 && percentage >= 25){
+                lit_scale = lit_scale + "one-quarter-lit.png";
+            }
+
+            //HALF LIT
+            else if (percentage < 75 && percentage >= 50){
+                lit_scale = lit_scale + "half-lit.png";
+            }
+
+            //THREE QUARTERS LIT
+            else if (percentage < 100 && percentage >= 75){
+                lit_scale = lit_scale + "three-quarters-lit.png";
+            }
+
+            //FULL LIT
+            else {
+                lit_scale = lit_scale + "full-lit.png";
+            }
+
+            document.getElementById("event-rating-" + i).setAttribute("src", lit_scale);
         }
 
 });

@@ -97,7 +97,7 @@
                                     <option value="" disabled selected>Select your option</option>
                                     <option value="small">Small (25 and below)</option>  
                                     <option value="medium">Medium (26-80)</option>
-                                    <option value="big">Big (80-149)</option>
+                                    <option value="big">Big (81-149)</option>
                                     <option value="huge">Huge (150 or more)</option>
                                 </select>
                             </div>

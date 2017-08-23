@@ -23,7 +23,7 @@ function template() {
                         '</div>',
                         '<div class="card-btn-container">',
                             '<div class="card-btn">',
-                                '<img id="event-rating" class="lit-rating" src="img/full-lit.png" alt="It is lit">',
+                                '<img id="event-rating" class="lit-rating" src="" alt="It is lit">',
                             '</div>',
                             '<div class="dropup-container">',
                                 '<div class="dropup div-inline">',
