@@ -338,7 +338,7 @@ a.dropdown-item:hover {
         font-size: 8px;
     }
 
-    .username > h2 {
+    #username {
         font-size: 18px;
     }
 

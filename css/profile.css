@@ -57,6 +57,7 @@ input[type='text']:focus {
     margin-right: 10px;
     width: 30%;
     border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .edit-profile-btn:before {
@@ -232,13 +233,13 @@ hr {
 /*FONT RESIZING FOR IPAD AND MOBILE*/
 @media only screen and (max-width: 768px) {
     .username > h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .profile-btn {
         font-size: 10px;
         margin-top: 4px;
-
+        padding: 6px 2px;
     }
 
     .profile-settings-btn {
@@ -264,18 +265,22 @@ hr {
     
 
     .profile-container {
-        margin-bottom: 0px;
+        margin-top: 30px;
     }
 
     .profile-img-container {
-        height: 100px;
-        width: 100px;
-        margin: 0 auto;
+        height: 80px;
+        width: 80px;
+        margin-top: 15px;
     }
 
     .line-one {
         margin-top: 15px;
         margin-bottom: 0px;
+    }
+
+    .fullname > h3 {
+        font-size: 14px;
     }
 
     .dropdown-item {
@@ -299,6 +304,13 @@ hr {
     .connections-btn > h4,
     #event-stream .nav-pills > li > a {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 350px) { 
+    .profile-img-container {
+        height: 60px;
+        width: 60px;
     }
 }
 
