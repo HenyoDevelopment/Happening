@@ -62,65 +62,65 @@
 
                     <!--PROFILE START-->
                     <div class="row row-centered profile-container">
-                        <div class="col-sm-4">
-                            <div class="profile-img-container">
-                                <img id="profile_picture" class="profile-photo" src="" alt="profile photo"> </img>
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="user-info">
-                                <div class="line-one">
-                                    <div class="username">
-                                        <h2 id="username"></h2>
-                                    </div>
-                                    <div class="dropdown-container">
-                                        <div class="dropdown div-inline">
-                                            <button class="btn profile-settings-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                &#9662;
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right profile-settings-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item settings-item" href="account-setting.php">Account Settings</a>
-                                                <a class="dropdown-item settings-item" href="get-started.php">Log Out</a>
-                                            </div>
+                    <div class="col-xs-9">
+                        <div class="user-info">
+                            <div class="line-one">
+                                <div class="username">
+                                    <h2 id="username">@mrshuly</h2>
+                                </div>
+                                <div class="dropdown-container">
+                                    <div class="dropdown div-inline">
+                                        <button class="btn profile-settings-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            &#9662;
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right profile-settings-dropdown" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item settings-item" href="#">Account Settings</a>
+                                            <a class="dropdown-item settings-item" href="#">Log Out</a>
                                         </div>
                                     </div>
-                                    <div class="btn profile-btn">
-                                        <div href="home.html" class="own-profile-btn"></div>
-                                    </div>
                                 </div>
-                                <div class="line-two">
-                                    <div class="fullname">
-                                        <h3 id="name"></h3>
-                                    </div>
+                                <div class="btn profile-btn">
+                                    <div class="edit-profile-btn"></div>
                                 </div>
-                                <div class="line-three">
-                                    <div class="bio">
-                                        <p id="description"></p>
-                                    </div>
+                            </div>
+                            <div class="line-two">
+                                <div class="fullname">
+                                    <h3 id="name">Gabriel Vallangca</h3>
                                 </div>
-                                <hr>
-                                <div class="line-four">
-                                    <div class="points">
-                                        <h4><b id="points"></b></h4>
-                                        <h4>points</h4>
-                                    </div>
-                                    <div class="connections">
-                                        <div class="dropdown div-inline connections-center">
-                                            <button class="btn connections-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <h4><b id="connections"></b></h4>
-                                                <h4>connections</h4>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><b id="followers" ></b> followers</a>
-                                                <a class="dropdown-item" href="#"><b id="following" ></b> following</a>
-                                            </div>
+                            </div>
+                            <div class="line-four">
+                                <div class="points">
+                                    <h4><b>15</b> points</h4>
+                                </div>
+                                <div class="connections">
+                                    <div class="dropdown div-inline">
+                                        <button class="btn connections-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h4><b>479</b> connections</h4>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"><b>342</b> followers</a>
+                                            <a class="dropdown-item" href="#"><b>137</b> following</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--PROFILE END-->
+                    <div class="col-xs-3">
+                        <div class="profile-img-container">
+                            <img id="profile-photo vertical-align" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-xs-12">
+                        <div class="line-three">
+                            <div class="bio">
+                                <p id="description">TRUST. RESPECT. LOYALTY. LOVE. 💯 ✊ Be formless ☁️ Be water 🌊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROFILE END-->
 
                     <!--SECONDARY NAV START-->
                     <div id="event-stream">	
