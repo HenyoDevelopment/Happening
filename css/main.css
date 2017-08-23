@@ -457,6 +457,29 @@ hr {
     margin: 10px 0 10px 0;
 }
 
+.default-upload-btn {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.default-upload-btn + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+
 /*MOBILE SIZE FIXES*/
 @media only screen and (max-width: 767px){
 

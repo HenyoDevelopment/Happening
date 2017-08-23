@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(".edit-profile-btn").on("click", function(e) {
         if ($(".save-profile-btn")[0]){
-            saveProfile();
+            save_profile();
         } else {
             //edit name
             var name_data = $(".fullname").children("h3");
@@ -17,16 +17,20 @@ $(document).ready(function() {
             var curr_bio_val = bio_data.text();
             bio_data.empty();
             
-            // send input to DOM 
+            // editable divs to DOM 
             $('<input type="text" name="'+new_name_id+'" id="'+new_name_id+'" value="'+curr_name_val+'" class="live-edit">').appendTo(name_data);
             $('<input type="text" name="'+new_bio_id+'" id="'+new_bio_id+'" value="'+curr_bio_val+'" class="live-edit">').appendTo(bio_data);
-            
+
+            // change profile pic to DOM
+            $('<input type="file" class="default-upload-btn" name="fileToUpload" id="fileToUpload" onchange="change_profile_photo(event)">').insertAfter(".profile-photo");
+            $('<label id="new-upload-btn" for="fileToUpload">Choose a file</label>').insertAfter("#fileToUpload");
+
             //change btn to save profile
             $(this).attr('class', 'save-profile-btn');
         }
     });
     // save profile changes function
-	function saveProfile() {
+	function save_profile() {
         // save name
 		var name_data = $(".fullname").children("h3");
 		var new_name_id   = name_data.attr("id");
@@ -45,6 +49,17 @@ $(document).ready(function() {
 		e_bio_input.remove();
 		bio_data.html(new_bio_val);
 		
-		$(".save-profile-btn").attr('class', 'edit-profile-btn');
-	};
+        $(".save-profile-btn").attr('class', 'edit-profile-btn');
+        $("#fileToUpload").remove();
+        $("#new-upload-btn").remove();
+    };
 });
+
+function change_profile_photo(event) {
+    var reader = new FileReader();
+    reader.onload = function() {
+        var output = document.getElementById('profile-photo');
+        output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
