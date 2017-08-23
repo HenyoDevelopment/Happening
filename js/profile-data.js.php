@@ -97,9 +97,12 @@
                 'image' => $recordArray['image'],
                 'tags' => $recordArray['tags'],
                 'users_going' => $recordArray['users_going'],
-                'size' => $recordArray['size']
+                'size' => $recordArray['size'],
+                'host_image' => get_host_image($recordArray['host'])
                 );
         }
+
+      
 
         return $event_info;
     }
@@ -117,7 +120,7 @@
         //      else put in present array
         //end for
         foreach ($event_list as $event_id) {
-            $info = get_event($event_id);  
+            $info = get_event($event_id); 
             //print_r($info);   
 
             if ($info['end_date'] < date("Y-m-d")) {
@@ -126,6 +129,25 @@
                 array_push($present, $info);
             }
         }
+    }
+
+    function get_host_image($username){
+        global $db;
+        $sqlQuery = "SELECT * FROM `users` WHERE username ='$username';";
+        $result = mysqli_query($db, $sqlQuery) or die(mysqli_error($db));
+        $image = "img/profile-photos/";
+        //OBTAINING DATA FROM DATABASE
+        while ($recordArray = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            if($recordArray['profile_picture'] != "") {
+                $image = $image.$recordArray['profile_picture'];
+            } else {
+                $image = "img/default-img/default0.jpg";
+            }
+
+            //echo $image . "\n";
+        }
+
+        return $image;
     }
 
     //Function to see which friends are going to an event
@@ -173,6 +195,7 @@ $.getScript('js/event-card-template.js').done(function(){
             variable-names              ID-names
 
             events[i]['host']       -> event-host
+            events[i]['host_image'] -> user-image
             events[i]['image']      -> event-image
             events[i]['name']       -> event-name
             events[i]['start_date'] -> date-time
@@ -199,8 +222,12 @@ $.getScript('js/event-card-template.js').done(function(){
             document.getElementById("event-image").setAttribute("id","event-image-" + i);
             document.getElementById("event-image-" + i).setAttribute("src", image_location);
 
+            /////////////////
+            // HOST IMAGE  //
+            /////////////////
+            document.getElementById("user-image").setAttribute("id","user-image-" + i);
+            document.getElementById("user-image-" + i).setAttribute("src", events[i]['host_image']);
 
-            //document.getElementById("user-image").setAttribute("src", events[i]['image']);
 
             //////////
             // Host //
@@ -224,7 +251,7 @@ $.getScript('js/event-card-template.js').done(function(){
             // event-capacity & event-people //
             ///////////////////////////////////
             var people = events[i]['users_going'].split(",");
-            var cap = toTitleCase(events[i]['size']) + " Event &#183; " + people.length + " attendees";
+            var cap = toTitleCase(events[i]['size']) + " Event &nbsp;&#183;&nbsp;" + people.length + " attendees";
             document.getElementById("event-capacity").setAttribute("id","event-capacity-" + i);
             document.getElementById("event-capacity-" + i).innerHTML = cap;
 
@@ -239,10 +266,15 @@ $.getScript('js/event-card-template.js').done(function(){
             var match = events[i]['tags'].match(/\[(.*?)\]/); //Remove brackets
             var tags = match[1].split(",");
 
+            //Output tags
             for (var j = 0; j < tags.length; j++) {
                 tag = tags[j].replace (/"/g,'');
                 tag = tag.trim(); //Remove trailing spaces
-                tag = "<a class=\"tags\">#" + tag + "</a>&nbsp;&#183;&nbsp;"
+                tag = "<a class=\"tags\">#" + tag + "</a>&nbsp;";
+
+                if (j + 1 < tags.length) 
+                    tag += "&#183;&nbsp;";
+
                 $("#event-tags-" + i).append(tag);
             }
         }
