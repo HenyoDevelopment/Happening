@@ -28,7 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <script src="js/host.js"></script>
-        <script type="text/javascript" src="js/account-setting.js.php"></script>
+        <script src="js/account-setting.js.php"></script>
 
     </head> 
 
@@ -81,7 +81,7 @@
                         <form action="profile.php">
                              <input class="btn" id="submit-event" type="submit" name="submit" value="Cancel"/>
                         </form>
-
+                    </div>
                 </div>
                 <!-- FORM END -->
 

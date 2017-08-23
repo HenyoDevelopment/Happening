@@ -1,20 +1,66 @@
 .profile-container {
     padding: 15px 0;
+    margin-bottom: 0;
 }
 
 .profile-img-container {
-    overflow:hidden;
-    border-radius: 5px;
+    float: right;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .profile-photo {
     width: 100%;
     height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+input[type='text'],
+input[type='text']:focus {
+    width: 100%;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #282828;
+    outline: none;
+}
+
+#new-upload-btn {
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.camera-container {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);    
+}
+
+.camera-outline {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
 }
 
 .line-one {
     height: 34px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .username { 
@@ -27,6 +73,7 @@
     margin: 0px; 
     font-size: 24px;
     line-height: 34px;
+    font-weight: 400;
 }
 
 .profile-btn,
@@ -37,10 +84,15 @@
     margin-right: 10px;
     width: 30%;
     border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.own-profile-btn:before {
+.edit-profile-btn:before {
     content: 'Edit Profile';
+}
+
+.save-profile-btn:before {
+    content: 'Save Changes';
 }
 
 .dropdown-container {
@@ -63,6 +115,7 @@
 }
 
 a.dropdown-item {
+    font-weight: 400;
     padding: 5px;
     margin: 0 10px;
     text-decoration: none;
@@ -79,7 +132,6 @@ a.dropdown-item:hover {
 
 .line-two {
     margin-bottom: 10px; 
-    margin-left: 5px;
 }
 
 .fullname {
@@ -96,7 +148,6 @@ a.dropdown-item:hover {
 
 .line-three {
     margin-bottom: 15px; 
-    margin-left: 5px;
 }
 
 .bio > p {
@@ -107,14 +158,12 @@ a.dropdown-item:hover {
 .line-four {
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 5px;
 }
 
 .points,
 .connections {
-    width: 49%;
+    width: 30%;
     display: inline-block;
-    text-align: center;
     vertical-align: top;
 }
 
@@ -122,7 +171,13 @@ a.dropdown-item:hover {
     width: 70%;
 }
 
-.points > h4,
+.points > h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
 .connections-btn > h4 {
     margin: 0;
     font-size: 14px;
@@ -130,7 +185,7 @@ a.dropdown-item:hover {
 }
 
 .points {
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .connections-btn {
@@ -205,13 +260,13 @@ hr {
 /*FONT RESIZING FOR IPAD AND MOBILE*/
 @media only screen and (max-width: 768px) {
     .username > h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .profile-btn {
         font-size: 10px;
         margin-top: 4px;
-
+        padding: 6px 2px;
     }
 
     .profile-settings-btn {
@@ -234,20 +289,29 @@ hr {
     .bio > p {
         font-size: 12px;
     }
-
+    
     .profile-container {
-        margin-bottom: 0px;
+        margin-top: 30px;
     }
 
     .profile-img-container {
-        max-width: 80%;
-        max-height: 80%;
-        margin: 0 auto;
+        height: 80px;
+        width: 80px;
+        margin-top: 15px;
+    }
+
+    .camera-outline {
+        width: 30px;
+        height: 30px;
     }
 
     .line-one {
         margin-top: 15px;
         margin-bottom: 0px;
+    }
+
+    .fullname > h3 {
+        font-size: 14px;
     }
 
     .dropdown-item {
@@ -271,6 +335,13 @@ hr {
     .connections-btn > h4,
     #event-stream .nav-pills > li > a {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 350px) { 
+    .profile-img-container {
+        height: 60px;
+        width: 60px;
     }
 }
 

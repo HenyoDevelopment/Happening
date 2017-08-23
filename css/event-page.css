@@ -206,14 +206,8 @@ a.tags {
     display: inline-block;
 }
 
-.username {
-    margin-bottom: 0px;
-    display: inline-block;
-}
-
-.username > h2 {
+#username {
     font-size: 24px;
-    font-weight: 300;
 }
 
 .fullname {
@@ -249,7 +243,7 @@ a.tags {
 .points > h4,
 .connections-btn > h4 {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -284,6 +278,7 @@ a.tags {
 a.dropdown-item {
     padding: 5px;
     margin: 0 10px;
+    font-weight: 400;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -343,7 +338,7 @@ a.dropdown-item:hover {
         font-size: 8px;
     }
 
-    .username > h2 {
+    #username {
         font-size: 18px;
     }
 
