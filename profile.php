@@ -32,8 +32,10 @@
         <script src="js/general-event-card.js"></script>
         <script src="js/interested.js"></script>
         <script src="js/follow-btn.js"></script>
+        <script src="js/profile-edit.js"></script>
 
-        <script type="text/javascript" src="js/profile-data.js.php"></script>
+
+        <script src="js/profile-data.js.php"></script>
     </head> 
 
     <body>
@@ -120,7 +122,24 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <!--PROFILE END-->
+=======
+                    <div class="col-xs-3">
+                        <div class="profile-img-container">
+                            <img id="profile-photo" class="profile-photo" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="line-three">
+                            <div class="bio">
+                                <p id="description">TRUST. RESPECT. LOYALTY. LOVE. 💯 ✊ Be formless ☁️ Be water 🌊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROFILE END-->
+>>>>>>> origin/master
 
                     <!--SECONDARY NAV START-->
                     <div id="event-stream">	
