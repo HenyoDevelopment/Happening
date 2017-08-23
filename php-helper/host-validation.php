@@ -57,6 +57,8 @@
 		$event_host = $_SESSION['usernameValue'];
 		$event_id = $event_host."%".$event_name."%".$start_date;
 
+		$users_going = json_encode([$event_host]);
+
 		//print_r($_SESSION);
 		/************************/
         /*  Image Processing     /
@@ -78,7 +80,7 @@
         $conn = new mysqli($host, $user, $password,$database);
 
         //print_r($_SESSION);
-        $sqlQuery = "INSERT INTO events(event_id, name, host, image, location, start_date, start_time, end_date, end_time, size, description, tags, privacy) VALUES (
+        $sqlQuery = "INSERT INTO events(event_id, name, host, image, location, start_date, start_time, end_date, end_time, size, description, tags, users_going, privacy) VALUES (
         						'$event_id',
       							'$event_name',
         						'$event_host',
@@ -91,6 +93,7 @@
         						'$size',
         						'$description',
         						'$tags',
+        						'$users_going',
         						'$privacy'
        					 );";
 
@@ -98,6 +101,8 @@
 		    update($event_host, $event_id, $db);
 			
 			echo "New record created successfully";
+			header('Location: ../profile.php');
+
 		} else {
 
 			//Check if event Already Exists
@@ -109,7 +114,7 @@
     }	
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -135,7 +140,7 @@
 
     <body>
         
-    	<!-- FOR DEBUGGING PURPOSES ONLY -->
+    	FOR DEBUGGING PURPOSES ONLY
 
         <div class="container main-content">
             <div class="row row-centered">
@@ -160,4 +165,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> -->

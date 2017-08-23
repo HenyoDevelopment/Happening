@@ -186,18 +186,18 @@ $.getScript('js/event-card-template.js').done(function(){
 
 
         //debugging purposes only
-        //alert(events[0]['name']);
-        
-        var html = template();
-        $("#1b").append(html);
+        //alert(JSON.stringify(events));
 
         for (i = 0; i < events.length; i++) { 
+
+            var html = template();
+            $("#1b").append(html);
             /////////////
             //  IMAGE  //
             /////////////
-            events[i]['image'] = "img/event_images/" + events[0]['image'];
+            var image_location = "img/event_images/" + events[i]['image'];
             document.getElementById("event-image").setAttribute("id","event-image-" + i);
-            document.getElementById("event-image-" + i).setAttribute("src", events[i]['image']);
+            document.getElementById("event-image-" + i).setAttribute("src", image_location);
 
 
             //document.getElementById("user-image").setAttribute("src", events[i]['image']);
@@ -223,10 +223,28 @@ $.getScript('js/event-card-template.js').done(function(){
             ///////////////////////////////////
             // event-capacity & event-people //
             ///////////////////////////////////
-            var cap = toTitleCase(events[i]['size']) + " Event &#183 " + events[i]['users_going'];
+            var people = events[i]['users_going'].split(",");
+            var cap = toTitleCase(events[i]['size']) + " Event &#183; " + people.length + " attendees";
             document.getElementById("event-capacity").setAttribute("id","event-capacity-" + i);
             document.getElementById("event-capacity-" + i).innerHTML = cap;
 
+            ////////////////////
+            // Friends Going  //
+            ////////////////////
+
+            //////////
+            // TAGS //
+            //////////
+            document.getElementById("event-tags").setAttribute("id","event-tags-" + i);
+            var match = events[i]['tags'].match(/\[(.*?)\]/); //Remove brackets
+            var tags = match[1].split(",");
+
+            for (var j = 0; j < tags.length; j++) {
+                tag = tags[j].replace (/"/g,'');
+                tag = tag.trim(); //Remove trailing spaces
+                tag = "<a class=\"tags\">#" + tag + "</a>&nbsp;&#183;&nbsp;"
+                $("#event-tags-" + i).append(tag);
+            }
         }
 
 });
