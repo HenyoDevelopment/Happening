@@ -17,13 +17,13 @@ $(document).ready(function() {
             var curr_bio_val = bio_data.text();
             bio_data.empty();
             
-            // editable divs to DOM 
+            // send editable divs to DOM 
             $('<input type="text" name="'+new_name_id+'" id="'+new_name_id+'" value="'+curr_name_val+'" class="live-edit">').appendTo(name_data);
             $('<input type="text" name="'+new_bio_id+'" id="'+new_bio_id+'" value="'+curr_bio_val+'" class="live-edit">').appendTo(bio_data);
 
-            // change profile pic to DOM
+            // send change profile pic to DOM
             $('<input type="file" class="default-upload-btn" name="fileToUpload" id="fileToUpload" onchange="change_profile_photo(event)">').insertAfter(".profile-photo");
-            $('<label id="new-upload-btn" for="fileToUpload"><img width="50px" height="50px"src="img/camera-outline.png"></img></label>').insertAfter("#fileToUpload");
+            $('<label id="new-upload-btn" for="fileToUpload"> <div class="camera-container"> <img class="camera-outline" src="img/camera-outline-white.png"></div></img></label>').insertAfter("#fileToUpload");
 
             //change btn to save profile
             $(this).attr('class', 'save-profile-btn');

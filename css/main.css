@@ -466,12 +466,6 @@ hr {
 	z-index: -1;
 }
 
-#new-upload-btn {
-    color: black;
-    display: inline-block;
-    cursor: pointer;
-}
-
 .inputfile:focus + label,
 .inputfile + label:hover {
     background-color: red;
