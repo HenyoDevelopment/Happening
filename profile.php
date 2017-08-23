@@ -161,7 +161,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-unhappy"></i>
@@ -200,7 +200,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-really-happy"></i>
@@ -239,7 +239,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-happy"></i>
