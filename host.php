@@ -27,8 +27,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtBCdPRCnQCF-MI78JOcc1e7Oly7Lth7I&libraries=places"></script>
-        
 
+        <script src="js/image-preview.js"></script>
         <script src="js/host.js"></script>
         <script src="js/google-autocomplete.js"></script>
         <script src="js/event-validation.js.php"></script>
@@ -61,15 +61,12 @@
                     <p id="error"> </p>
                     <div class="form-container">
                         <form name="create-event-form" action="php-helper/host-validation.php" method="POST" runat="server" enctype="multipart/form-data" onSubmit="return validateForm()">
-                            <div class="event-img-preview">
-                              <img id="preview" style="max-width: 400px;"/>
-                            </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Event Image:</div>
                                 <div class="col-sm-10">
-                                    <input required type="file" name="fileToUpload" id="fileToUpload" onchange="preview_image(event)"> 
+                                    <input required type="file" name="fileToUpload" id="fileToUpload"> 
                                     <div class="event-img-container">
-                                        <img id="profile_picture" class="event-img-preview" src="img/profile-photos/gabe.png" alt="profile photo"> </img>
+                                        <img id="image_preview" class="event-img-preview" src="img/profile-photos/gabe.png" alt="Uh oh. That's not a .png or .jpg file."> </img>
                                     </div>
                                 </div>
                             </div>
