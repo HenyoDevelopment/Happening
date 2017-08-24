@@ -27,7 +27,7 @@ function getRandomInt(min, max) {
 
 // party parrot ftw
 function party_parrot() {
-    var parrot_num = getRandomInt(0, 8);
+    var parrot_num = getRandomInt(0, 9);
     var parrot_type; 
     switch(parrot_num) {
         case 0: 
@@ -53,6 +53,9 @@ function party_parrot() {
             break;
         case 7: 
             parrot_type = "reverse_conga_parrot.gif";
+            break;
+        case 8: 
+            parrot_type = "middle_parrot.gif";
             break;
     }
     return parrot_type;

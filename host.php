@@ -73,7 +73,7 @@
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Privacy:</div>
                                 <select required class="col-sm-10" name="privacy" id="privacy">
-                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="" disabled selected>Public or private event?</option>
                                     <option value="public">Public (Everyone can see it)</option>  
                                     <option value="private">Private (Only people you invite can see it)</option>
                                 </select>

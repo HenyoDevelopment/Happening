@@ -178,7 +178,7 @@
                         </div>
                         <div class="col-xs-3">
                             <div class="profile-img-container">
-                                <img id="profile_picture" class="profile-photo" src="img/party_parrot.gif" alt="profile photo"> </img>
+                                <img id="profile_picture" class="profile-photo" src="img/party-parrot/middle_parrot.gif" alt="profile photo"> </img>
                             </div>
                         </div>
                         <div class="col-xs-12">

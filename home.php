@@ -80,7 +80,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/full-lit.png" alt="It's lit">
+                                                <img class="lit-rating" src="img/default-img/full-lit.png" alt="It's lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
@@ -212,7 +212,7 @@
                                             </div>
                                             <div class="card-btn-container">
                                                 <div class="card-btn">
-                                                    <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                    <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                                 </div>
                                                 <div class="dropup-container">
                                                     <div class="dropup div-inline">
@@ -267,7 +267,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/three-quarters-lit.png" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
@@ -304,7 +304,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="img/one-quarter-lit.png" alt="one quarter lit">
+                                                <img class="lit-rating" src="img/default-img/one-quarter-lit.png" alt="one quarter lit">
                                             </div>
                                             <div class="dropup-container">
                                                 <div class="dropup div-inline">
