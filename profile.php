@@ -229,7 +229,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-unhappy"></i>
@@ -268,7 +268,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-really-happy"></i>
@@ -307,7 +307,7 @@
                                         </div>
                                         <div class="card-btn-container">
                                             <div class="card-btn">
-                                                <img class="lit-rating" src="" alt="three quarters lit">
+                                                <img class="lit-rating" src="img/default-img/three-quarters-lit.png" alt="three quarters lit">
                                             </div>
                                             <div class="event-rating card-btn" type="button">
                                                 <i id="event-interest" class="card-icon icon-happy"></i>
@@ -333,7 +333,7 @@
                 <div class="footer"> 
                     <h6><a>About Us</a></h6>
                     <h6>&copy; 2017 Happening</h6>
-                    <h6><a>Contact</a></h6>
+                    <h6><a>FAQ</a></h6>
                 </div>
             </div>
             <!--FOOTER END-->
