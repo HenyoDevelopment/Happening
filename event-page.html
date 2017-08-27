@@ -13,6 +13,7 @@
         <meta name="author" content="The Happening Team">
 
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/input-field.css">                
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/icon.css">
         <link rel="stylesheet" href="css/event-page.css">
@@ -36,7 +37,10 @@
             </a>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
+                    <span class="input input--hoshi navbar-search">
+                        <input class="input__field input__field--hoshi navbar-search" id="search-input" type="text" placeholder="Search Event, User, or Tag"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" id="search-underline"></label>
+                    </span>
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
@@ -229,8 +233,74 @@
                                                             <h4><b>479</b> connections</h4>
                                                         </button>
                                                         <div class="dropdown-menu dropdown-menu-right connections-dropdown" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#"><b>342</b> followers</a>
-                                                            <a class="dropdown-item" href="#"><b>137</b> following</a>
+                                                            <a class="dropdown-item" href="#followers-list" rel="modal:open"><b id="followers">3</b> followers</a>
+                                                            <div id="followers-list" style="display:none;">
+                                                                <div class="user-card-list-container">
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/sani.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@sanisideup</a></div>   
+                                                                            <div class="fullname-text-list"><p>Sani Djaya</p></div>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/gabe.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@mrshuly</a></div>   
+                                                                            <div class="fullname-text-list"><p>Gabriel Vallangca</p></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/technica-user.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@technica</a></div>   
+                                                                            <div class="fullname-text-list"><p>Technica</p></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a class="dropdown-item" href="#following-list" rel="modal:open"><b id="following">3</b> following</a>
+                                                            <div id="following-list" style="display:none;">
+                                                                <div class="user-card-list-container">
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/bitcamp-user.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@bitcamp</a></div>   
+                                                                            <div class="fullname-text-list"><p>Bitcamp</p></div>
+                                                                        </div>
+                                                                    </div>
+            
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/gabe.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@mrshuly</a></div>   
+                                                                            <div class="fullname-text-list"><p>Gabriel Vallangca</p></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="user-card-list">
+                                                                        <div class="user-img-container-list">
+                                                                            <img class="user-img" src="img/profile-photos/technica-user.png" alt="">
+                                                                        </div> 
+                                                                        <div class="user-info-container-list">
+                                                                            <div class="username-text-list"><a class="user">@technica</a></div>   
+                                                                            <div class="fullname-text-list"><p>Technica</p></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div> 

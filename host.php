@@ -70,7 +70,7 @@
                                 <div class="col-sm-10">
                                     <input required type="file" name="fileToUpload" id="fileToUpload"> 
                                     <div class="event-img-container">
-                                        <img id="image_preview" class="event-img-preview" alt="Uh oh. That's not a .png or .jpg file."> </img>
+                                        <img id="image_preview" class="event-img-preview" alt="Uh oh! That's not a .png or .jpg file."> </img>
                                     </div>
                                 </div>
                             </div>
