@@ -120,10 +120,9 @@
                                 <input class="col-sm-10 input-field" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
-                        </form>
-
-                        <form action="home.php">
-                             <input class="btn" id="submit-event" type="submit" name="submit" value="Cancel"/>
+                            <div class="cancel-container">
+                                <a>cancel</a>
+                            </div>
                         </form>
                 </div>
                 <!-- FORM END -->
