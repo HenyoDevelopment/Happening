@@ -22,6 +22,7 @@
         <meta name="author" content="The Happening Team">
 
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/input-field.css">        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/host.css">
 
@@ -42,7 +43,10 @@
             </a>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
+                    <span class="input input--hoshi navbar-search">
+                        <input class="input__field input__field--hoshi navbar-search" id="search-input" type="text" placeholder="Search Event, User, or Tag"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" id="search-underline"></label>
+                    </span>
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
@@ -80,25 +84,25 @@
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Event Title:</div> 
-                                <input required class="col-sm-10" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
+                                <input required class="col-sm-10 input-field" type="text" name="event-name" id="event-name" placeholder="Add a short and sweet title"/>
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Location:</div> 
-                                <input required class="col-sm-10" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
+                                <input required class="col-sm-10 input-field" type="text" name="location" id="location" placeholder="Make sure its easy to find"/>
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Start:</div> 
-                                <input required class="col-sm-5" type="date" name="date-start" id="date-start"/> 
-                                <input required class="col-sm-4 col-sm-offset-1" type="time" name="time-start" id="time-start"/>
+                                <input required class="col-sm-5 input-field" type="date" name="date-start" id="date-start"/> 
+                                <input required class="col-sm-4 col-sm-offset-1 input-field" type="time" name="time-start" id="time-start"/>
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">End:</div> 
-                                <input required class="col-sm-5" type="date" name="date-end" id="date-end"/> 
-                                <input required class="col-sm-4 col-sm-offset-1" type="time" name="time-end" id="time-end"/>
+                                <input required class="col-sm-5 input-field" type="date" name="date-end" id="date-end"/> 
+                                <input required class="col-sm-4 col-sm-offset-1 input-field" type="time" name="time-end" id="time-end"/>
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Expected Attendance:</div>
-                                <select required class="col-sm-10" name="event-size" id="event-size">
+                                <select required class="col-sm-10 input-field" name="event-size" id="event-size">
                                     <option value="" disabled selected>Select your option</option>
                                     <option value="small">Small (25 and below)</option>  
                                     <option value="medium">Medium (26-80)</option>
@@ -113,7 +117,7 @@
                             </div>
                             <div class="row event-input-line">
                                 <div class="col-sm-2 input-description">Tags:</div> 
-                                <input class="col-sm-10" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
+                                <input class="col-sm-10 input-field" type="text" name="tags" id="tags" placeholder="Choose attractive tags (Separate with commas)"/>
                             </div>
                             <input class="btn" id="submit-event" type="submit" name="submit" value="Create"/>
                         </form>

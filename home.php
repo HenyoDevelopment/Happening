@@ -22,6 +22,7 @@
         <meta name="author" content="The Happening Team">
 
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/input-field.css">        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/icon.css">
 
@@ -41,7 +42,10 @@
             </a>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="navbar-search" placeholder="Search Event, User, or Tag">
+                    <span class="input input--hoshi navbar-search">
+                        <input class="input__field input__field--hoshi navbar-search" id="search-input" type="text" placeholder="Search Event, User, or Tag"/>
+                        <label class="input__label input__label--hoshi input__label--hoshi-color-1" id="search-underline"></label>
+                    </span>
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">

@@ -2,7 +2,7 @@
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin: 1em;
+	margin: 10px;
 	max-width: 350px;
 	width: calc(100% - 2em);
 	vertical-align: top;
@@ -17,9 +17,8 @@
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #aaa;
+	color: #282828;
 	font-weight: bold;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 
@@ -32,9 +31,9 @@
 	float: right;
 	padding: 0 1em;
 	width: 40%;
-	color: #6a7989;
+	color: #282828;
 	font-weight: bold;
-	font-size: 70.25%;
+	font-size: 12px;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	-webkit-touch-callout: none;
@@ -50,73 +49,7 @@
 	display: block;
 	padding: 1.6em 0;
 	width: 100%;
-}
-
-/* Individual styles */
-
-/* Haruki */
-
-.input--haruki {
-	margin: 4em 1em 1em;
-}
-
-.input__field--haruki {
-	padding: 0.4em 0.25em;
-	width: 100%;
-	background: transparent;
-	color: #AFB5BB;
-	font-size: 1.55em;
-}
-
-.input__label--haruki {
-	position: absolute;
-	width: 100%;
-	text-align: left;
-	pointer-events: none;
-}
-
-.input__label-content--haruki {
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.input__label--haruki::before,
-.input__label--haruki::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 4px;
-	background: #6a7989;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.input__label--haruki::before {
-	top: 0;
-}
-
-.input__label--haruki::after {
-	bottom: 0;
-}
-
-.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
-.input--filled .input__label-content--haruki {
-	-webkit-transform: translate3d(0, -90%, 0);
-	transform: translate3d(0, -90%, 0);
-}
-
-.input__field--haruki:focus + .input__label--haruki::before,
-.input--filled .input__label--haruki::before {
-	-webkit-transform: translate3d(0, -0.5em, 0);
-	transform: translate3d(0, -0.5em, 0);
-}
-
-.input__field--haruki:focus + .input__label--haruki::after,
-.input--filled .input__label--haruki::after {
-	-webkit-transform: translate3d(0, 0.5em, 0);
-	transform: translate3d(0, 0.5em, 0);
+	color: #282828;
 }
 
 /* Hoshi */
@@ -129,7 +62,7 @@
 	padding: 0.85em 0.15em;
 	width: 100%;
 	background: transparent;
-	color: #595F6E;
+	color: #282828;
 }
 
 .input__label--hoshi {
@@ -155,7 +88,7 @@
 	left: 0;
 	width: 100%;
 	height: calc(100% - 10px);
-	border-bottom: 1px solid #B9C1CA;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .input__label--hoshi::after {
@@ -168,15 +101,7 @@
 }
 
 .input__label--hoshi-color-1::after {
-	border-color: hsl(200, 100%, 50%);
-}
-
-.input__label--hoshi-color-2::after {
-	border-color: hsl(160, 100%, 50%);
-}
-
-.input__label--hoshi-color-3::after {
-	border-color: hsl(20, 100%, 50%);
+	border-color: #ff944d;
 }
 
 .input__field--hoshi:focus + .input__label--hoshi::after,

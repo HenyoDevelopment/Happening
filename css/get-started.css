@@ -21,8 +21,9 @@ h4 {
 }
 
 .login-container {
-    width: 350px;
-    margin: 0 auto;
+    text-align: center;
+    min-width: 350px;
+    margin-bottom: 35px;
 }
 
 .navbar-brand-full {
@@ -31,6 +32,7 @@ h4 {
     width: auto;
     margin: 0 auto;
 }
+
 .text-container {
     text-align: center;
     margin-top: 20px
@@ -47,7 +49,7 @@ h4 {
 
 #exTab3 .nav-pills > li {
     margin: 0 auto;
-    width: 175px;
+    width: 50%;
     float: left; 
     text-align: center;
 }
@@ -85,12 +87,7 @@ input {
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     outline: none;
-}
-
-input:focus {
-    border-bottom: 1px solid #282828;
 }
 
 label#password-label {
@@ -107,7 +104,7 @@ input[type=submit] {
     font-weight: bold;
     height: 50px;
     width: 80%;
-    margin-top: 20px;
+    margin: 10px 0; 
     color: #ffffff;
     background-color: #ff944d;
     border-color: #ff944d;
@@ -122,14 +119,6 @@ input[type=submit]:active {
 }
 
 @media only screen and (max-width: 370px) {
-    .login-container {
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    #exTab3 .nav-pills > li {
-        width: 150px;
-    }
 
     h3 {
         font-size: 18px;
@@ -137,6 +126,10 @@ input[type=submit]:active {
 
     h4 {
         font-size: 14px;
+    }
+
+    .login-container {
+        min-width: 300px;
     }
 }
 

@@ -97,6 +97,10 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/get-started.css">
+		<link rel="stylesheet" href="css/input-field.css">
+
+		<script href="js/input-field-label.js"></script>
+		
 		</script>
     </head> 
 
@@ -104,7 +108,7 @@
 
 		<div class="container-fluid main-content">
             <div class="row box-container">
-                <div class="login-container">
+                <div class="login-container col-sm-4 col-sm-offset-4">
 
 						<a class= "navbar-brand-logo" href="get-started.php">
                     		<img class="navbar-brand-full" alt="Happening Logo" src="img/happening-full.png">
@@ -132,8 +136,18 @@
 												}
 											?>
 										</div>
-										<input type="text" name="username" placeholder="Username" required="true"/><br/>
-										<input type="password" name="password" placeholder="Password" required="true" /><br/>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="text" name="username" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Username</span>
+											</label>
+										</span>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="password" name="password" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Password</span>
+											</label>
+										</span>
 										<div class="btn-holder">
 											<input type="submit" name="submit" value="Sign In">
 										</div>
@@ -156,12 +170,32 @@
 										<div class="text-container error">
 											<p id="invalid-password"> </p>
 										</div>
-										<input type="email" name="email" placeholder="Email" required="true"/><br/>
-										<input type="text" name="name" placeholder="Name" /><br/>
-										<input type="text" name="username" placeholder="Username" required="true"/><br/>
-										<input type="password" name="password" placeholder="Password" required="true" /><br/>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="email" name="email" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Email</span>
+											</label>
+										</span>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="text" name="name" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Name</span>
+											</label>
+										</span>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="text" name="username" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Username</span>
+											</label>
+										</span>
+										<span class="input input--hoshi">
+											<input class="input__field input__field--hoshi" type="password" name="password" required="true"/>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1">
+												<span class="input__label-content input__label-content--hoshi">Password</span>
+											</label>
+										</span>
 										<div class="btn-holder">
-											<input type="submit" name="submit" value="Give Me Access!">
+											<input id="submit-btn" type="submit" name="submit" value="Give Me Access!">
 										</div>
 										<!-- <div class="text-container">
 										</div> -->
@@ -189,7 +223,45 @@
 		</div>
     </body>
 
-	<!-- Needed FOR TABS TO WORK-->
+	<!-- NEEDED FOR TABS TO WORK-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- NEEDED FOR INPUT ANIMATION TO WORK-->
+	<script src="js/classie.js"></script>
+	<script>
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+	</script>
 </html>

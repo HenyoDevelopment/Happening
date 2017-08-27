@@ -72,18 +72,27 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .navbar-search {
     width: 100%;
-    padding: 6px 12px;
+    max-width: 100%;
+    margin: 0;
     font-size: 14px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
+    background-color: transparent;
     outline: none;
 }
 
-.navbar-search:focus {
-    border-bottom: 1px solid #282828;
+.navbar-left {
+    margin: 0;
+    height: 50px;
+}
+
+#search-input {
+    height: 50px;
+    padding: 0; 
+    float: left;
+}
+
+#search-underline {
+    padding: 0;
+    position: static;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -500,8 +509,12 @@ hr {
     }
 
     .navbar-search {
-        width: 80%;
+        width: 85%;
         font-size: 12px;
+    }
+
+    #search-input { 
+        height: 40px;
     }
 
     .navbar-right {

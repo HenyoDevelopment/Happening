@@ -55,7 +55,7 @@ input {
     border-radius: 0;
 }
 
-input:hover {
+.input-field:hover {
     border-bottom: 1px solid #282828;
 }
 
@@ -118,4 +118,11 @@ select:hover {
     outline: none;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
     padding: 14px 12px;
+}
+
+
+@media only screen and (max-width: 767px){
+    #privacy {
+        width: 100%;
+    }
 }
