@@ -57,15 +57,32 @@
         </div>
         <!--NAVIGATION BAR END-->
 
-        <!--USERS START-->
+        <!--HOME FEED START-->
         <div class="container main-content">
             <div class="row row-centered">
                 <div id="col-restriction" class="col-sm-8 col-sm-offset-2">
+
+                    <!--EVENT RATING BEGIN--> 
+                    <div class="event-ratings">
+                        <div class="event-ratings-container">
+                            
+                            <!--EVENT RATING START--> 
+                            <div class="rating-card">
+                                <div class="rating-img-container vertical-align">
+                                    <img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
+                                </div>
+                            </div>
+                            <!--EVENT RATING END-->
+
+                        </div>
+                    </div>
+                    <!--EVENT RATING END-->
 
                     <!--USER ONE START-->
                     <div class="friend-card">
                         <div class="friend-events">
                             <div class="friend-events-container">
+
                                 <!--MOONRISE CARD START-->
                                 <div class="card">
                                     <div class="img-container vertical-align">
@@ -196,7 +213,7 @@
                     <div class="friend-card">
                         <div class="friend-events">
                             <div class="friend-events-container">
-                                <div class="center-event-cards"> <!-- ONLY HAVE THIS DIV FOR USERS WITH ONE EVENT CARD -->
+                                <div class="center-event-cards"> <!-- ONLY USER THIS DIV FOR USERS WITH ONE EVENT CARD -->
                                     <!--TECHNICA CARD START-->
                                     <div class="card">
                                         <div class="img-container vertical-align">

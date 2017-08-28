@@ -179,6 +179,35 @@ h1, h2, h3, h4, h5, h6, h7 p {
     border-bottom: 2px solid #ff944d;
 }
 
+.event-ratings {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.event-ratings-container {
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.rating-card {
+    display: inline-block;
+    background: white;
+    border-radius: 2px;
+    white-space: normal;
+    margin-top: 10px;
+}
+
+.rating-img-container {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
 .friend-card {
     display: block;
     width: auto;
@@ -197,8 +226,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
-    padding: 0 5px;
-    margin-top: -5px;
+    padding: 5px 5px 0 5px;
 }
 
 .friend-info {
@@ -215,7 +243,6 @@ h1, h2, h3, h4, h5, h6, h7 p {
     background: white;
     border-radius: 2px;
     white-space: normal;
-    margin-top: 10px;
 }
 
 .event-card {
