@@ -296,7 +296,6 @@ $.getScript('js/event-card-template.js').done(function(){
             }    
 
             var nominator = people.length;
-            alert(nominator);
             var percentage = (nominator / denominator) * 100;
             var lit_scale = "img/default-img/";
 

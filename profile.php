@@ -31,7 +31,7 @@
 	    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         
         <script src="js/general-event-card.js"></script>
-        <script src="js/interested.js"></script>
+        <script src="js/interested.js.php"></script>
         <script src="js/follow-btn.js"></script>
         <script src="js/profile-edit.js"></script>
 
