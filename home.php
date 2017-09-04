@@ -68,8 +68,16 @@
                             
                             <!--EVENT RATING START--> 
                             <div class="rating-card">
-                                <div class="rating-img-container vertical-align">
-                                    <img class="card-event-img" src="img/events/moonrise.jpg" alt="Moonrise Festival 2017">
+                                <div class="rating-question">
+                                    <h4>Did you enjoy Bitcamp 2017?</h4>
+                                </div>
+                                <div class="rating-response">
+                                    <div class="rating-response-yes"> 
+                                        <a><h4>Yes!</h4></a>
+                                    </div>
+                                    <div class="rating-response-no"> 
+                                        <a><h4>No.</h4></a>
+                                    </div>
                                 </div>
                             </div>
                             <!--EVENT RATING END-->

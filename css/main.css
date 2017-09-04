@@ -181,31 +181,49 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .event-ratings {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .event-ratings-container {
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
-    padding: 0 5px;
+    padding: 5px;
+    text-align: center;
 }
 
 .rating-card {
     display: inline-block;
-    background: white;
+    background: transparent;
     border-radius: 2px;
     white-space: normal;
-    margin-top: 10px;
 }
 
-.rating-img-container {
-    display: block;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    position: relative;
+.rating-response-no,
+.rating-response-yes {
+    margin: 0 5px;
+}
+
+.rating-question, 
+.rating-response,
+.rating-response-yes,
+.rating-response-no {
+    display: inline-block;
+}
+
+.rating-response {
+    margin: 0 10px;
+}
+
+.rating-question > h4,
+.rating-response > h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.rating-response-yes > a > h4,
+.rating-response-no > a > h4 {
+    margin: 0;
 }
 
 .friend-card {
@@ -240,7 +258,7 @@ h1, h2, h3, h4, h5, h6, h7 p {
 
 .card {
     display: inline-block;
-    background: white;
+    background: transparent;
     border-radius: 2px;
     white-space: normal;
 }
@@ -536,7 +554,7 @@ hr {
     }
 
     .navbar-search {
-        width: 85%;
+        width: 80%;
         font-size: 12px;
     }
 
