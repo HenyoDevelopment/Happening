@@ -8,7 +8,7 @@
 	$table2 = "events";
 	
 	// Create connection to root
-	$conn = new mysqli($host,"root","");
+	$conn = new mysqli($host,$user,$password);
 	
 	//Check if connection fails
 	if ($conn->connect_error) {
