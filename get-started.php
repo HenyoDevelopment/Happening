@@ -1,7 +1,7 @@
 <?php
     require_once("php-helper/open-database.php");
 
-    //For Loggin out
+    //For Loggint out
 	session_destroy();
 ?>
 

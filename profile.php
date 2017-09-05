@@ -2,7 +2,7 @@
     session_start();
 
     //If user is not logged in, prompt user to login
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    if (!isset($_SESSION["usernameValue"])) {
         header("Location: get-started.php");
     }
 ?>
