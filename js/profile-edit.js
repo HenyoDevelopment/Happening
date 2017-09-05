@@ -1,16 +1,17 @@
 $(document).ready(function() {
 	$(".edit-profile-btn").on("click", function() {
         if ($(".save-profile-btn")[0]){
+            // saves profile 
             save_profile();
         } else {
-            //edit name
+            // BEGIN EDITING NAME
             var name_data = $(".fullname").children("h3");
             var name_id = name_data.attr("id");
             var new_name_id = name_id+"-form";
             var curr_name_val = name_data.text();
             name_data.empty();
 
-            //edit data
+            // BEGIN EDITING DATA
             var bio_data = $(".bio").children("p");
             var bio_id = bio_data.attr("id");
             var new_bio_id = bio_id+"-form";
@@ -34,25 +35,31 @@ $(document).ready(function() {
     });
     // save profile changes function
 	function save_profile() {
-        // save name
-		var name_data = $(".fullname").children("h3");
-		var new_name_id   = name_data.attr("id");
-		var c_name_input  = "#"+new_name_id+"-form";
-		var e_name_input  = $(c_name_input);
-		var new_name_val  = e_name_input.val().replace(/[*^<>()|[\]\\]/g, " ");
-        e_name_input.remove();
 
-        console.log(new_name_val);        
-        name_data.html(new_name_val);
-        
-        // save description
-        var bio_data = $(".bio").children("p");
-		var new_bio_id   = bio_data.attr("id");
-		var c_bio_input  = "#"+new_bio_id+"-form";
-		var e_bio_input  = $(c_bio_input);
-		var new_bio_val  = e_bio_input.val();
-		e_bio_input.remove();
-		bio_data.html(new_bio_val);
+        // Saves name for client
+		var new_name_data = $(".fullname").children("h3");
+        var new_name_input_id = $("#" + new_name_data.attr("id") + "-form");
+		var new_name_val = new_name_input_id.val().replace(/[*^<>()|[\]\\]/g, " ");
+        new_name_input_id.remove();
+        new_name_data.html(new_name_val);
+
+        // Saves description for client
+        var new_bio_data = $(".bio").children("p");
+		var new_bio_input_id = $("#" + new_bio_data.attr("id") + "-form");
+		var new_bio_val = new_bio_input_id.val().replace(/[*^<>()|[\]\\]/g, " ");
+		new_bio_input_id.remove();
+        new_bio_data.html(new_bio_val);
+
+        // Update data in database (AJAX)
+        $.ajax({
+            url: "php-helper/update-profile.php",
+            method: "POST",
+            data: {"name": new_name_val, "bio": new_bio_val},
+            dataType: "json",
+            success: function(response) {
+                alert("Data Save: " + response);
+            }
+        });
 		
         $(".save-profile-btn").attr('class', 'edit-profile-btn');
         $("#fileToUpload").remove();

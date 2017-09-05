@@ -1,0 +1,9 @@
+AJAX 
+- interested.js 
+- profile-edit.js + update-profile.php
+
+HTTPS
+// Don't worry about htis until I'm with you
+// You need access to the server to fix this
+- sign in form broken 
+
