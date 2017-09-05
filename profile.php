@@ -96,6 +96,8 @@
                                         <h3 id="name"></h3>
                                     </div>
                                 </div>
+                                <div id="test">
+                                </div>
                                 <div class="line-four">
                                     <div class="points">
                                         <h4><b id="points"></b> points</h4>
