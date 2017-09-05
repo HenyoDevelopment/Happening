@@ -50,14 +50,14 @@ $(document).ready(function() {
 		new_bio_input_id.remove();
         new_bio_data.html(new_bio_val);
 
-        // Update data in database 
+        // Update data in database (AJAX)
         $.ajax({
             url: "php-helper/update-profile.php",
             method: "POST",
             data: {"name": new_name_val, "bio": new_bio_val},
             dataType: "json",
-            success : function(response) {
-                $('#test').text(response)
+            success: function(data) {
+                alert ("Data Save: " + data);
             }
         });
 		
