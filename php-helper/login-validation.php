@@ -25,9 +25,9 @@
 					 password_verify($passwordValue, $recordArray["password"])) {
 					
                     //SAVE CREDENTIALS TO LOCAL MEMORY	
-                    $_SESSION["passwordValue"] = $passwordValue;
                     $_SESSION["usernameValue"] = $usernameValue;
-					
+                    $_SESSION["loggedIn"] = true;
+                    
 					$passed = true;
                     
                     //Redirect to HOME
