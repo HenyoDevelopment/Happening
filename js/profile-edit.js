@@ -56,8 +56,8 @@ $(document).ready(function() {
             method: "POST",
             data: {"name": new_name_val, "bio": new_bio_val},
             dataType: "json",
-            success: function(data) {
-                alert ("Data Save: " + data);
+            success: function(response) {
+                alert("Data Save: " + response);
             }
         });
 		
