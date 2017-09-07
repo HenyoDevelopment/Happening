@@ -39,7 +39,8 @@
 
             <div class="row thank-you">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h4> Thanks for signing up! Here is a sneak peek of what you can do on Happening.</h4>
+                    <h4>We have reserved your username. We'll be sure to send you an email when we launch!</h4>
+                    <h4>Here is a sneak peek of our platform...</h4>
                 </div>                                                 
             </div>
 
@@ -64,7 +65,7 @@
             <div class="row box-container-two">
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="text-container">
-                        <h2>We are committed to help student organizations.</h2>
+                        <h2>Built for student leaders by student leaders.</h2>
                         <h3>Attract attendees with tags like <a>#freefood</a>.</h3> 
                         <h3>Show off past events on your profile.</h3> 
                         <h3>Receive feedback on your events.</h3>                            
@@ -75,9 +76,11 @@
 
             <div class="row box-container contact">
                 <div class="text-container">
-                    <h2>Join the development process!</h2> 
-                    <h4>Tell us what else you want to see on Happening.</h4> 
-                    <h4><a>contact@whatshappening.co</a></h4>    
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <h2>Join the development process!</h2> 
+                        <h3>Tell us what else you want to see on Happening.</h3> 
+                        <h4><a href="mailto:contact@whatshappening.co">contact@whatshappening.co</a></h4>    
+                    </div>
                 </div>
             </div>
 
@@ -86,7 +89,7 @@
                 <div id="footer-fix" class="footer"> 
                     <h6><a>About Us</a></h6>
                     <h6>&copy; 2017 Happening</h6>
-                    <h6><a>FAQ</a></h6>
+                    <h6><a>Info</a></h6>
                 </div>
             </div>
             <!--FOOTER END-->

@@ -135,7 +135,7 @@
             <div class="footer"> 
                 <h6><a>About Us</a></h6>
                 <h6>&copy; 2017 Happening</h6>
-                <h6><a>FAQ</a></h6>
+                <h6><a>Info</a></h6>
             </div>
         </div>
         <!--FOOTER END-->
