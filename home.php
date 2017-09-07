@@ -171,16 +171,16 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
-                                    <div class="event-size-indicator-medium"></div>
+                                    <div class="event-size-indicator-huge"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
-                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
-                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
+                                            <h4 class="card-title"><a class="event-link">Technica 2017</a></h4>
+                                            <p class="card-event-info">Sat Nov 4 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Huge Event &#183; 907 attendees </p>
                                             <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                             <p class="card-tags">
-                                                <a class="tags">#womenshackathon</a> &#183; 
-                                                <a class="tags">#freefood</a>
+                                                <a class="tags">#womenwhocode</a> &#183; 
+                                                <a class="tags">#freeswag</a>
                                             </p>
                                         </div>
                                         <div class="card-btn-container">
@@ -227,16 +227,16 @@
                                         <div class="img-container vertical-align">
                                             <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                         </div>
-                                        <div class="event-size-indicator-medium"></div>
+                                        <div class="event-size-indicator-huge"></div>
                                         <div class="card-block">
                                             <div class="card-text-container">
-                                                <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
-                                                <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                                <p class="card-event-info">Medium Event &#183; 907 attendees </p>
+                                                <h4 class="card-title"><a class="event-link">Technica 2017</a></h4>
+                                                <p class="card-event-info">Sat Nov 4 @ 10:00 AM &#183; 0.5 miles away</p>
+                                                <p class="card-event-info">Huge Event &#183; 907 attendees </p>
                                                 <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                                 <p class="card-tags">
-                                                    <a class="tags">#womenshackathon</a> &#183; 
-                                                    <a class="tags">#freefood</a>
+                                                    <a class="tags">#womenwhocode</a> &#183; 
+                                                    <a class="tags">#freeswag</a>
                                                 </p>
                                             </div>
                                             <div class="card-btn-container">
@@ -282,16 +282,16 @@
                                     <div class="img-container vertical-align">
                                         <img class="card-event-img" src="img/events/technica.png" alt="Technica 2017">
                                     </div>
-                                    <div class="event-size-indicator-medium"></div>
+                                    <div class="event-size-indicator-huge"></div>
                                     <div class="card-block">
                                         <div class="card-text-container">
-                                            <h4 class="card-title"><a class="event-link">$5.00 &#9679; Technica 2017</a></h4>
-                                            <p class="card-event-info">Fri Nov 5 @ 10:00 AM &#183; 0.5 miles away</p>
-                                            <p class="card-event-info">Medium Event &#183; 907 attendees </p>
+                                            <h4 class="card-title"><a class="event-link">Technica 2017</a></h4>
+                                            <p class="card-event-info">Sat Nov 4 @ 10:00 AM &#183; 0.5 miles away</p>
+                                            <p class="card-event-info">Huge Event &#183; 907 attendees </p>
                                             <p class="card-text">trishaaamazing, beaakahayon, and 58 others</p>
                                             <p class="card-tags">
-                                                <a class="tags">#womenshackathon</a> &#183; 
-                                                <a class="tags">#freefood</a>
+                                                <a class="tags">#womenwhocode</a> &#183; 
+                                                <a class="tags">#freeswag</a>
                                             </p>
                                         </div>
                                         <div class="card-btn-container">

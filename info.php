@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +19,8 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/landing-page.css">
+        <link rel="stylesheet" href="css/info.css">
+        
     </head> 
 
     <body>
@@ -31,48 +37,53 @@
 
         <div class="container-fluid main-content">
 
-            <!--USER ORIENTED AD START-->
+            <div class="row thank-you">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h4> Thanks for signing up! Here is a sneak peek of what you can do on Happening.</h4>
+                </div>                                                 
+            </div>
+
+            <!--USER ORIENTED AD-->
             <div class="row box-container">
-                <div class="col-sm-6 col-sm-offset-1">
+                <div class="col-sm-10 col-sm-offset-1">
                     <div class="text-container">
-                        <h1>Never</h1>
-                        <h2>miss <img class="lit" src="img/default-img/full-lit.png" alt="lit"> events.</h2>
-                        <h3>Come for the <a>#freefood</a>. Stay for the people.</h3>
-                        <h4>Find the best events from your friends.</h4> 
-                    </div>
-                    <a class="btn get-started-button" href="sign-up.php">Get Started</a>
-                </div>
-                <div class="col-sm-4"> 
-                    <div class="text-container">
-                        <h1>:IMAGE FOR USERS:</h1>
+                        <h2>A whole new way to find events.</h2>
+                        <h3>Find out which events your friends are going to.</h3>
+                        <h3>
+                            Check if an event is going to be
+                            <img class="lit" src="img/default-img/full-lit.png" alt="lit"> 
+                            before you go.
+                        </h3>
+                        <h3>Search events by tags like <a>#freeswag</a></h3>
                     </div>
                 </div>
             </div>
-            <!--USER ORIENTED AD END-->
+            <!--USER ORIENTED AD-->
 
             <!--HOST ORIENTED AD START-->
             <div class="row box-container-two">
-                <div class="col-sm-5"> 
+                <div class="col-sm-10 col-sm-offset-1">
                     <div class="text-container">
-                        <h1>:IMAGE FOR HOSTS:</h1>
+                        <h2>We are committed to help student organizations.</h2>
+                        <h3>Attract attendees with tags like <a>#freefood</a>.</h3> 
+                        <h3>Show off past events on your profile.</h3> 
+                        <h3>Receive feedback on your events.</h3>                            
                     </div>
-                </div>
-                <div class="col-sm-6 col-sm-offset-1">
-                    <div class="text-container">
-                        <h1>Improve </h1>
-                        <h2>event turnout.</h2>
-                        <h3>Show off the event ratings your community hosts</h3>    
-                        <h4>or host your own private events.</h4>                
-                    </div>
-                    <a class="btn get-started-button" href="sign-up.php">Host an Event</a>
                 </div>
             </div>
             <!--HOST ORIENTED AD END-->
 
+            <div class="row box-container contact">
+                <div class="text-container">
+                    <h2>Join the development process!</h2> 
+                    <h4>Tell us what else you want to see on Happening.</h4> 
+                    <h4><a>contact@whatshappening.co</a></h4>    
+                </div>
+            </div>
 
             <!--FOOTER START-->
             <div class="row">
-                <div class="footer"> 
+                <div id="footer-fix" class="footer"> 
                     <h6><a>About Us</a></h6>
                     <h6>&copy; 2017 Happening</h6>
                     <h6><a>FAQ</a></h6>

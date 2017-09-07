@@ -1,0 +1,74 @@
+.thank-you {
+    text-align: center;
+}
+
+.thank-you > * > h4 {
+    font-weight: 400;    
+}
+
+h4 > a,
+h4 > a:hover {
+    color: #1c94e0;
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.text-container > h2 {
+    font-size: 46px;
+}
+
+.box-container,
+.box-container-two {
+    height: auto;
+}
+
+.lit {
+    height: 26px; 
+    width: 26px;
+}
+
+#commitment {
+    margin-top: 40px;
+}
+
+#commitment > h4 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.contact> h4 {
+    text-align: center;    
+}
+
+#footer-fix {
+    margin-bottom: -14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-content {
+        margin-top: 75px;
+    }
+
+    .text-container {
+        margin-top: 30px;
+    }
+
+    .text-container > h2 {
+        font-size: 20px;
+    }
+
+    .lit {
+        height: 15px;
+        width: 15px;
+    }
+    
+}     
