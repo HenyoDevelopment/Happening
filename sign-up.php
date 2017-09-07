@@ -1,3 +1,7 @@
+<?php
+    require_once("php-helper/open-database.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,8 +40,8 @@
             var email = document.forms["sign-up-form"]["email"].value;
             
             //Obtain JSON list from php
-            // var email_list = <?php echo $all_emails ?>;
-            // var username_list = <?php echo $all_usernames ?>;
+            var email_list = <?php echo $all_emails ?>;
+            var username_list = <?php echo $all_usernames ?>;
             
             var message = "";
             
