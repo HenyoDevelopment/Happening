@@ -1,0 +1,14 @@
+#exTab3 .nav-pills > li {
+    margin: 0 auto;
+    width: 100%;
+    float: left; 
+    text-align: center;
+}
+
+#top-text {
+    margin-bottom: 0;
+}
+
+#school {
+    margin-top: 3px;
+}

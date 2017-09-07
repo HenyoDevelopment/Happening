@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/get-started.css">
+    <link rel="stylesheet" href="css/sign-up.css">    
     <link rel="stylesheet" href="css/input-field.css">
 
     <script href="js/input-field-label.js"></script>
@@ -84,50 +85,13 @@
                     </a>
                     <div id="exTab3">	
                         <ul class="nav nav-pills center-pills">
-                            <li class="active"><a href="#1b" data-toggle="tab">Sign In</a></li>
-                            <li><a href="#2b" data-toggle="tab">Sign Up</a></li>
+                            <li class="active"><a href="#1b" data-toggle="tab">Sign Up</a></li>
                         </ul>
                         <div class="tab-content clearfix">
                             <div class="tab-pane active" id="1b">
                                 <div class="text-container">
-                                    <h3>Log in to continue</h3>
-                                </div>
-                                <!--LOGIN FORM START: Enter Username, and Password-->
-                                <form action="php-helper/login-validation.php" method="post">
-                                    <div class="text-container error">
-                                        <?php 
-                                            //If login_validation.php detects invalid match = true
-                                            if (isset($_SESSION["invalid_match"]) && $_SESSION["invalid_match"]){
-                                                //MESSAGE WHEN CREDENTIALS INPUT FAILS
-                                                echo "Username and Password do not match."; 
-                                                //Set it back to false
-                                                $_SESSION["invalid_match"] = false;
-                                            }
-                                        ?>
-                                    </div>
-                                    <span class="input input--hoshi">
-                                        <input class="input__field input__field--hoshi" type="text" name="username" required="true"/>
-                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                                            <span class="input__label-content input__label-content--hoshi">Username</span>
-                                        </label>
-                                    </span>
-                                    <span class="input input--hoshi">
-                                        <input class="input__field input__field--hoshi" type="password" name="password" required="true"/>
-                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                                            <span class="input__label-content input__label-content--hoshi">Password</span>
-                                        </label>
-                                    </span>
-                                    <div class="btn-holder">
-                                        <input type="submit" name="submit" value="Sign In">
-                                    </div>
-                                </form>
-                                <!--LOGIN FORM END-->
-                            </div>
-
-
-                            <div class="tab-pane" id="2b">
-                                <div class="text-container">
-                                    <h4>Happening is currently in limited release</h4>
+                                    <h4 id="top-text">Happening is launching soon at</h4> 
+                                    <h4 id="school">University of Maryland</h4>
                                     <h3>Sign up now to reserve your username</h3>
                                 </div>
                                 <!--SIGN UP FORM START (Input): Enter Username, and Password 
@@ -164,10 +128,8 @@
                                         </label>
                                     </span>
                                     <div class="btn-holder">
-                                        <input id="submit-btn" type="submit" name="submit" value="Give Me Access!">
+                                        <input id="submit-btn" type="submit" name="submit" value="Reserve My Username!">
                                     </div>
-                                    <!-- <div class="text-container">
-                                    </div> -->
                                 </form>
                                 <!--SIGN UP FORM END-->
                             </div>
